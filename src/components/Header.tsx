@@ -11,24 +11,24 @@ export const Header = () => {
           </div>
           <div>
             <h1 className="text-xl font-bold text-foreground">CleanWave</h1>
-            <p className="text-xs text-muted-foreground">Professional Cleaning</p>
+            <p className="text-xs text-muted-foreground">Curățenie Profesională</p>
           </div>
         </div>
         
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#home" className="text-foreground hover:text-success transition-colors">Home</a>
-          <a href="#services" className="text-foreground hover:text-success transition-colors">Services</a>
-          <a href="#about" className="text-foreground hover:text-success transition-colors">About</a>
+          <a href="#home" className="text-foreground hover:text-success transition-colors">Acasă</a>
+          <a href="#services" className="text-foreground hover:text-success transition-colors">Servicii</a>
+          <a href="#about" className="text-foreground hover:text-success transition-colors">Despre</a>
           <a href="#contact" className="text-foreground hover:text-success transition-colors">Contact</a>
         </nav>
         
         <div className="flex items-center gap-4">
           <div className="hidden sm:flex items-center gap-2 text-foreground">
             <Phone className="w-4 h-4 text-success" />
-            <span className="text-sm font-medium">+1 (555) 123-4567</span>
+            <span className="text-sm font-medium">+373 (60) 123-456</span>
           </div>
           <Button variant="success" size="sm">
-            Get Quote
+            Ofertă Gratuită
           </Button>
         </div>
       </div>

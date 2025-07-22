@@ -1,10 +1,10 @@
 import { useEffect, useState } from "react";
 
 const stats = [
-  { number: 792, label: "Cleanings Completed", suffix: "" },
-  { number: 500, label: "Happy Customers", suffix: "+" },
-  { number: 98, label: "Satisfaction Rate", suffix: "%" },
-  { number: 5, label: "Years Experience", suffix: "" }
+  { number: 792, label: "Curățenii Finalizate", suffix: "" },
+  { number: 500, label: "Clienți Mulțumiți", suffix: "+" },
+  { number: 98, label: "Rata de Satisfacție", suffix: "%" },
+  { number: 5, label: "Ani de Experiență", suffix: "" }
 ];
 
 export const Stats = () => {
@@ -56,7 +56,7 @@ export const Stats = () => {
   }, [hasAnimated]);
 
   return (
-    <section id="stats-section" className="py-20 bg-success">
+    <section id="stats-section" className="py-20 bg-success" aria-label="Statistici servicii curățenie Chișinău">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (

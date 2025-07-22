@@ -1,73 +1,100 @@
-# Welcome to your Lovable project
+# CleanWave - Servicii Profesionale de Curățenie în Chișinău, Moldova
 
-## Project info
+Acest proiect conține un site web modern și responsiv pentru servicii de curățenie profesională în Chișinău, Moldova.
 
-**URL**: https://lovable.dev/projects/4d53a848-e9f1-4e5b-82e4-7a6eef7b44d2
+## 🎨 Caracteristici Design
 
-## How can I edit this code?
+- **Sistem de Design Personalizabil**: Variabile CSS custom pentru o personalizare ușoară a culorilor și stilurilor
+- **Optimizare Imagini**: Lazy loading și optimizări pentru performanță
+- **Animații Fluide**: Tranziții și efecte moderne pentru o experiență plăcută
+- **Design Responsiv**: Perfect adaptat pentru toate dispozitivele
 
-There are several ways of editing your application.
+## 🚀 Tehnologii Utilizate
 
-**Use Lovable**
+- **React 18** cu TypeScript
+- **Tailwind CSS** cu sistem de design custom
+- **Vite** pentru build rapid
+- **Lucide React** pentru iconițe
+- **Radix UI** pentru componente accesibile
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/4d53a848-e9f1-4e5b-82e4-7a6eef7b44d2) and start prompting.
+## 📱 SEO & Optimizări
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Schema.org** markup pentru SEO local
+- **Open Graph** și Twitter meta tags
+- **Optimizat pentru Moldova/Chișinău**
+- **Lazy loading** pentru imagini
+- **Performance optimizations**
 
-**Use your preferred IDE**
+## 🛠️ Personalizare
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Schimbarea Culorilor
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+Editează variabilele din `src/index.css`:
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```css
+:root {
+  /* Culoarea primară - schimbă aici pentru rebrand */
+  --primary: 142 76% 36%;        /* Verde principal */
+  --primary-hover: 142 76% 32%;  /* Verde hover */
+  --primary-light: 142 76% 90%;  /* Verde deschis */
+  
+  /* Culorile de succes */
+  --success: 142 76% 36%;
+  --success-hover: 142 76% 32%;
+  --success-light: 142 76% 90%;
+  
+  /* Fundal secțiuni */
+  --hero-bg: 0 0% 98%;
+  --section-bg: 0 0% 100%;
+  --footer-bg: 222.2 84% 4.9%;
+}
 ```
 
-**Edit a file directly in GitHub**
+### Personalizare Rapidă
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. **Culori**: Modifică variabilele HSL în `src/index.css`
+2. **Typography**: Ajustează în `tailwind.config.ts`
+3. **Spacing**: Folosește sistemul Tailwind standard
+4. **Animații**: Configurează în `tailwind.config.ts`
 
-**Use GitHub Codespaces**
+## 📋 Setup Local
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```bash
+# Instalare dependințe
+npm install
 
-## What technologies are used for this project?
+# Rulare în dezvoltare
+npm run dev
 
-This project is built with:
+# Build pentru producție
+npm run build
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Preview build
+npm run preview
+```
 
-## How can I deploy this project?
+## 🌍 Localizare
 
-Simply open [Lovable](https://lovable.dev/projects/4d53a848-e9f1-4e5b-82e4-7a6eef7b44d2) and click on Share -> Publish.
+Site-ul este complet tradus în română pentru piața din Moldova:
+- Toate textele sunt în română
+- Numerele de telefon Moldova (+373)
+- Adrese din Chișinău
+- SEO optimizat pentru căutări locale
 
-## Can I connect a custom domain to my Lovable project?
+## 📞 Contact
 
-Yes, you can!
+- **Telefon**: +373 (60) 123-456
+- **Email**: contact@cleanwave.md
+- **Adresă**: Strada Ștefan cel Mare 123, Chișinău, Moldova
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+## 🔗 Deploy
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+Pentru a face deploy pe GitHub:
+
+1. Conectează proiectul la GitHub din Lovable
+2. Push-urile automate vor fi făcute la fiecare modificare
+3. Poți folosi GitHub Pages, Netlify, sau Vercel pentru hosting
+
+---
+
+**CleanWave** - Unde curățenia întâlnește accesibilitatea! 🧽✨

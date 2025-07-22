@@ -8,24 +8,24 @@ import deepImage from "@/assets/deep-cleaning.jpg";
 const services = [
   {
     icon: Building2,
-    title: "Offices",
-    description: "Professional office cleaning services to maintain a productive work environment.",
+    title: "Birouri",
+    description: "Servicii profesionale de curățenie pentru birouri pentru menținerea unui mediu de lucru productiv în Chișinău.",
     image: officeImage,
-    features: ["Daily cleaning", "Sanitization", "Waste management", "Window cleaning"]
+    features: ["Curățenie zilnică", "Dezinfectare", "Gestionarea deșeurilor", "Curățarea geamurilor"]
   },
   {
     icon: Home,
-    title: "Homes",
-    description: "Comprehensive residential cleaning services for your comfort and peace of mind.",
+    title: "Case",
+    description: "Servicii complete de curățenie rezidențială pentru confortul și liniștea dumneavoastră în Moldova.",
     image: homeImage,
-    features: ["Deep cleaning", "Regular maintenance", "Kitchen & bathroom", "Carpet cleaning"]
+    features: ["Curățenie profundă", "Întreținere regulată", "Bucătărie & baie", "Curățare covoare"]
   },
   {
     icon: Zap,
-    title: "Deep Clean",
-    description: "Intensive cleaning services for spaces that need extra attention and care.",
+    title: "Curățenie Profundă",
+    description: "Servicii intensive de curățenie pentru spațiile care necesită atenție și îngrijire suplimentară.",
     image: deepImage,
-    features: ["Move-in/out", "Post-construction", "Spring cleaning", "Sanitization"]
+    features: ["Mutare/ieșire", "Post-construcție", "Curățenie de primăvară", "Dezinfectare"]
   }
 ];
 
@@ -35,11 +35,11 @@ export const Services = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            OUR CLEANING <span className="text-success">SERVICES</span>
+            SERVICIILE NOASTRE DE <span className="text-success">CURĂȚENIE</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            We provide a wide range of cleaning services for residential and commercial spaces. 
-            From deep cleaning to regular maintenance, we ensure your space stays pristine.
+            Oferim o gamă largă de servicii de curățenie pentru spații rezidențiale și comerciale în Chișinău, Moldova. 
+            De la curățenie profundă la întreținere regulată, ne asigurăm că spațiul dumneavoastră rămâne impecabil.
           </p>
         </div>
         
@@ -53,12 +53,15 @@ export const Services = () => {
               <div className="relative overflow-hidden">
                 <img 
                   src={service.image} 
-                  alt={service.title}
-                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110"
+                  alt={`${service.title} - Servicii de curățenie în Chișinău`}
+                  className="w-full h-64 object-cover transition-transform duration-500 group-hover:scale-110 img-optimized"
+                  loading="lazy"
+                  width={400}
+                  height={256}
                 />
                 <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                   <Button variant="success" size="lg">
-                    Learn More
+                    Află Mai Mult
                   </Button>
                 </div>
               </div>
@@ -85,7 +88,7 @@ export const Services = () => {
                 </div>
                 
                 <Button variant="outline" className="w-full mt-6 group-hover:border-success group-hover:text-success">
-                  Get Quote
+                  Obține Ofertă
                 </Button>
               </CardContent>
             </Card>

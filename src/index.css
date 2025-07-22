@@ -8,39 +8,70 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Base colors */
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 
+    /* Card colors */
     --card: 0 0% 100%;
     --card-foreground: 222.2 84% 4.9%;
 
+    /* Popover colors */
     --popover: 0 0% 100%;
     --popover-foreground: 222.2 84% 4.9%;
 
+    /* Primary brand colors - easily customizable */
     --primary: 142 76% 36%;
     --primary-foreground: 0 0% 98%;
+    --primary-hover: 142 76% 32%;
+    --primary-light: 142 76% 90%;
 
+    /* Secondary colors */
     --secondary: 0 0% 96%;
     --secondary-foreground: 222.2 84% 4.9%;
 
+    /* Muted colors */
     --muted: 210 40% 96.1%;
     --muted-foreground: 215.4 16.3% 46.9%;
 
+    /* Accent colors */
     --accent: 142 76% 36%;
     --accent-foreground: 0 0% 98%;
 
+    /* Destructive colors */
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
+    /* Border and input */
     --border: 214.3 31.8% 91.4%;
     --input: 214.3 31.8% 91.4%;
     --ring: 142 76% 36%;
 
-    /* Custom cleaning theme colors */
+    /* Custom cleaning theme variables - EASILY CUSTOMIZABLE */
     --success: 142 76% 36%;
     --success-foreground: 0 0% 98%;
+    --success-hover: 142 76% 32%;
+    --success-light: 142 76% 90%;
+    
+    /* Layout colors */
     --hero-bg: 0 0% 98%;
     --section-bg: 0 0% 100%;
+    --footer-bg: 222.2 84% 4.9%;
+    
+    /* Gradient variables */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-hover)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--hero-bg)), hsl(var(--section-bg)));
+    
+    /* Shadow variables */
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+    --shadow-xl: 0 20px 25px -5px rgb(0 0 0 / 0.1);
+    
+    /* Animation timing */
+    --transition-fast: 0.15s ease-out;
+    --transition-normal: 0.3s ease-out;
+    --transition-slow: 0.5s ease-out;
 
     --radius: 0.5rem;
 
@@ -73,6 +104,8 @@ All colors MUST be HSL.
 
     --primary: 142 76% 36%;
     --primary-foreground: 222.2 84% 4.9%;
+    --primary-hover: 142 76% 40%;
+    --primary-light: 142 76% 15%;
 
     --secondary: 217.2 32.6% 17.5%;
     --secondary-foreground: 210 40% 98%;
@@ -93,8 +126,15 @@ All colors MUST be HSL.
     /* Custom cleaning theme colors - dark mode */
     --success: 142 76% 36%;
     --success-foreground: 222.2 84% 4.9%;
+    --success-hover: 142 76% 40%;
+    --success-light: 142 76% 15%;
+    
     --hero-bg: 222.2 84% 4.9%;
     --section-bg: 217.2 32.6% 17.5%;
+    --footer-bg: 222.2 84% 4.9%;
+    
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--primary-hover)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--hero-bg)), hsl(var(--section-bg)));
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -121,12 +161,17 @@ All colors MUST be HSL.
 }
 
 @layer utilities {
+  /* Semantic color utilities */
   .hero-bg {
     background: hsl(var(--hero-bg));
   }
   
   .section-bg {
     background: hsl(var(--section-bg));
+  }
+  
+  .footer-bg {
+    background: hsl(var(--footer-bg));
   }
   
   .text-success {
@@ -137,7 +182,61 @@ All colors MUST be HSL.
     background-color: hsl(var(--success));
   }
   
+  .bg-success-hover:hover {
+    background-color: hsl(var(--success-hover));
+  }
+  
+  .bg-success-light {
+    background-color: hsl(var(--success-light));
+  }
+  
   .border-success {
     border-color: hsl(var(--success));
+  }
+  
+  /* Gradient utilities */
+  .bg-gradient-primary {
+    background: var(--gradient-primary);
+  }
+  
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+  
+  /* Shadow utilities */
+  .shadow-custom-sm {
+    box-shadow: var(--shadow-sm);
+  }
+  
+  .shadow-custom-md {
+    box-shadow: var(--shadow-md);
+  }
+  
+  .shadow-custom-lg {
+    box-shadow: var(--shadow-lg);
+  }
+  
+  .shadow-custom-xl {
+    box-shadow: var(--shadow-xl);
+  }
+  
+  /* Transition utilities */
+  .transition-fast {
+    transition: var(--transition-fast);
+  }
+  
+  .transition-normal {
+    transition: var(--transition-normal);
+  }
+  
+  .transition-slow {
+    transition: var(--transition-slow);
+  }
+  
+  /* Image optimization */
+  .img-optimized {
+    loading: lazy;
+    decoding: async;
+    content-visibility: auto;
   }
 }

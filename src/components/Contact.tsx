@@ -10,11 +10,11 @@ export const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            GET IN <span className="text-success">TOUCH</span>
+            INTRĂ ÎN <span className="text-success">CONTACT</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Ready to experience professional cleaning services? Contact us today for a free estimate 
-            and let us transform your space.
+            Gata să experimentezi servicii profesionale de curățenie în Chișinău? Contactează-ne astăzi pentru o evaluare gratuită 
+            și lasă-ne să-ți transformăm spațiul.
           </p>
         </div>
         
@@ -22,40 +22,40 @@ export const Contact = () => {
           {/* Contact Form */}
           <Card className="animate-slide-in-left">
             <CardHeader>
-              <CardTitle className="text-2xl">Request a Quote</CardTitle>
+              <CardTitle className="text-2xl">Solicită o Ofertă</CardTitle>
             </CardHeader>
             <CardContent className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <Input placeholder="First Name" />
+                  <Input placeholder="Prenume" />
                 </div>
                 <div>
-                  <Input placeholder="Last Name" />
+                  <Input placeholder="Nume" />
                 </div>
               </div>
               
               <div className="grid grid-cols-2 gap-4">
                 <div>
-                  <Input type="email" placeholder="Email Address" />
+                  <Input type="email" placeholder="Adresa de Email" />
                 </div>
                 <div>
-                  <Input type="tel" placeholder="Phone Number" />
+                  <Input type="tel" placeholder="Numărul de Telefon" />
                 </div>
               </div>
               
               <div>
-                <Input placeholder="Property Address" />
+                <Input placeholder="Adresa Proprietății în Chișinău" />
               </div>
               
               <div>
                 <Textarea 
-                  placeholder="Tell us about your cleaning needs..." 
+                  placeholder="Spune-ne despre nevoile tale de curățenie..." 
                   className="min-h-32"
                 />
               </div>
               
               <Button variant="success" size="lg" className="w-full">
-                Get Free Estimate
+                Obține Evaluare Gratuită
               </Button>
             </CardContent>
           </Card>
@@ -69,8 +69,8 @@ export const Contact = () => {
                     <Phone className="w-6 h-6 text-success" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">Call Us</h3>
-                    <p className="text-muted-foreground">+1 (555) 123-4567</p>
+                    <h3 className="font-semibold">Sună-ne</h3>
+                    <p className="text-muted-foreground">+373 (60) 123-456</p>
                   </div>
                 </div>
               </CardContent>
@@ -83,8 +83,8 @@ export const Contact = () => {
                     <Mail className="w-6 h-6 text-success" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">Email Us</h3>
-                    <p className="text-muted-foreground">hello@cleanwave.com</p>
+                    <h3 className="font-semibold">Trimite Email</h3>
+                    <p className="text-muted-foreground">contact@cleanwave.md</p>
                   </div>
                 </div>
               </CardContent>
@@ -97,8 +97,8 @@ export const Contact = () => {
                     <MapPin className="w-6 h-6 text-success" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">Visit Us</h3>
-                    <p className="text-muted-foreground">123 Clean Street, City, State 12345</p>
+                    <h3 className="font-semibold">Vizitează-ne</h3>
+                    <p className="text-muted-foreground">Strada Ștefan cel Mare 123, Chișinău, Moldova</p>
                   </div>
                 </div>
               </CardContent>
@@ -111,9 +111,9 @@ export const Contact = () => {
                     <Clock className="w-6 h-6 text-success" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">Working Hours</h3>
-                    <p className="text-muted-foreground">Mon - Fri: 8:00 AM - 6:00 PM</p>
-                    <p className="text-muted-foreground">Sat: 9:00 AM - 4:00 PM</p>
+                    <h3 className="font-semibold">Orele de Lucru</h3>
+                    <p className="text-muted-foreground">Luni - Vineri: 08:00 - 18:00</p>
+                    <p className="text-muted-foreground">Sâmbătă: 09:00 - 16:00</p>
                   </div>
                 </div>
               </CardContent>

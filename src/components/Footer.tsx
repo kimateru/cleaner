@@ -2,7 +2,7 @@ import { Sparkles, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
 
 export const Footer = () => {
   return (
-    <footer className="bg-foreground text-background py-16">
+    <footer className="footer-bg text-background py-16">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
@@ -13,12 +13,12 @@ export const Footer = () => {
               </div>
               <div>
                 <h3 className="text-xl font-bold">CleanWave</h3>
-                <p className="text-xs text-background/70">Professional Cleaning</p>
+                <p className="text-xs text-background/70">Curățenie Profesională</p>
               </div>
             </div>
             <p className="text-background/70 leading-relaxed">
-              Your trusted partner for professional cleaning services. We bring cleanliness 
-              and affordability together for residential and commercial spaces.
+              Partenerul tău de încredere pentru servicii profesionale de curățenie în Chișinău, Moldova. 
+              Aducem împreună curățenia și accesibilitatea pentru spații rezidențiale și comerciale.
             </p>
             <div className="flex gap-4">
               <div className="w-8 h-8 rounded-full bg-background/10 flex items-center justify-center hover:bg-success transition-colors cursor-pointer">
@@ -38,24 +38,24 @@ export const Footer = () => {
           
           {/* Services */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Services</h4>
+            <h4 className="text-lg font-semibold mb-4">Servicii</h4>
             <ul className="space-y-2 text-background/70">
-              <li><a href="#" className="hover:text-success transition-colors">Office Cleaning</a></li>
-              <li><a href="#" className="hover:text-success transition-colors">Home Cleaning</a></li>
-              <li><a href="#" className="hover:text-success transition-colors">Deep Cleaning</a></li>
-              <li><a href="#" className="hover:text-success transition-colors">Carpet Cleaning</a></li>
-              <li><a href="#" className="hover:text-success transition-colors">Window Cleaning</a></li>
+              <li><a href="#" className="hover:text-success transition-colors">Curățenie Birouri</a></li>
+              <li><a href="#" className="hover:text-success transition-colors">Curățenie Cămin</a></li>
+              <li><a href="#" className="hover:text-success transition-colors">Curățenie Profundă</a></li>
+              <li><a href="#" className="hover:text-success transition-colors">Curățare Covoare</a></li>
+              <li><a href="#" className="hover:text-success transition-colors">Curățare Geamuri</a></li>
             </ul>
           </div>
           
           {/* Company */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Company</h4>
+            <h4 className="text-lg font-semibold mb-4">Companie</h4>
             <ul className="space-y-2 text-background/70">
-              <li><a href="#" className="hover:text-success transition-colors">About Us</a></li>
-              <li><a href="#" className="hover:text-success transition-colors">Our Team</a></li>
-              <li><a href="#" className="hover:text-success transition-colors">Careers</a></li>
-              <li><a href="#" className="hover:text-success transition-colors">Reviews</a></li>
+              <li><a href="#" className="hover:text-success transition-colors">Despre Noi</a></li>
+              <li><a href="#" className="hover:text-success transition-colors">Echipa Noastră</a></li>
+              <li><a href="#" className="hover:text-success transition-colors">Cariere</a></li>
+              <li><a href="#" className="hover:text-success transition-colors">Recenzii</a></li>
               <li><a href="#" className="hover:text-success transition-colors">Blog</a></li>
             </ul>
           </div>
@@ -64,15 +64,15 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-background/70">
-              <li>+1 (555) 123-4567</li>
-              <li>hello@cleanwave.com</li>
-              <li>123 Clean Street<br />City, State 12345</li>
+              <li>+373 (60) 123-456</li>
+              <li>contact@cleanwave.md</li>
+              <li>Strada Ștefan cel Mare 123<br />Chișinău, Moldova</li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-background/20 mt-12 pt-8 text-center text-background/70">
-          <p>&copy; 2024 CleanWave. All rights reserved. | Privacy Policy | Terms of Service</p>
+          <p>&copy; 2024 CleanWave. Toate drepturile rezervate. | Politica de Confidențialitate | Termeni și Condiții</p>
         </div>
       </div>
     </footer>

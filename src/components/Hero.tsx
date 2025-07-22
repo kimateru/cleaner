@@ -13,19 +13,19 @@ export const Hero = () => {
             <div className="space-y-4">
               <div className="inline-flex items-center gap-2 bg-success/10 text-success px-4 py-2 rounded-full text-sm font-medium">
                 <Award className="w-4 h-4" />
-                #1 Rated Cleaning Service
+                #1 Serviciu de Curățenie în Chișinău
               </div>
               
               <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                WELCOME TO PLACE WHERE{" "}
-                <span className="text-success">CLEANLINESS</span>{" "}
-                <span className="text-success">MEETS AFFORDABILITY</span>
+                BINE ATI VENIT ACOLO UNDE{" "}
+                <span className="text-success">CURĂȚENIA</span>{" "}
+                <span className="text-success">ÎNTÂLNEȘTE ACCESIBILITATEA</span>
               </h1>
               
               <p className="text-xl text-muted-foreground leading-relaxed">
-                We provide high-quality cleaning services for residential and commercial spaces.
-                From deep cleaning to regular maintenance, we ensure the best results
-                and technologies to ensure the best results.
+                Oferim servicii de curățenie de înaltă calitate pentru spații rezidențiale și comerciale în Chișinău.
+                De la curățenie profundă la întreținere regulată, folosim tehnologii moderne 
+                pentru a asigura cele mai bune rezultate.
               </p>
             </div>
             
@@ -50,23 +50,23 @@ export const Hero = () => {
                     <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                   ))}
                 </div>
-                <p className="text-sm text-muted-foreground">Trusted by 500+ customers</p>
+                <p className="text-sm text-muted-foreground">Încrederea a peste 500+ clienți din Chișinău</p>
               </div>
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
               <Button variant="hero" size="xl">
-                Get Free Estimate
+                Evaluare Gratuită
               </Button>
               <Button variant="outline" size="xl">
-                View Portfolio
+                Vezi Portofoliul
               </Button>
             </div>
             
             <div className="grid grid-cols-3 gap-4 pt-8">
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-success" />
-                <span className="text-sm font-medium">Licensed & Insured</span>
+                <span className="text-sm font-medium">Licențiat & Asigurat</span>
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-success" />
@@ -74,7 +74,7 @@ export const Hero = () => {
               </div>
               <div className="flex items-center gap-2">
                 <CheckCircle className="w-5 h-5 text-success" />
-                <span className="text-sm font-medium">24/7 Support</span>
+                <span className="text-sm font-medium">Suport 24/7</span>
               </div>
             </div>
           </div>
@@ -84,16 +84,19 @@ export const Hero = () => {
             <div className="relative">
               <img 
                 src={heroImage} 
-                alt="Professional cleaning service" 
-                className="rounded-3xl shadow-2xl w-full h-[600px] object-cover"
+                alt="Servicii profesionale de curățenie în Chișinău, Moldova" 
+                className="rounded-3xl shadow-2xl w-full h-[600px] object-cover img-optimized"
+                loading="eager"
+                width={600}
+                height={600}
               />
               
               {/* Floating Stats Card */}
               <Card className="absolute top-8 right-8 p-6 bg-background/90 backdrop-blur-sm border-success/20 animate-float">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-success animate-count-up">792</div>
-                  <div className="text-sm text-muted-foreground">CLEANINGS</div>
-                  <div className="text-xs text-muted-foreground mt-1">WE HAVE PERFORMED</div>
+                  <div className="text-sm text-muted-foreground">CURĂȚENII</div>
+                  <div className="text-xs text-muted-foreground mt-1">REALIZATE ÎN CHIȘINĂU</div>
                 </div>
               </Card>
               
@@ -101,11 +104,11 @@ export const Hero = () => {
               <Card className="absolute bottom-8 left-8 p-4 bg-background/90 backdrop-blur-sm border-success/20 animate-float" style={{ animationDelay: '1s' }}>
                 <div className="flex items-center gap-3">
                   <div className="w-12 h-12 rounded-full bg-gradient-to-r from-purple-400 to-pink-400 flex items-center justify-center">
-                    <span className="text-white font-semibold">TM</span>
+                    <span className="text-white font-semibold">EC</span>
                   </div>
                   <div>
-                    <div className="font-semibold text-sm">Expert Team</div>
-                    <div className="text-xs text-muted-foreground">Professional cleaners</div>
+                    <div className="font-semibold text-sm">Echipă Expertă</div>
+                    <div className="text-xs text-muted-foreground">Profesioniști în curățenie</div>
                   </div>
                 </div>
               </Card>
