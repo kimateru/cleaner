@@ -59,7 +59,7 @@ export const Stats = () => {
   return (
     <section id="stats-section" className="py-20 bg-success animate-fade-in" aria-label="Statistici servicii curățenie Chișinău">
       <div className="container mx-auto px-4">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div key={stat.label} className="text-center animate-count-up" style={{ animationDelay: `${index * 0.2}s` }}>
               <div className="w-16 h-16 rounded-full bg-success-foreground/10 flex items-center justify-center mx-auto mb-4 animate-fade-in">

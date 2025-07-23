@@ -6,11 +6,11 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
-          <div className="space-y-4 animate-fade-in">
-            <div className="flex items-center gap-2">
-              <div className="w-16 h-16 bg-success rounded-xl flex items-center justify-center p-2">
+          <div className="space-y-4 animate-fade-in text-center md:text-left">
+            <div className="flex items-center justify-center md:justify-start gap-2">
+              <div className="w-10 h-10 bg-success rounded-xl flex items-center justify-center p-2">
                 <img 
-                  src="/logo2.svg" 
+                  src="/logo.svg" 
                   alt="Cleaner Logo" 
                   className="w-full h-full object-contain"
                 />
@@ -24,7 +24,7 @@ export const Footer = () => {
               Partenerul tău de încredere pentru servicii profesionale de curățenie în Chișinău, Moldova. 
               Aducem împreună curățenia și accesibilitatea pentru spații rezidențiale și comerciale.
             </p>
-            <div className="flex gap-4">
+            <div className="flex gap-4 justify-center md:justify-start">
               <div className="w-8 h-8 rounded-full bg-background/10 flex items-center justify-center hover:bg-success transition-colors cursor-pointer">
                 <Facebook className="w-4 h-4" />
               </div>
@@ -38,7 +38,7 @@ export const Footer = () => {
           </div>
 
           {/* Services */}
-          <div className="animate-fade-in">
+          <div className="animate-fade-in text-center md:text-left">
             <h4 className="text-lg font-semibold mb-4">Servicii</h4>
             <ul className="space-y-2 text-background/70">
               <li>
@@ -65,7 +65,7 @@ export const Footer = () => {
           </div>
           
           {/* Company */}
-          <div className="animate-fade-in">
+          <div className="animate-fade-in text-center md:text-left">
             <h4 className="text-lg font-semibold mb-4">Companie</h4>
             <ul className="space-y-2 text-background/70">
               <li>
@@ -87,7 +87,7 @@ export const Footer = () => {
           </div>
 
           {/* Contact */}
-          <div className="animate-fade-in">
+          <div className="animate-fade-in text-center md:text-left">
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-background/70">
               <li>+373 (60) 123-456</li>

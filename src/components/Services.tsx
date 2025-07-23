@@ -47,7 +47,7 @@ export const Services = () => {
           {services.map((service, index) => (
             <Card 
               key={service.title} 
-              className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-border/50 animate-fade-in"
+              className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 border-border/50 animate-fade-in text-center md:text-left"
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               <div className="relative overflow-hidden">
@@ -67,7 +67,7 @@ export const Services = () => {
               </div>
               
               <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-4">
+                <div className="flex flex-col md:flex-row items-center md:items-start gap-3 mb-4">
                   <div className="w-12 h-12 rounded-xl bg-success/10 flex items-center justify-center">
                     <service.icon className="w-6 h-6 text-success" />
                   </div>
@@ -78,18 +78,24 @@ export const Services = () => {
                   {service.description}
                 </p>
                 
-                <div className="space-y-3">
+                <div className="space-y-3 mb-6">
                   {service.features.map((feature) => (
-                    <div key={feature} className="flex items-center gap-2">
+                    <div key={feature} className="flex items-center justify-center md:justify-start gap-2">
                       <div className="w-2 h-2 rounded-full bg-success"></div>
                       <span className="text-sm">{feature}</span>
                     </div>
                   ))}
                 </div>
                 
-                <Button variant="outline" className="w-full mt-6 group-hover:border-success group-hover:text-success">
-                  Obține Ofertă
-                </Button>
+                <div className="flex items-center justify-between">
+                  <div className="text-center md:text-right">
+                    <div className="text-2xl font-bold text-main-green font-gill-sans">{service.price}</div>
+                    <div className="text-sm text-muted-foreground font-doxent-light">{service.duration}</div>
+                  </div>
+                  <Button className="bg-main-green hover:bg-main-green/90 text-white font-gill-sans">
+                    Rezervă Acum
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           ))}

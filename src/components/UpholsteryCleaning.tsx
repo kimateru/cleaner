@@ -134,7 +134,7 @@ export const UpholsteryCleaning = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-3 gap-4 mt-8">
+            <div className="flex flex-col md:grid md:grid-cols-3 gap-4 mt-8">
               <div className="text-center p-6 bg-main-green/5 rounded-2xl border border-main-green/20 hover:bg-main-green/10 transition-colors">
                 <Droplets className="w-10 h-10 text-main-green mx-auto mb-3" />
                 <h4 className="font-gill-sans font-semibold text-main-green mb-1">99% Eficiență</h4>
@@ -155,27 +155,35 @@ export const UpholsteryCleaning = () => {
 
           <div className="animate-slide-in-right flex flex-col justify-between">
             <div className="mb-8">
-              <h3 className="text-3xl font-gill-sans font-bold mb-6 text-main-green">De Ce Să Ne Alegeți?</h3>
+              <h3 className="text-3xl font-gill-sans font-bold mb-6 text-main-green text-center md:text-left">
+                De Ce Să Ne Alegeți?
+              </h3>
               <div className="space-y-4">
-                <div className="flex items-start gap-4 p-4 bg-background rounded-xl border border-main-green/20">
-                  <CheckCircle className="w-6 h-6 text-main-green flex-shrink-0 mt-1" />
+                <div className="flex flex-col items-center md:flex-row md:items-start gap-4 p-4 bg-background rounded-xl border border-main-green/20 text-center md:text-left">
+                  <CheckCircle className="w-6 h-6 text-main-green flex-shrink-0 mt-1 md:mt-1 md:mr-0" />
                   <div>
                     <h4 className="font-gill-sans font-semibold mb-1">Echipamente Profesionale</h4>
-                    <p className="text-sm text-muted-foreground font-doxent-light">Tehnologie cu abur de ultimă generație pentru rezultate perfecte</p>
+                    <p className="text-sm text-muted-foreground font-doxent-light">
+                      Tehnologie cu abur de ultimă generație pentru rezultate perfecte
+                    </p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4 p-4 bg-background rounded-xl border border-main-green/20">
-                  <CheckCircle className="w-6 h-6 text-main-green flex-shrink-0 mt-1" />
+                <div className="flex flex-col items-center md:flex-row md:items-start gap-4 p-4 bg-background rounded-xl border border-main-green/20 text-center md:text-left">
+                  <CheckCircle className="w-6 h-6 text-main-green flex-shrink-0 mt-1 md:mt-1 md:mr-0" />
                   <div>
                     <h4 className="font-gill-sans font-semibold mb-1">Experiență de 5+ Ani</h4>
-                    <p className="text-sm text-muted-foreground font-doxent-light">Peste 1000 de piese de mobilier restaurate cu succes</p>
+                    <p className="text-sm text-muted-foreground font-doxent-light">
+                      Peste 1000 de piese de mobilier restaurate cu succes
+                    </p>
                   </div>
                 </div>
-                <div className="flex items-start gap-4 p-4 bg-background rounded-xl border border-main-green/20">
-                  <CheckCircle className="w-6 h-6 text-main-green flex-shrink-0 mt-1" />
+                <div className="flex flex-col items-center md:flex-row md:items-start gap-4 p-4 bg-background rounded-xl border border-main-green/20 text-center md:text-left">
+                  <CheckCircle className="w-6 h-6 text-main-green flex-shrink-0 mt-1 md:mt-1 md:mr-0" />
                   <div>
                     <h4 className="font-gill-sans font-semibold mb-1">Garanție Completă</h4>
-                    <p className="text-sm text-muted-foreground font-doxent-light">30 de zile garanție pentru toate serviciile noastre</p>
+                    <p className="text-sm text-muted-foreground font-doxent-light">
+                      30 de zile garanție pentru toate serviciile noastre
+                    </p>
                   </div>
                 </div>
               </div>
@@ -183,7 +191,7 @@ export const UpholsteryCleaning = () => {
 
             <Card className="bg-gradient-to-br from-main-green/10 to-secondary-green/5 border-main-green/20">
               <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-4">
+                <div className="flex flex-col items-center md:flex-row md:items-center gap-3 mb-4 text-center md:text-left">
                   <Clock className="w-8 h-8 text-main-green" />
                   <div>
                     <h4 className="font-gill-sans font-bold text-lg text-main-green">Program Flexibil</h4>
@@ -199,50 +207,6 @@ export const UpholsteryCleaning = () => {
           </div>
         </div>
 
-        {/* Services Grid */}
-        {/* <div className="mb-20">
-          <div className="text-center mb-12">
-            <h3 className="text-3xl font-gill-sans font-bold mb-4 text-main-green">Serviciile Noastre</h3>
-            <p className="text-muted-foreground font-doxent-light max-w-2xl mx-auto">
-              Oferim soluții complete pentru toate tipurile de tapițerie și mobilier
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {services.map((service, index) => (
-              <Card 
-                key={index} 
-                className="border-main-green/20 hover:shadow-xl transition-all duration-300 hover:border-main-green/40 hover:-translate-y-2 animate-fade-in group"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <CardContent className="p-6">
-                  <div className="text-center mb-4">
-                    <div className="text-4xl mb-3">{service.icon}</div>
-                    <h4 className="font-gill-sans font-bold text-lg text-main-green mb-2">{service.title}</h4>
-                    <div className="text-2xl font-gill-sans font-bold text-secondary-green mb-3">{service.price}</div>
-                    <p className="text-sm text-muted-foreground font-doxent-light">{service.description}</p>
-                  </div>
-                  
-                  <div className="space-y-2">
-                    {service.features.map((feature, idx) => (
-                      <div key={idx} className="flex items-center gap-2">
-                        <CheckCircle className="w-4 h-4 text-main-green flex-shrink-0" />
-                        <span className="text-sm font-doxent-light">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                  
-                  <Button 
-                    variant="outline" 
-                    className="w-full mt-4 border-main-green text-main-green hover:bg-main-green hover:text-white transition-all font-gill-sans group-hover:bg-main-green group-hover:text-white"
-                  >
-                    Comandă Acum
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div> */}
 
         {/* Process Section */}
         <div className="mb-20">
@@ -276,12 +240,16 @@ export const UpholsteryCleaning = () => {
           <Card className="bg-gradient-to-r from-main-green to-secondary-green text-white w-full mx-auto">
             <CardContent className="p-12">
               <h3 className="text-4xl font-gill-sans font-bold mb-4">Gata să Îți Restaurezi Mobilierul?</h3>
-              <p className="text-xl font-doxent-light mb-8 opacity-90">
+              <p className="text-xl font-doxent-light mb-2
+               opacity-90">
                 Contactează-ne astăzi pentru o evaluare gratuită și redă strălucirea mobilierului tău
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" variant="outline" className="bg-white text-main-green font-gill-sans text-lg hover:scale-105 transition-all duration-300 hover:bg-main-green/10">
-                  📞 Sună Acum: +373 (60) 123-456
+                <p className="text-3xl font-doxent-light mb-4 opacity-90">Sună Acum:</p>
+              </div>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                <Button size="lg" variant="outline" className="bg-white text-main-green font-gill-sans text-lg hover:scale-105 transition-all duration-300 hover:bg-main-green/10 w-full">
+                  📞 +373 (60) 123-456
                 </Button>
               </div>
             </CardContent>

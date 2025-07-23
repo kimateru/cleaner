@@ -82,10 +82,11 @@ export const RegularCleaning = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {plans.map((plan, index) => (
-            <Card
-              key={plan.title}
-              className={`relative border-main-green/20 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-fade-in hover:border-main-green/40 ${plan.popular ? 'border-main-green/50 ring-2 ring-main-green/20' : ''
-                }`}
+            <Card 
+              key={plan.title} 
+              className={`relative border-main-green/20 hover:shadow-xl transition-all duration-300 hover:-translate-y-2 animate-fade-in hover:border-main-green/40 text-center md:text-left ${
+                plan.popular ? 'border-main-green/50 ring-2 ring-main-green/20' : ''
+              }`}
               style={{ animationDelay: `${index * 0.2}s` }}
             >
               {plan.popular && (
@@ -93,10 +94,10 @@ export const RegularCleaning = () => {
                   Recomandat
                 </Badge>
               )}
-
+              
               <CardContent className="p-6">
                 <div className="text-center mb-6">
-                  <h3 className="font-gill-sans font-semibold text-xl mb-2">{plan.title}</h3>
+                  <h3 className="font-gill-sans font-semibold text-xl mb-2 mt-2">{plan.title}</h3>
                   <div className="flex items-baseline justify-center gap-1">
                     <span className="text-3xl font-bold text-main-green font-gill-sans">{plan.price}</span>
                     <span className="text-sm text-muted-foreground font-doxent-light">{plan.period}</span>
@@ -105,16 +106,16 @@ export const RegularCleaning = () => {
 
                 <div className="space-y-3 mb-8">
                   {plan.features.map((feature) => (
-                    <div key={feature} className="flex items-start gap-3">
+                    <div key={feature} className="flex items-start justify-center md:justify-start gap-3">
                       <CheckCircle className="w-5 h-5 text-main-green flex-shrink-0 mt-0.5" />
-                      <span className="text-sm font-doxent-light">{feature}</span>
+                      <span className="text-sm font-doxent-light text-center md:text-left">{feature}</span>
                     </div>
                   ))}
                 </div>
 
-                <Button
-                  variant={plan.popular ? "default" : "outline"}
-                  className={`w-full font-gill-sans ${plan.popular ? 'bg-main-green hover:bg-main-green/90 text-white' : 'border-main-green text-main-green hover:bg-main-green/10'}`}
+                <Button 
+                  variant={plan.popular ? "default" : "outline"} 
+                  className={`w-full font-gill-sans ${plan.popular ? 'bg-main-green hover:bg-main-green/90 text-white' : 'border-main-green text-main-green hover:bg-main-green/90'}`}
                 >
                   Alege Planul
                 </Button>
@@ -122,6 +123,7 @@ export const RegularCleaning = () => {
             </Card>
           ))}
         </div>
+
       </div>
     </section>
   );

@@ -36,7 +36,7 @@ export const DeepCleaning = () => {
         </div>
 
         <div className="grid lg:grid-cols-5 gap-12 mb-16">
-          <div className="lg:col-span-3 animate-slide-in-left flex flex-col justify-between">
+          <div className="lg:col-span-3 animate-slide-in-left flex flex-col justify-between text-center lg:text-left">
             <div className="relative">
               <img 
                 src={deepImage} 
@@ -56,13 +56,13 @@ export const DeepCleaning = () => {
 
             <Card className="border-main-green/20 bg-gradient-to-br from-main-green/10 to-secondary-green/5 mt-6">
               <CardContent className="p-6">
-                <div className="flex items-center gap-3">
+                <div className="flex flex-col sm:flex-row items-center text-center sm:text-left gap-3">
                   <div className="w-12 h-12 rounded-xl bg-main-green/10 flex items-center justify-center flex-shrink-0">
                     <Sparkles className="w-6 h-6 text-main-green" />
                   </div>
                   <div>
                     <h3 className="font-gill-sans font-semibold text-lg text-main-green mb-2">Rezultate Garantate</h3>
-                    <div className="flex items-center gap-1">
+                    <div className="flex items-center justify-center sm:justify-start gap-1">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                       ))}
@@ -74,7 +74,7 @@ export const DeepCleaning = () => {
             </Card>
           </div>
 
-          <div className="lg:col-span-2 animate-slide-in-right flex flex-col justify-between">
+          <div className="lg:col-span-2 animate-slide-in-right flex flex-col justify-between text-center lg:text-left">
             <div className="mb-8">
               <h3 className="text-2xl font-gill-sans font-semibold mb-6 text-main-green">Serviciile Noastre</h3>
               <div className="space-y-4">
@@ -86,7 +86,7 @@ export const DeepCleaning = () => {
                   "Curățenie post-renovare",
                   "Curățenie industrială"
                 ].map((service, index) => (
-                  <div key={service} className="flex items-center gap-3 p-3 bg-main-green/5 rounded-lg border border-main-green/10">
+                  <div key={service} className="flex items-center justify-center lg:justify-start gap-3 p-3 bg-main-green/5 rounded-lg border border-main-green/10">
                     <CheckCircle className="w-5 h-5 text-main-green flex-shrink-0" />
                     <span className="font-doxent-light">{service}</span>
                   </div>
@@ -94,7 +94,7 @@ export const DeepCleaning = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-3 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="text-center p-4 bg-main-green/5 rounded-xl border border-main-green/20">
                 <Clock className="w-8 h-8 text-main-green mx-auto mb-2" />
                 <div className="text-sm font-semibold text-main-green font-gill-sans">Rapid</div>

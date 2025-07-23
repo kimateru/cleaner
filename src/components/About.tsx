@@ -24,7 +24,7 @@ export const About = () => {
     <section id="about" className="py-20 section-bg">
       <div className="container mx-auto px-4">
         <div className="grid lg:grid-cols-5 gap-12 items-start">
-          <div className="lg:col-span-3 animate-fade-in">
+          <div className="lg:col-span-3 animate-fade-in text-center lg:text-left">
             <h2 className="text-4xl lg:text-5xl font-gill-sans font-bold mb-6 text-main-green">
               Despre Cleaner
             </h2>
@@ -42,29 +42,29 @@ export const About = () => {
             </div>
 
             <div className="space-y-4">
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center lg:justify-start gap-2">
                 <CheckCircle className="w-5 h-5 text-main-green" />
                 <span className="font-medium font-doxent-light">Licențiați și asigurați</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center lg:justify-start gap-2">
                 <CheckCircle className="w-5 h-5 text-main-green" />
                 <span className="font-medium font-doxent-light">Echipamente profesionale</span>
               </div>
-              <div className="flex items-center gap-2">
+              <div className="flex items-center justify-center lg:justify-start gap-2">
                 <CheckCircle className="w-5 h-5 text-main-green" />
                 <span className="font-medium font-doxent-light">Produse ecologice</span>
               </div>
             </div>
           </div>
 
-          <div className="lg:col-span-2 animate-fade-in">
+          <div className="lg:col-span-2 animate-fade-in text-center lg:text-left">
             <h3 className="text-2xl font-gill-sans font-semibold mb-6 text-main-green">
               De Ce Să Ne Alegeți
             </h3>
             <div className="space-y-6">
               {features.map((feature, index) => (
                 <Card key={feature.title} className="border-main-green/20 hover:shadow-lg transition-all duration-300 hover:border-main-green/40">
-                  <CardContent className="p-6 flex items-center gap-4">
+                  <CardContent className="p-6 flex flex-col sm:flex-row items-center text-center sm:text-left gap-4">
                     <div className="w-12 h-12 rounded-xl bg-main-green/10 flex items-center justify-center flex-shrink-0">
                       <feature.icon className="w-6 h-6 text-main-green" />
                     </div>
