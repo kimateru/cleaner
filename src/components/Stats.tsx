@@ -8,6 +8,7 @@ const stats = [
 ];
 
 export const Stats = () => {
+  const { t } = useTranslation();
   const [counters, setCounters] = useState(stats.map(() => 0));
   const [hasAnimated, setHasAnimated] = useState(false);
 

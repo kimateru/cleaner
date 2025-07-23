@@ -1,9 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { CheckCircle, Star, Award } from "lucide-react";
+import { useTranslation } from "@/hooks/useTranslation";
 import heroImage from "@/assets/hero-cleaning.jpg";
 
 export const Hero = () => {
+  const { t } = useTranslation();
   return (
     <section id="home" className="pt-20 pb-16 hero-bg">
       <div className="container mx-auto px-4">
@@ -16,16 +18,13 @@ export const Hero = () => {
                 #1 Serviciu de Curățenie în Chișinău
               </div>
               
-              <h1 className="text-5xl lg:text-6xl font-bold leading-tight">
-                BINE ATI VENIT ACOLO UNDE{" "}
-                <span className="text-success">CURĂȚENIA</span>{" "}
-                <span className="text-success">ÎNTÂLNEȘTE ACCESIBILITATEA</span>
+              <h1 className="text-5xl lg:text-6xl font-heading font-bold leading-tight">
+                {t('heroTitle')}{" "}
+                <span className="text-success">CLEANER</span>
               </h1>
               
               <p className="text-xl text-muted-foreground leading-relaxed">
-                Oferim servicii de curățenie de înaltă calitate pentru spații rezidențiale și comerciale în Chișinău.
-                De la curățenie profundă la întreținere regulată, folosim tehnologii moderne 
-                pentru a asigura cele mai bune rezultate.
+                {t('heroDescription')}
               </p>
             </div>
             
@@ -55,11 +54,11 @@ export const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="xl">
-                Evaluare Gratuită
+              <Button variant="hero" size="xl" className="bg-success hover:bg-success/90 text-success-foreground">
+                {t('getStarted')}
               </Button>
-              <Button variant="outline" size="xl">
-                Vezi Portofoliul
+              <Button variant="outline" size="xl" className="border-success text-success hover:bg-success/10">
+                {t('callNow')}
               </Button>
             </div>
             
