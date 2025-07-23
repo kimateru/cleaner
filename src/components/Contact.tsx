@@ -7,7 +7,7 @@ export const Contact = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-gill-sans text-main-green">
-            INTRĂ ÎN <span className="text-secondary-green">CONTACT</span>
+            INTRĂ ÎN CONTACT
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-doxent-light">
             Gata să experimentezi servicii profesionale de curățenie în Chișinău? Contactează-ne astăzi pentru o evaluare gratuită 

@@ -6,10 +6,14 @@ export const Footer = () => {
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
-          <div className="space-y-4">
+          <div className="space-y-4 animate-fade-in">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 bg-success rounded-xl flex items-center justify-center">
-                <Sparkles className="w-6 h-6 text-success-foreground" />
+              <div className="w-16 h-16 bg-success rounded-xl flex items-center justify-center p-2">
+                <img 
+                  src="/logo2.svg" 
+                  alt="Cleaner Logo" 
+                  className="w-full h-full object-contain"
+                />
               </div>
               <div>
                 <h3 className="text-xl font-bold">CleanWave</h3>
@@ -32,9 +36,9 @@ export const Footer = () => {
               </div>
             </div>
           </div>
-          
+
           {/* Services */}
-          <div>
+          <div className="animate-fade-in">
             <h4 className="text-lg font-semibold mb-4">Servicii</h4>
             <ul className="space-y-2 text-background/70">
               <li>
@@ -61,7 +65,7 @@ export const Footer = () => {
           </div>
           
           {/* Company */}
-          <div>
+          <div className="animate-fade-in">
             <h4 className="text-lg font-semibold mb-4">Companie</h4>
             <ul className="space-y-2 text-background/70">
               <li>
@@ -81,9 +85,9 @@ export const Footer = () => {
               </li>
             </ul>
           </div>
-          
+
           {/* Contact */}
-          <div>
+          <div className="animate-fade-in">
             <h4 className="text-lg font-semibold mb-4">Contact</h4>
             <ul className="space-y-2 text-background/70">
               <li>+373 (60) 123-456</li>
@@ -92,8 +96,8 @@ export const Footer = () => {
             </ul>
           </div>
         </div>
-        
-        <div className="border-t border-background/20 mt-12 pt-8 text-center text-background/70">
+
+        <div className="border-t border-background/20 mt-12 pt-8 text-center text-background/70 animate-fade-in">
           <p>&copy; 2024 CleanWave. Toate drepturile rezervate. | Politica de Confidențialitate | Termeni și Condiții</p>
         </div>
       </div>

@@ -1,10 +1,11 @@
 import { useEffect, useState } from "react";
+import { Users, CheckCircle, Star, Clock } from "lucide-react";
 
 const stats = [
-  { number: 792, label: "Curățenii Finalizate", suffix: "" },
-  { number: 500, label: "Clienți Mulțumiți", suffix: "+" },
-  { number: 98, label: "Rata de Satisfacție", suffix: "%" },
-  { number: 5, label: "Ani de Experiență", suffix: "" }
+  { number: 792, label: "Curățenii Finalizate", suffix: "", icon: CheckCircle },
+  { number: 500, label: "Clienți Mulțumiți", suffix: "+", icon: Users },
+  { number: 99, label: "Rata de Satisfacție", suffix: "%", icon: Star },
+  { number: 5, label: "Ani de Experiență", suffix: "", icon: Clock }
 ];
 
 export const Stats = () => {
@@ -56,11 +57,14 @@ export const Stats = () => {
   }, [hasAnimated]);
 
   return (
-    <section id="stats-section" className="py-20 bg-success" aria-label="Statistici servicii curățenie Chișinău">
+    <section id="stats-section" className="py-20 bg-success animate-fade-in" aria-label="Statistici servicii curățenie Chișinău">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
           {stats.map((stat, index) => (
             <div key={stat.label} className="text-center animate-count-up" style={{ animationDelay: `${index * 0.2}s` }}>
+              <div className="w-16 h-16 rounded-full bg-success-foreground/10 flex items-center justify-center mx-auto mb-4 animate-fade-in">
+                <stat.icon className="w-8 h-8 text-success-foreground" />
+              </div>
               <div className="text-4xl lg:text-5xl font-bold text-success-foreground mb-2">
                 {counters[index]}{stat.suffix}
               </div>

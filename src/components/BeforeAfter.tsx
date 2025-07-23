@@ -100,7 +100,7 @@ export const BeforeAfter = () => {
             Rezultate Vizibile
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-gill-sans font-bold mb-6 text-main-green">
-            ÎNAINTE ȘI <span className="text-secondary-green">DUPĂ</span>
+            ÎNAINTE ȘI DUPĂ
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-doxent-light">
             Vezi transformarea incredibilă pe care o realizăm în fiecare proiect. Rezultate garantate care vorbesc de la sine.
