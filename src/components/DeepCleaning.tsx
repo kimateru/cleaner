@@ -1,13 +1,10 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { CheckCircle, Clock, Shield, Sparkles } from "lucide-react";
-import { useTranslation } from "@/hooks/useTranslation";
+import { CheckCircle, Clock, Shield, Sparkles, Star, Award, Users } from "lucide-react";
 import deepImage1 from "@/assets/deep-cleaning.jpg";
 
 export const DeepCleaning = () => {
-  const { t } = useTranslation();
-
   const services = [
     "Curățenie după construcție",
     "Curățenie pentru mutare",
@@ -17,121 +14,105 @@ export const DeepCleaning = () => {
     "Curățenie industrială"
   ];
 
-  const beforeAfter = [
-    {
-      title: "Apartament după renovare",
-      description: "Curățenie completă după renovarea unei bucătării moderne",
-      image: deepImage1
-    },
-    {
-      title: "Birou după construcție", 
-      description: "Pregătire spațiu de lucru pentru deschidere",
-      image: deepImage1
-    }
+  const stats = [
+    { number: "500+", label: "Proiecte Finalizate", icon: Award },
+    { number: "98%", label: "Clienți Mulțumiți", icon: Users },
+    { number: "24h", label: "Timp de Răspuns", icon: Clock }
   ];
 
   return (
-    <section id="deep-cleaning" className="py-20 hero-bg">
+    <section id="deep-cleaning" className="py-20 hero-bg overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
-          <Badge variant="outline" className="mb-4 border-success text-success">
+          <Badge variant="outline" className="mb-4 border-main-green text-main-green">
             Serviciu Premium
           </Badge>
-          <h2 className="text-4xl lg:text-5xl font-heading font-bold mb-6">
-            {t('deepCleaningTitle')}
+          <h2 className="text-4xl lg:text-5xl font-gill-sans font-bold mb-6 text-main-green">
+            Curățenie Profundă
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            {t('deepCleaningDesc')}
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-doxent-light">
+            Servicii intensive de curățenie pentru mutări, după construcții sau curățenie de primăvară. Rezultate garantate.
           </p>
         </div>
 
         <div className="grid lg:grid-cols-2 gap-12 mb-16">
-          <div className="animate-slide-in-left">
-            <img 
-              src={deepImage1} 
-              alt="Curățenie profundă - rezultate profesionale"
-              className="w-full h-96 object-cover rounded-2xl shadow-xl mb-6"
-              loading="lazy"
-            />
+          <div className="animate-slide-in-left flex flex-col justify-between">
+            <div className="relative">
+              <img 
+                src={deepImage1} 
+                alt="Curățenie profundă - rezultate profesionale"
+                className="w-full h-80 object-cover rounded-2xl shadow-xl"
+                loading="lazy"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-2xl"></div>
+              <div className="absolute bottom-4 left-4 text-white">
+                <h4 className="text-lg font-gill-sans font-bold">Echipament Profesional</h4>
+                <p className="text-sm font-doxent-light opacity-90">Tehnologie de ultimă generație</p>
+              </div>
+            </div>
             
-            <Card className="border-success/20 bg-success/5">
+            <div className="grid grid-cols-3 gap-4">
+              {stats.map((stat, index) => (
+                <Card key={index} className="border-main-green/20 bg-main-green/5 text-center hover:bg-main-green/10 transition-colors">
+                  <CardContent className="p-4">
+                    <stat.icon className="w-6 h-6 text-main-green mx-auto mb-2" />
+                    <div className="text-2xl font-gill-sans font-bold text-main-green">{stat.number}</div>
+                    <p className="text-xs text-muted-foreground font-doxent-light">{stat.label}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <Card className="border-main-green/20 bg-gradient-to-br from-main-green/10 to-secondary-green/5">
               <CardContent className="p-6">
-                <div className="flex items-center gap-3 mb-4">
-                  <div className="w-12 h-12 rounded-xl bg-success/10 flex items-center justify-center">
-                    <Sparkles className="w-6 h-6 text-success" />
+                <div className="flex items-center gap-3">
+                  <div className="w-12 h-12 rounded-xl bg-main-green/10 flex items-center justify-center flex-shrink-0">
+                    <Sparkles className="w-6 h-6 text-main-green" />
                   </div>
-                  <div>
-                    <h3 className="font-heading font-semibold text-lg">Rezultate Garantate</h3>
-                    <p className="text-sm text-muted-foreground">100% satisfacție sau refacem gratuit</p>
+                  <div >
+                    <h3 className="font-gill-sans font-semibold text-lg text-main-green mb-2">Rezultate Garantate</h3>
+                    <div className="flex items-center gap-1">
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                      ))}
+                      <span className="text-sm font-doxent-light ml-2">4.9/5 Rating</span>
+                    </div>
                   </div>
                 </div>
               </CardContent>
             </Card>
           </div>
 
-          <div className="animate-slide-in-right">
-            <h3 className="text-2xl font-heading font-semibold mb-6">Ce Include Serviciul</h3>
-            <div className="grid gap-4 mb-8">
-              {services.map((service) => (
-                <div key={service} className="flex items-center gap-3">
-                  <CheckCircle className="w-5 h-5 text-success flex-shrink-0" />
-                  <span className="font-medium">{service}</span>
-                </div>
-              ))}
-            </div>
-
-            <div className="bg-muted/50 rounded-xl p-6 mb-8">
-              <h4 className="font-heading font-semibold text-lg mb-4">Detalii Preț</h4>
-              <div className="space-y-3">
-                <div className="flex justify-between items-center">
-                  <span>Apartament 1-2 camere</span>
-                  <span className="font-semibold">1,500-2,500 MDL</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span>Apartament 3-4 camere</span>
-                  <span className="font-semibold">2,500-4,000 MDL</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span>Casă până la 150m²</span>
-                  <span className="font-semibold">4,000-6,000 MDL</span>
-                </div>
+          <div className="animate-slide-in-right flex flex-col justify-between">
+            <div className="mb-8">
+              <h3 className="text-2xl font-gill-sans font-semibold mb-6 text-main-green">Serviciile Noastre</h3>
+              <div className="grid gap-3">
+                {services.map((service) => (
+                  <div key={service} className="flex items-center gap-3 p-4 rounded-lg bg-background/50 border border-main-green/20 hover:bg-main-green/5 transition-colors">
+                    <CheckCircle className="w-5 h-5 text-main-green flex-shrink-0" />
+                    <span className="font-doxent-light">{service}</span>
+                  </div>
+                ))}
               </div>
             </div>
 
-            <div className="flex gap-4 mb-6">
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Clock className="w-4 h-4" />
-                <span className="text-sm">4-8 ore</span>
+            <div className="grid grid-cols-3 gap-4">
+              <div className="text-center p-4 bg-main-green/5 rounded-xl border border-main-green/20">
+                <Clock className="w-8 h-8 text-main-green mx-auto mb-2" />
+                <h4 className="font-semibold text-sm font-gill-sans">Rapid</h4>
+                <p className="text-xs text-muted-foreground mt-1 font-doxent-light">2-6 ore</p>
               </div>
-              <div className="flex items-center gap-2 text-muted-foreground">
-                <Shield className="w-4 h-4" />
-                <span className="text-sm">Asigurare inclusă</span>
+              <div className="text-center p-4 bg-main-green/5 rounded-xl border border-main-green/20">
+                <Shield className="w-8 h-8 text-main-green mx-auto mb-2" />
+                <h4 className="font-semibold text-sm font-gill-sans">Sigur</h4>
+                <p className="text-xs text-muted-foreground mt-1 font-doxent-light">Produse eco</p>
+              </div>
+              <div className="text-center p-4 bg-main-green/5 rounded-xl border border-main-green/20">
+                <Sparkles className="w-8 h-8 text-main-green mx-auto mb-2" />
+                <h4 className="font-semibold text-sm font-gill-sans">Complet</h4>
+                <p className="text-xs text-muted-foreground mt-1 font-doxent-light">Până la detalii</p>
               </div>
             </div>
-
-            <Button size="lg" className="w-full bg-success hover:bg-success/90 text-success-foreground">
-              Solicită Evaluare Gratuită
-            </Button>
-          </div>
-        </div>
-
-        <div className="animate-fade-in">
-          <h3 className="text-2xl font-heading font-semibold text-center mb-8">Lucrări Realizate</h3>
-          <div className="grid md:grid-cols-2 gap-8">
-            {beforeAfter.map((project, index) => (
-              <Card key={index} className="overflow-hidden border-border/50 hover:shadow-lg transition-all duration-300">
-                <img 
-                  src={project.image} 
-                  alt={project.title}
-                  className="w-full h-48 object-cover"
-                  loading="lazy"
-                />
-                <CardContent className="p-6">
-                  <h4 className="font-heading font-semibold text-lg mb-2">{project.title}</h4>
-                  <p className="text-muted-foreground">{project.description}</p>
-                </CardContent>
-              </Card>
-            ))}
           </div>
         </div>
       </div>

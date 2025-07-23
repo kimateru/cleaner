@@ -1,4 +1,4 @@
-import { Sparkles, Facebook, Twitter, Instagram, Linkedin } from "lucide-react";
+import { Sparkles, Facebook, Twitter, Instagram, Linkedin, Phone } from "lucide-react";
 
 export const Footer = () => {
   return (
@@ -25,13 +25,10 @@ export const Footer = () => {
                 <Facebook className="w-4 h-4" />
               </div>
               <div className="w-8 h-8 rounded-full bg-background/10 flex items-center justify-center hover:bg-success transition-colors cursor-pointer">
-                <Twitter className="w-4 h-4" />
-              </div>
-              <div className="w-8 h-8 rounded-full bg-background/10 flex items-center justify-center hover:bg-success transition-colors cursor-pointer">
                 <Instagram className="w-4 h-4" />
               </div>
               <div className="w-8 h-8 rounded-full bg-background/10 flex items-center justify-center hover:bg-success transition-colors cursor-pointer">
-                <Linkedin className="w-4 h-4" />
+                <Phone className="w-4 h-4" />
               </div>
             </div>
           </div>
@@ -40,11 +37,26 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Servicii</h4>
             <ul className="space-y-2 text-background/70">
-              <li><a href="#" className="hover:text-success transition-colors">Curățenie Birouri</a></li>
-              <li><a href="#" className="hover:text-success transition-colors">Curățenie Cămin</a></li>
-              <li><a href="#" className="hover:text-success transition-colors">Curățenie Profundă</a></li>
-              <li><a href="#" className="hover:text-success transition-colors">Curățare Covoare</a></li>
-              <li><a href="#" className="hover:text-success transition-colors">Curățare Geamuri</a></li>
+              <li>
+                <a href="#deep-cleaning" className="hover:text-success transition-colors">
+                  Curățenie Profundă
+                </a>
+              </li>
+              <li>
+                <a href="#regular-cleaning" className="hover:text-success transition-colors">
+                  Curățenie Regulată
+                </a>
+              </li>
+              <li>
+                <a href="#upholstery-cleaning" className="hover:text-success transition-colors">
+                  Curățenie Tapițerie
+                </a>
+              </li>
+              <li>
+                <a href="#before-after" className="hover:text-success transition-colors">
+                  Înainte & După
+                </a>
+              </li>
             </ul>
           </div>
           
@@ -52,11 +64,21 @@ export const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Companie</h4>
             <ul className="space-y-2 text-background/70">
-              <li><a href="#" className="hover:text-success transition-colors">Despre Noi</a></li>
-              <li><a href="#" className="hover:text-success transition-colors">Echipa Noastră</a></li>
-              <li><a href="#" className="hover:text-success transition-colors">Cariere</a></li>
-              <li><a href="#" className="hover:text-success transition-colors">Recenzii</a></li>
-              <li><a href="#" className="hover:text-success transition-colors">Blog</a></li>
+              <li>
+                <a href="#about" className="hover:text-success transition-colors">
+                  Despre Noi
+                </a>
+              </li>
+              <li>
+                <a href="#clients" className="hover:text-success transition-colors">
+                  Clienți
+                </a>
+              </li>
+              <li>
+                <a href="#contact" className="hover:text-success transition-colors">
+                  Contact
+                </a>
+              </li>
             </ul>
           </div>
           
