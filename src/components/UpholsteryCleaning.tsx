@@ -248,9 +248,9 @@ export const UpholsteryCleaning = () => {
                 <p className="text-3xl font-doxent-light mb-4 opacity-90">Sună Acum:</p>
               </div>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" variant="outline" className="bg-white text-main-green font-gill-sans text-lg hover:scale-105 transition-all duration-300 hover:bg-main-green/10 w-full">
+                <a href="tel: " className="bg-white text-main-green font-gill-sans text-lg transition-all duration-300 w-full md:w-[300px] rounded-xl py-2 px-4 hover:scale-105">
                   📞 +373 (60) 123-456
-                </Button>
+                </a>
               </div>
             </CardContent>
           </Card>

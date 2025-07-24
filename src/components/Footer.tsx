@@ -8,16 +8,16 @@ export const Footer = () => {
           {/* Brand */}
           <div className="space-y-4 animate-fade-in text-center md:text-left">
             <div className="flex items-center justify-center md:justify-start gap-2">
-              <div className="w-10 h-10 bg-success rounded-xl flex items-center justify-center p-2">
+              <div className="w-14 h-14 bg-success rounded-xl flex items-center justify-center p-2">
                 <img 
-                  src="/logo.svg" 
+                  src="/logo2.svg" 
                   alt="Cleaner Logo" 
                   className="w-full h-full object-contain"
                 />
               </div>
               <div>
-                <h3 className="text-xl font-bold">CleanWave</h3>
-                <p className="text-xs text-background/70">Curățenie Profesională</p>
+                <h3 className="text-xl font-bold">Cleaner</h3>
+                <p className="text-xs text-background/70">Servicii de Curățenie</p>
               </div>
             </div>
             <p className="text-background/70 leading-relaxed">
