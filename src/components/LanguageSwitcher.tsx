@@ -19,7 +19,7 @@ export const LanguageSwitcher = () => {
     >
       <Globe className="w-4 h-4" />
       <span className="font-medium text-sm">
-        {i18n.language?.toUpperCase() || 'RO'}
+        {i18n.language === 'ro' ? 'RU' : 'RO'}
       </span>
     </Button>
   );
