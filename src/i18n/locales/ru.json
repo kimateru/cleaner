@@ -286,6 +286,18 @@
     "satisfactionRate": "Уровень удовлетворенности",
     "yearsExperience": "Лет опыта"
   },
+  "cta": {
+    "getQuote": "Получить Бесплатную Оценку",
+    "scheduleNow": "Записаться Сейчас",
+    "contactUs": "Свяжитесь с Нами",
+    "learnMore": "Узнать Больше",
+    "seeResults": "Посмотреть Результаты",
+    "bookService": "Заказать Услугу",
+    "freeConsultation": "Бесплатная Консультация",
+    "instantQuote": "Рассчитать Стоимость",
+    "viewPricing": "Посмотреть Цены",
+    "startNow": "Начать Сейчас"
+  },
   "common": {
     "phone": "+373 (60) 123-456"
   }

@@ -286,6 +286,18 @@
     "satisfactionRate": "Rata de Satisfacție",
     "yearsExperience": "Ani de Experiență"
   },
+  "cta": {
+    "getQuote": "Obține o Ofertă Gratuită",
+    "scheduleNow": "Programează Acum",
+    "contactUs": "Contactează-ne",
+    "learnMore": "Află Mai Multe",
+    "seeResults": "Vezi Rezultatele",
+    "bookService": "Rezervă Serviciul",
+    "freeConsultation": "Consultație Gratuită",
+    "instantQuote": "Calculează Preț Instant",
+    "viewPricing": "Vezi Prețurile",
+    "startNow": "Începe Acum"
+  },
   "common": {
     "phone": "+373 (60) 123-456"
   }
