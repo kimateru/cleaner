@@ -2,48 +2,33 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Calendar, Star, Home } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import homeImage from "@/assets/home-cleaning.jpg";
 import officeImage from "@/assets/office-cleaning.jpg";
 
 export const RegularCleaning = () => {
+  const { t } = useTranslation();
+  
   const plans = [
     {
-      title: "Plan Săptămânal",
+      title: t('regularCleaning.weekly'),
       price: "800-1,200",
-      period: "MDL/vizită",
-      features: [
-        "Curățenie completă săptămânală",
-        "Aspirare și ștergere",
-        "Curățenie băi și bucătărie",
-        "Schimbare așternuturi",
-        "Reducere 15% pentru contract anual"
-      ],
+      period: t('regularCleaning.currency'),
+      features: t('regularCleaning.weeklyFeatures', { returnObjects: true }),
       popular: false
     },
     {
-      title: "Plan Bi-săptămânal",
+      title: t('regularCleaning.biweekly'),
       price: "1,000-1,500",
-      period: "MDL/vizită",
-      features: [
-        "Curățenie la 2 săptămâni",
-        "Curățenie profundă periodică",
-        "Întreținere regulată",
-        "Flexibilitate program",
-        "Cea mai populară opțiune"
-      ],
+      period: t('regularCleaning.currency'),
+      features: t('regularCleaning.biweeklyFeatures', { returnObjects: true }),
       popular: true
     },
     {
-      title: "Plan Lunar",
+      title: t('regularCleaning.monthly'),
       price: "1,500-2,200",
-      period: "MDL/vizită",
-      features: [
-        "Curățenie lunară intensivă",
-        "Perfect pentru birouri",
-        "Curățenie geamuri inclusă",
-        "Fără contract pe termen lung",
-        "Ideal pentru întreținere"
-      ],
+      period: t('regularCleaning.currency'),
+      features: t('regularCleaning.monthlyFeatures', { returnObjects: true }),
       popular: false
     }
   ];
@@ -70,13 +55,13 @@ export const RegularCleaning = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <Badge variant="outline" className="mb-4 border-main-green text-main-green">
-            Cel Mai Popular
+            {t('regularCleaning.badge')}
           </Badge>
           <h2 className="text-4xl lg:text-6xl font-gill-sans font-bold mb-6 text-main-green">
-            Curățenie Regulată
+            {t('regularCleaning.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-doxent-light">
-            Servicii de întreținere săptămânală sau lunară pentru case și birouri. Menținem spațiul mereu curat.
+            {t('regularCleaning.subtitle')}
           </p>
         </div>
 
@@ -91,7 +76,7 @@ export const RegularCleaning = () => {
             >
               {plan.popular && (
                 <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-main-green text-white">
-                  Recomandat
+                  {t('regularCleaning.popular')}
                 </Badge>
               )}
               
@@ -117,7 +102,7 @@ export const RegularCleaning = () => {
                   variant={plan.popular ? "default" : "outline"} 
                   className={`w-full font-gill-sans ${plan.popular ? 'bg-main-green hover:bg-main-green/90 text-white' : 'border-main-green text-main-green hover:bg-main-green/90'}`}
                 >
-                  Alege Planul
+                  {t('regularCleaning.choosePackage')}
                 </Button>
               </CardContent>
             </Card>

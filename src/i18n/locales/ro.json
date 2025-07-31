@@ -1,0 +1,292 @@
+{
+  "nav": {
+    "home": "Acasă",
+    "about": "Despre Noi",
+    "deepCleaning": "Curățenie Profundă",
+    "regularCleaning": "Curățenie Regulată",
+    "upholsteryCleaning": "Curățenie Tapițerie",
+    "beforeAfter": "Înainte & După",
+    "clients": "Clienți",
+    "contact": "Contact"
+  },
+  "hero": {
+    "badge": "#1 Serviciu de Curățenie în Chișinău",
+    "title": "Servicii de Curățenie Profesionale în Chișinău",
+    "subtitle": "Transformăm spațiile tale cu servicii profesionale de curățenie. Calitate garantată, echipă expertă și prețuri competitive în Moldova.",
+    "clients": "Peste 500 clienți mulțumiți",
+    "cta": "Programează Consultație Gratuită",
+    "licensed": "Licențiați",
+    "licensedDesc": "Companie autorizată",
+    "insured": "Asigurați",
+    "insuredDesc": "Protecție completă",
+    "guarantee": "Garanție",
+    "guaranteeDesc": "100% satisfacție",
+    "available": "Disponibil Acum",
+    "rating": "Rating Client"
+  },
+  "about": {
+    "title": "Despre Cleaner",
+    "description": "Cu peste 5 ani de experiență în curățenie profesională, Cleaner este liderul pieței din Chișinău. Folosim echipamente moderne și produse ecologice pentru rezultate impecabile.",
+    "mission": "Misiunea Noastră",
+    "missionDesc": "Să oferim servicii de curățenie de cea mai înaltă calitate, creând spații curate și sănătoase pentru clienții noștri din Moldova.",
+    "whyChooseUs": "De Ce Să Ne Alegeți",
+    "licensed": "Companie licențiată și autorizată",
+    "equipment": "Echipamente profesionale moderne",
+    "ecoProducts": "Produse de curățenie ecologice",
+    "experience": "Experiență",
+    "experienceDesc": "Peste 5 ani în domeniu",
+    "quality": "Calitate",
+    "qualityDesc": "Produse și echipamente premium",
+    "trust": "Încredere",
+    "trustDesc": "Peste 500 clienți mulțumiți"
+  },
+  "services": {
+    "title": "SERVICIILE NOASTRE DE",
+    "titleHighlight": "CURĂȚENIE",
+    "subtitle": "Oferim o gamă largă de servicii de curățenie pentru spații rezidențiale și comerciale în Chișinău, Moldova. De la curățenie profundă la întreținere regulată, ne asigurăm că spațiul dumneavoastră rămâne impecabil."
+  },
+  "upholstery": {
+    "badge": "Specializare Premium",
+    "title": "Curățenie Tapițerie",
+    "subtitle": "Redăm viața mobilierului tău cu servicii specializate de curățenie pentru tapițerie, covoare și draperii. Tehnologie avansată și experiență de peste 5 ani.",
+    "whyChooseUs": "De ce să ne alegi?",
+    "efficiency": "Eficiență",
+    "ecoFriendly": "Eco-Friendly",
+    "fastDrying": "Uscare Rapidă",
+    "efficiencyDesc": "Eliminare pete",
+    "ecoFriendlyDesc": "Produse sigure",
+    "fastDryingDesc": "2-4 ore",
+    "services": [
+      {
+        "title": "Canapele și Fotolii",
+        "price": "200-500 MDL",
+        "description": "Curățenie profundă pentru toate tipurile de țesături și piele",
+        "features": ["Eliminare pete", "Dezinfectare", "Protecție țesături"]
+      },
+      {
+        "title": "Covoare și Mochete",
+        "price": "15-25 MDL/m²",
+        "description": "Restaurare completă cu echipamente profesionale",
+        "features": ["Curățare profundă", "Eliminare mirosuri", "Uscare rapidă"]
+      },
+      {
+        "title": "Draperii și Perdele",
+        "price": "150-300 MDL",
+        "description": "Tratament delicat pentru materiale fine și valoroase",
+        "features": ["Curățare delicată", "Menținere formă", "Culori vii"]
+      },
+      {
+        "title": "Saltele și Perne",
+        "price": "300-600 MDL",
+        "description": "Dezinfectare completă și eliminarea acarienilor",
+        "features": ["Anti-acarieni", "Dezinfectare", "Igienizare completă"]
+      },
+      {
+        "title": "Mobilier de Birou",
+        "price": "100-300 MDL",
+        "description": "Întreținere profesională pentru mediul de lucru",
+        "features": ["Curățare regulată", "Menținere aspect", "Durabilitate"]
+      },
+      {
+        "title": "Covoare Persane",
+        "price": "30-50 MDL/m²",
+        "description": "Tratament special pentru covoare valoroase și antice",
+        "features": ["Tehnică specială", "Conservare valoare", "Restaurare culori"]
+      }
+    ],
+    "process": [
+      {
+        "title": "Evaluare Gratuită",
+        "description": "Analizăm tipul de material și gradul de murdărire"
+      },
+      {
+        "title": "Pre-tratament",
+        "description": "Aplicăm soluții speciale pentru pete și murdărie"
+      },
+      {
+        "title": "Curățare Profundă",
+        "description": "Folosim echipamente cu abur și aspiration puternică"
+      },
+      {
+        "title": "Finalizare",
+        "description": "Aplicăm protecție și verificăm calitatea rezultatului"
+      }
+    ],
+    "equipment": "Echipamente Profesionale",
+    "equipmentDesc": "Tehnologie cu abur de ultimă generație pentru rezultate perfecte",
+    "experience": "Experiență de 5+ Ani",
+    "experienceDesc": "Peste 1000 de piese de mobilier restaurate cu succes",
+    "guarantee": "Garanție Completă",
+    "guaranteeDesc": "30 de zile garanție pentru toate serviciile noastre",
+    "flexibleSchedule": "Program Flexibil",
+    "flexibleScheduleDesc": "Disponibili 7 zile din 7",
+    "requestEvaluation": "Solicită Evaluare Gratuită",
+    "ourProcess": "Procesul Nostru de Lucru",
+    "processSubtitle": "Urmăm un proces structurat pentru a garanta cele mai bune rezultate",
+    "readyToRestore": "Gata să Îți Restaurezi Mobilierul?",
+    "ctaDescription": "Contactează-ne astăzi pentru o evaluare gratuită și redă strălucirea mobilierului tău",
+    "callNow": "Sună Acum:"
+  },
+  "beforeAfter": {
+    "badge": "Rezultate Reale",
+    "title": "Înainte & După",
+    "subtitle": "Vezi transformările incredibile realizate de echipa noastră. Rezultate garantate pentru fiecare proiect.",
+    "items": [
+      {
+        "title": "Apartament după Renovare",
+        "description": "Curățenie completă după renovarea unei bucătării moderne",
+        "location": "Centru, Chișinău"
+      },
+      {
+        "title": "Birou Corporativ",
+        "description": "Transformarea unui spațiu de lucru negliat într-un mediu profesional",
+        "location": "Râșcani, Chișinău"
+      }
+    ],
+    "before": "Înainte",
+    "after": "După",
+    "dragToCompare": "Trage pentru a compara"
+  },
+  "clientsReviews": {
+    "badge": "Testimoniale Clienți",
+    "title": "Ce Spun Clienții Noștri",
+    "subtitle": "Peste 500 de clienți mulțumiți în Chișinău. Iată ce spun despre serviciile noastre.",
+    "reviews": [
+      {
+        "name": "Maria Popescu",
+        "role": "Manager Restaurant",
+        "location": "Centru, Chișinău",
+        "text": "Cleaner a transformat complet bucătăria restaurantului nostru. Echipa lor este foarte profesionista și punctuală. Recomand cu încredere!",
+        "service": "Curățenie Comercială"
+      },
+      {
+        "name": "Alexandru Ionescu",
+        "role": "Proprietar Apartament",
+        "location": "Botanica, Chișinău",
+        "text": "Am folosit serviciile pentru curățenie după renovare. Rezultatul a fost exceptional - apartamentul arăta ca nou. Foarte mulțumit! Echipa a lucrat cu mare atenție la detalii și a folosit produse de calitate.",
+        "service": "Curățenie Profundă"
+      },
+      {
+        "name": "Elena Mihai",
+        "role": "Director Birou IT",
+        "location": "Râșcani, Chișinău",
+        "text": "Colaborăm cu Cleaner de 2 ani pentru curățenia biroului. Echipa este de încredere și serviciul este impecabil. Nu ne-au dezamăgit niciodată.",
+        "service": "Curățenie Regulată"
+      },
+      {
+        "name": "Sergiu Petrov",
+        "role": "Proprietar Canapea Antică",
+        "location": "Centru, Chișinău",
+        "text": "Canapeaua mea din piele avea pete vechi pe care nu credeam că se pot șterge. Cleaner a făcut minuni - arată ca nouă!",
+        "service": "Curățenie Tapițerie"
+      },
+      {
+        "name": "Irina Constantinescu",
+        "role": "Proprietar Casă",
+        "location": "Buiucani, Chișinău",
+        "text": "Curățenia de primăvară făcută de echipa Cleaner a fost perfectă. Au lucrat 6 ore non-stop și casa noastră strălucește acum. Recomand cu drag serviciile lor profesionale.",
+        "service": "Curățenie de Primăvară"
+      },
+      {
+        "name": "Dmitri Smirnov",
+        "role": "Manager Hotel",
+        "location": "Centru, Chișinău",
+        "text": "Serviciile de curățenie pentru hotelul nostru sunt de cea mai înaltă calitate. Echipa Cleaner este foarte responsabilă și profesionistă.",
+        "service": "Curățenie Hotel"
+      }
+    ],
+    "rating": "Rating",
+    "verified": "Verificat"
+  },
+  "deepCleaning": {
+    "badge": "Serviciu Premium",
+    "title": "Curățenie Profundă",
+    "subtitle": "Servicii intensive de curățenie pentru mutări, după construcții sau curățenie de primăvară. Rezultate garantate.",
+    "equipment": "Echipament Profesional",
+    "equipmentDesc": "Tehnologie de ultimă generație",
+    "guaranteed": "Rezultate Garantate",
+    "rating": "Rating",
+    "ourServices": "Serviciile Noastre",
+    "services": [
+      "Curățenie după construcție",
+      "Curățenie pentru mutare",
+      "Curățenie de primăvară",
+      "Dezinfectare completă",
+      "Curățenie post-renovare",
+      "Curățenie industrială"
+    ],
+    "fast": "Rapid",
+    "fastDesc": "2-6 ore",
+    "safe": "Sigur",
+    "safeDesc": "Produse eco",
+    "complete": "Complet",
+    "completeDesc": "Până la detalii"
+  },
+  "regularCleaning": {
+    "badge": "Serviciu Regulat",
+    "title": "Curățenie Regulată",
+    "subtitle": "Planuri flexibile de curățenie pentru case și birouri. Alege frecvența care ți se potrivește.",
+    "weekly": "Plan Săptămânal",
+    "biweekly": "Plan Bi-săptămânal", 
+    "monthly": "Plan Lunar",
+    "currency": "MDL/vizită",
+    "weeklyFeatures": [
+      "Curățenie completă săptămânală",
+      "Aspirare și ștergere",
+      "Curățenie băi și bucătărie",
+      "Schimbare așternuturi",
+      "Reducere 15% pentru contract anual"
+    ],
+    "biweeklyFeatures": [
+      "Curățenie la 2 săptămâni",
+      "Curățenie profundă periodică",
+      "Întreținere regulată",
+      "Flexibilitate program",
+      "Cea mai populară opțiune"
+    ],
+    "monthlyFeatures": [
+      "Curățenie lunară intensivă",
+      "Perfect pentru birouri",
+      "Curățenie geamuri inclusă",
+      "Fără contract pe termen lung",
+      "Ideal pentru întreținere"
+    ],
+    "popular": "Cel mai popular",
+    "choosePackage": "Alege Pachetul"
+  },
+  "footer": {
+    "description": "Partenerul tău de încredere pentru servicii profesionale de curățenie în Chișinău, Moldova. Aducem împreună curățenia și accesibilitatea pentru spații rezidențiale și comerciale.",
+    "services": "Servicii",
+    "company": "Companie",
+    "contact": "Contact",
+    "aboutUs": "Despre Noi",
+    "clients": "Clienți",
+    "phone": "+373 (60) 123-456",
+    "email": "contact@cleanwave.md",
+    "address": "Strada Ștefan cel Mare 123<br />Chișinău, Moldova",
+    "copyright": "Toate drepturile rezervate.",
+    "privacy": "Politica de Confidențialitate",
+    "terms": "Termeni și Condiții"
+  },
+  "contact": {
+    "title": "INTRĂ ÎN CONTACT",
+    "subtitle": "Gata să experimentezi servicii profesionale de curățenie în Chișinău? Contactează-ne astăzi pentru o evaluare gratuită și lasă-ne să-ți transformăm spațiul.",
+    "mapTitle": "Cleaner - Locația noastră în Chișinău",
+    "callUs": "Sună-ne",
+    "sendEmail": "Trimite Email",
+    "visitUs": "Vizitează-ne",
+    "address": "Strada Ștefan cel Mare 123, Chișinău, Moldova",
+    "workingHours": "Orele de Lucru",
+    "workingDays": "Luni - Vineri: 08:00 - 18:00",
+    "saturday": "Sâmbătă: 09:00 - 16:00"
+  },
+  "stats": {
+    "cleaningsCompleted": "Curățenii Finalizate",
+    "happyClients": "Clienți Mulțumiți",
+    "satisfactionRate": "Rata de Satisfacție",
+    "yearsExperience": "Ani de Experiență"
+  },
+  "common": {
+    "phone": "+373 (60) 123-456"
+  }
+}

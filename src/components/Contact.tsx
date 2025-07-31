@@ -1,17 +1,18 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export const Contact = () => {
+  const { t } = useTranslation();
   return (
     <section id="contact" className="py-20 section-bg">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 font-gill-sans text-main-green">
-            INTRĂ ÎN CONTACT
+            {t('contact.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto font-doxent-light">
-            Gata să experimentezi servicii profesionale de curățenie în Chișinău? Contactează-ne astăzi pentru o evaluare gratuită 
-            și lasă-ne să-ți transformăm spațiul.
+            {t('contact.subtitle')}
           </p>
         </div>
         
@@ -27,7 +28,7 @@ export const Contact = () => {
                 allowFullScreen
                 loading="lazy"
                 referrerPolicy="no-referrer-when-downgrade"
-                title="Cleaner - Locația noastră în Chișinău"
+                title={t('contact.mapTitle')}
               ></iframe>
             </CardContent>
           </Card>
@@ -40,8 +41,8 @@ export const Contact = () => {
               <div className="w-16 h-16 rounded-full bg-main-green/10 flex items-center justify-center mx-auto mb-4">
                 <Phone className="w-8 h-8 text-main-green" />
               </div>
-              <h3 className="font-gill-sans font-semibold text-main-green mb-2">Sună-ne</h3>
-              <p className="text-muted-foreground font-doxent-light">+373 (60) 123-456</p>
+              <h3 className="font-gill-sans font-semibold text-main-green mb-2">{t('contact.callUs')}</h3>
+              <p className="text-muted-foreground font-doxent-light">{t('common.phone')}</p>
             </CardContent>
           </Card>
           
@@ -50,7 +51,7 @@ export const Contact = () => {
               <div className="w-16 h-16 rounded-full bg-main-green/10 flex items-center justify-center mx-auto mb-4">
                 <Mail className="w-8 h-8 text-main-green" />
               </div>
-              <h3 className="font-gill-sans font-semibold text-main-green mb-2">Trimite Email</h3>
+              <h3 className="font-gill-sans font-semibold text-main-green mb-2">{t('contact.sendEmail')}</h3>
               <p className="text-muted-foreground font-doxent-light">contact@cleaner.md</p>
             </CardContent>
           </Card>
@@ -60,8 +61,8 @@ export const Contact = () => {
               <div className="w-16 h-16 rounded-full bg-main-green/10 flex items-center justify-center mx-auto mb-4">
                 <MapPin className="w-8 h-8 text-main-green" />
               </div>
-              <h3 className="font-gill-sans font-semibold text-main-green mb-2">Vizitează-ne</h3>
-              <p className="text-muted-foreground font-doxent-light">Strada Ștefan cel Mare 123, Chișinău, Moldova</p>
+              <h3 className="font-gill-sans font-semibold text-main-green mb-2">{t('contact.visitUs')}</h3>
+              <p className="text-muted-foreground font-doxent-light">{t('contact.address')}</p>
             </CardContent>
           </Card>
           
@@ -70,10 +71,10 @@ export const Contact = () => {
               <div className="w-16 h-16 rounded-full bg-main-green/10 flex items-center justify-center mx-auto mb-4">
                 <Clock className="w-8 h-8 text-main-green" />
               </div>
-              <h3 className="font-gill-sans font-semibold text-main-green mb-2">Orele de Lucru</h3>
+              <h3 className="font-gill-sans font-semibold text-main-green mb-2">{t('contact.workingHours')}</h3>
               <div className="text-muted-foreground font-doxent-light">
-                <p>Luni - Vineri: 08:00 - 18:00</p>
-                <p>Sâmbătă: 09:00 - 16:00</p>
+                <p>{t('contact.workingDays')}</p>
+                <p>{t('contact.saturday')}</p>
               </div>
             </CardContent>
           </Card>

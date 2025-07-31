@@ -1,14 +1,16 @@
 import { useEffect, useState } from "react";
 import { Users, CheckCircle, Star, Clock } from "lucide-react";
-
-const stats = [
-  { number: 792, label: "Curățenii Finalizate", suffix: "", icon: CheckCircle },
-  { number: 500, label: "Clienți Mulțumiți", suffix: "+", icon: Users },
-  { number: 99, label: "Rata de Satisfacție", suffix: "%", icon: Star },
-  { number: 5, label: "Ani de Experiență", suffix: "", icon: Clock }
-];
+import { useTranslation } from "react-i18next";
 
 export const Stats = () => {
+  const { t } = useTranslation();
+
+  const stats = [
+    { number: 792, label: t('stats.cleaningsCompleted'), suffix: "", icon: CheckCircle },
+    { number: 500, label: t('stats.happyClients'), suffix: "+", icon: Users },
+    { number: 99, label: t('stats.satisfactionRate'), suffix: "%", icon: Star },
+    { number: 5, label: t('stats.yearsExperience'), suffix: "", icon: Clock }
+  ];
   const [counters, setCounters] = useState(stats.map(() => 0));
   const [hasAnimated, setHasAnimated] = useState(false);
 

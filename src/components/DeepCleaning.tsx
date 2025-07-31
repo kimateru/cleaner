@@ -2,36 +2,24 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { CheckCircle, Clock, Shield, Sparkles, Star, Award, Users } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import deepImage from "@/assets/deep-cleaning.jpg";
 
 export const DeepCleaning = () => {
-  const services = [
-    "Curățenie după construcție",
-    "Curățenie pentru mutare",
-    "Curățenie de primăvară",
-    "Dezinfectare completă",
-    "Curățenie post-renovare",
-    "Curățenie industrială"
-  ];
-
-  const stats = [
-    { number: "500+", label: "Proiecte Finalizate", icon: Award },
-    { number: "98%", label: "Clienți Mulțumiți", icon: Users },
-    { number: "24h", label: "Timp de Răspuns", icon: Clock }
-  ];
+  const { t } = useTranslation();
 
   return (
     <section id="deep-cleaning" className="py-20 hero-bg overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <Badge variant="outline" className="mb-4 border-main-green text-main-green">
-            Serviciu Premium
+            {t('deepCleaning.badge')}
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-gill-sans font-bold mb-6 text-main-green">
-            Curățenie Profundă
+            {t('deepCleaning.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-doxent-light">
-            Servicii intensive de curățenie pentru mutări, după construcții sau curățenie de primăvară. Rezultate garantate.
+            {t('deepCleaning.subtitle')}
           </p>
         </div>
 
@@ -48,9 +36,9 @@ export const DeepCleaning = () => {
               <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-sm px-4 py-2 rounded-xl">
                 <div className="flex items-center gap-2">
                   <div className="w-3 h-3 bg-main-green rounded-full animate-pulse"></div>
-                  <span className="font-medium text-main-green font-gill-sans">Echipament Profesional</span>
+                  <span className="font-medium text-main-green font-gill-sans">{t('deepCleaning.equipment')}</span>
                 </div>
-                <p className="text-sm text-muted-foreground font-doxent-light">Tehnologie de ultimă generație</p>
+                <p className="text-sm text-muted-foreground font-doxent-light">{t('deepCleaning.equipmentDesc')}</p>
               </div>
             </div>
 
@@ -61,12 +49,12 @@ export const DeepCleaning = () => {
                     <Sparkles className="w-6 h-6 text-main-green" />
                   </div>
                   <div>
-                    <h3 className="font-gill-sans font-semibold text-lg text-main-green mb-2">Rezultate Garantate</h3>
+                    <h3 className="font-gill-sans font-semibold text-lg text-main-green mb-2">{t('deepCleaning.guaranteed')}</h3>
                     <div className="flex items-center justify-center sm:justify-start gap-1">
                       {[...Array(5)].map((_, i) => (
                         <Star key={i} className="w-4 h-4 fill-yellow-400 text-yellow-400" />
                       ))}
-                      <span className="ml-2 text-sm font-medium font-doxent-light">4.9/5 Rating</span>
+                      <span className="ml-2 text-sm font-medium font-doxent-light">4.9/5 {t('deepCleaning.rating')}</span>
                     </div>
                   </div>
                 </div>
@@ -76,16 +64,9 @@ export const DeepCleaning = () => {
 
           <div className="lg:col-span-2 animate-slide-in-right flex flex-col justify-between text-center lg:text-left">
             <div className="mb-8">
-              <h3 className="text-2xl font-gill-sans font-semibold mb-6 text-main-green">Serviciile Noastre</h3>
+              <h3 className="text-2xl font-gill-sans font-semibold mb-6 text-main-green">{t('deepCleaning.ourServices')}</h3>
               <div className="space-y-4">
-                {[
-                  "Curățenie după construcție",
-                  "Curățenie pentru mutare", 
-                  "Curățenie de primăvară",
-                  "Dezinfectare completă",
-                  "Curățenie post-renovare",
-                  "Curățenie industrială"
-                ].map((service, index) => (
+                {t('deepCleaning.services', { returnObjects: true }).map((service, index) => (
                   <div key={service} className="flex items-center justify-center lg:justify-start gap-3 p-3 bg-main-green/5 rounded-lg border border-main-green/10">
                     <CheckCircle className="w-5 h-5 text-main-green flex-shrink-0" />
                     <span className="font-doxent-light">{service}</span>
@@ -97,18 +78,18 @@ export const DeepCleaning = () => {
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
               <div className="text-center p-4 bg-main-green/5 rounded-xl border border-main-green/20">
                 <Clock className="w-8 h-8 text-main-green mx-auto mb-2" />
-                <div className="text-sm font-semibold text-main-green font-gill-sans">Rapid</div>
-                <div className="text-xs text-muted-foreground font-doxent-light">2-6 ore</div>
+                <div className="text-sm font-semibold text-main-green font-gill-sans">{t('deepCleaning.fast')}</div>
+                <div className="text-xs text-muted-foreground font-doxent-light">{t('deepCleaning.fastDesc')}</div>
               </div>
               <div className="text-center p-4 bg-main-green/5 rounded-xl border border-main-green/20">
                 <Shield className="w-8 h-8 text-main-green mx-auto mb-2" />
-                <div className="text-sm font-semibold text-main-green font-gill-sans">Sigur</div>
-                <div className="text-xs text-muted-foreground font-doxent-light">Produse eco</div>
+                <div className="text-sm font-semibold text-main-green font-gill-sans">{t('deepCleaning.safe')}</div>
+                <div className="text-xs text-muted-foreground font-doxent-light">{t('deepCleaning.safeDesc')}</div>
               </div>
               <div className="text-center p-4 bg-main-green/5 rounded-xl border border-main-green/20">
                 <Sparkles className="w-8 h-8 text-main-green mx-auto mb-2" />
-                <div className="text-sm font-semibold text-main-green font-gill-sans">Complet</div>
-                <div className="text-xs text-muted-foreground font-doxent-light">Până la detalii</div>
+                <div className="text-sm font-semibold text-main-green font-gill-sans">{t('deepCleaning.complete')}</div>
+                <div className="text-xs text-muted-foreground font-doxent-light">{t('deepCleaning.completeDesc')}</div>
               </div>
             </div>
           </div>

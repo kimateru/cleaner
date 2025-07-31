@@ -1,22 +1,25 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Award, Users, CheckCircle } from "lucide-react";
+import { useTranslation } from "react-i18next";
 
 export const About = () => {
+  const { t } = useTranslation();
+  
   const features = [
     {
       icon: Award,
-      title: "Experiență",
-      description: "Peste 5 ani în domeniu"
+      title: t('about.experience'),
+      description: t('about.experienceDesc')
     },
     {
       icon: Shield,
-      title: "Calitate",
-      description: "Produse și echipamente premium"
+      title: t('about.quality'),
+      description: t('about.qualityDesc')
     },
     {
       icon: Users,
-      title: "Încredere",
-      description: "Peste 500 clienți mulțumiți"
+      title: t('about.trust'),
+      description: t('about.trustDesc')
     }
   ];
 
@@ -26,40 +29,46 @@ export const About = () => {
         <div className="grid lg:grid-cols-5 gap-12 items-start">
           <div className="lg:col-span-3 animate-fade-in text-center lg:text-left">
             <h2 className="text-4xl lg:text-5xl font-gill-sans font-bold mb-6 text-main-green">
-              Despre Cleaner
+              {t('about.title')}
             </h2>
             <p className="text-lg text-muted-foreground mb-8 leading-relaxed font-doxent-light">
-              Cu peste 5 ani de experiență în curățenie profesională, Cleaner este liderul pieței din Chișinău. Folosim echipamente moderne și produse ecologice pentru rezultate impecabile.
+              {t('about.description')}
             </p>
             
             <div className="mb-8">
               <h3 className="text-2xl font-gill-sans font-semibold mb-4 text-main-green">
-                Misiunea Noastră
+                {t('about.mission')}
               </h3>
               <p className="text-muted-foreground leading-relaxed font-doxent-light">
-                Să oferim servicii de curățenie de cea mai înaltă calitate, creând spații curate și sănătoase pentru clienții noștri din Moldova.
+                {t('about.missionDesc')}
               </p>
             </div>
 
             <div className="space-y-4">
               <div className="flex items-center justify-center lg:justify-start gap-2">
                 <CheckCircle className="w-5 h-5 text-main-green" />
-                <span className="font-medium font-doxent-light">Licențiați și asigurați</span>
+                <span className="font-medium font-doxent-light">
+                  {t('about.licensed')}
+                </span>
               </div>
               <div className="flex items-center justify-center lg:justify-start gap-2">
                 <CheckCircle className="w-5 h-5 text-main-green" />
-                <span className="font-medium font-doxent-light">Echipamente profesionale</span>
+                <span className="font-medium font-doxent-light">
+                  {t('about.equipment')}
+                </span>
               </div>
               <div className="flex items-center justify-center lg:justify-start gap-2">
                 <CheckCircle className="w-5 h-5 text-main-green" />
-                <span className="font-medium font-doxent-light">Produse ecologice</span>
+                <span className="font-medium font-doxent-light">
+                  {t('about.ecoProducts')}
+                </span>
               </div>
             </div>
           </div>
 
           <div className="lg:col-span-2 animate-fade-in text-center lg:text-left">
             <h3 className="text-2xl font-gill-sans font-semibold mb-6 text-main-green">
-              De Ce Să Ne Alegeți
+              {t('about.whyChooseUs')}
             </h3>
             <div className="space-y-6">
               {features.map((feature, index) => (

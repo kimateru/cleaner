@@ -1,6 +1,7 @@
 import { useState, useRef, MouseEvent, TouchEvent } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { useTranslation } from "react-i18next";
 import deepCleaningImage from "@/assets/deep-cleaning.jpg";
 import homeCleaningImage from "@/assets/home-cleaning.jpg";
 import officeCleaningImage from "@/assets/office-cleaning.jpg";
@@ -15,39 +16,15 @@ interface BeforeAfterItem {
 }
 
 export const BeforeAfter = () => {
+  const { t } = useTranslation();
   const [sliderPositions, setSliderPositions] = useState<{ [key: number]: number }>({});
   const [isInteracting, setIsInteracting] = useState<{ [key: number]: boolean }>({});
 
-  const beforeAfterItems: BeforeAfterItem[] = [
-    {
-      title: "Apartament după Renovare",
-      description: "Curățenie completă după renovarea unei bucătării moderne",
-      beforeImage: deepCleaningImage,
-      afterImage: homeCleaningImage,
-      location: "Centru, Chișinău"
-    },
-    {
-      title: "Birou Corporativ",
-      description: "Transformarea unui spațiu de lucru negliat într-un mediu profesional",
-      beforeImage: officeCleaningImage,
-      afterImage: heroCleaningImage,
-      location: "Râșcani, Chișinău"
-    },
-    {
-      title: "Casă Particulară",
-      description: "Curățenie profundă pentru o familie cu copii mici",
-      beforeImage: heroCleaningImage,
-      afterImage: deepCleaningImage,
-      location: "Botanica, Chișinău"
-    },
-    {
-      title: "Restaurant După Renovare",
-      description: "Pregătirea pentru deschiderea unui restaurant nou",
-      beforeImage: homeCleaningImage,
-      afterImage: officeCleaningImage,
-      location: "Centru, Chișinău"
-    }
-  ];
+  const beforeAfterItems: BeforeAfterItem[] = t('beforeAfter.items', { returnObjects: true }).map((item, index) => ({
+    ...item,
+    beforeImage: [deepCleaningImage, officeCleaningImage, heroCleaningImage, homeCleaningImage][index],
+    afterImage: [homeCleaningImage, heroCleaningImage, deepCleaningImage, officeCleaningImage][index]
+  }));
 
   const updateSliderPosition = (clientX: number, element: HTMLDivElement, index: number) => {
     const rect = element.getBoundingClientRect();
@@ -97,13 +74,13 @@ export const BeforeAfter = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <Badge variant="outline" className="mb-4 border-main-green text-main-green">
-            Rezultate Vizibile
+            {t('beforeAfter.badge')}
           </Badge>
           <h2 className="text-4xl lg:text-5xl font-gill-sans font-bold mb-6 text-main-green">
-            ÎNAINTE ȘI DUPĂ
+            {t('beforeAfter.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-doxent-light">
-            Vezi transformarea incredibilă pe care o realizăm în fiecare proiect. Rezultate garantate care vorbesc de la sine.
+            {t('beforeAfter.subtitle')}
           </p>
         </div>
 
@@ -157,7 +134,7 @@ export const BeforeAfter = () => {
                         sliderPosition > 20 ? 'opacity-100' : 'opacity-50'
                       }`}
                     >
-                      ÎNAINTE
+                      {t('beforeAfter.before')}
                     </Badge>
                   </div>
                   
@@ -167,7 +144,7 @@ export const BeforeAfter = () => {
                         sliderPosition < 80 ? 'opacity-100' : 'opacity-50'
                       }`}
                     >
-                      DUPĂ
+                      {t('beforeAfter.after')}
                     </Badge>
                   </div>
 
@@ -177,8 +154,8 @@ export const BeforeAfter = () => {
                   } group-hover:opacity-0`}>
                     <div className="text-center text-white px-4">
                       <div className="text-base md:text-lg font-gill-sans font-semibold mb-2">
-                        <span className="hidden md:inline">Mută mouse-ul pentru comparație</span>
-                        <span className="md:hidden">Atinge și glisează pentru comparație</span>
+                        <span className="hidden md:inline">{t('beforeAfter.dragToCompare')}</span>
+                        <span className="md:hidden">{t('beforeAfter.dragToCompare')}</span>
                       </div>
                       <div className="text-sm font-doxent-light opacity-80">
                         <span className="hidden md:inline">Glisează pentru a vedea diferența</span>
@@ -219,49 +196,11 @@ export const BeforeAfter = () => {
                       </span>
                     </div>
                   </div>
-
-                  <div className="flex items-center justify-between pt-4 border-t border-border/30">
-                    <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 bg-red-500 rounded-full flex-shrink-0"></div>
-                      <span className="text-sm font-doxent-light">Înainte</span>
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <span className="text-sm font-doxent-light">După</span>
-                      <div className="w-3 h-3 bg-main-green rounded-full flex-shrink-0"></div>
-                    </div>
-                  </div>
                 </CardContent>
               </Card>
             );
           })}
         </div>
-
-        {/* <div className="text-center mt-12 animate-fade-in">
-          <Card className="bg-gradient-to-r from-main-green/5 to-secondary-green/5 border-main-green/20 max-w-2xl mx-auto">
-            <CardContent className="p-6 md:p-8">
-              <h3 className="font-gill-sans font-semibold text-xl md:text-2xl mb-4 text-main-green">
-                Garantăm Rezultate Vizibile
-              </h3>
-              <p className="text-muted-foreground mb-6 font-doxent-light text-sm md:text-base">
-                Fiecare proiect este o transformare completă. Dacă nu ești mulțumit 100%, refacem gratuit.
-              </p>
-              <div className="grid grid-cols-3 gap-4 md:gap-6 text-center">
-                <div>
-                  <div className="text-xl md:text-2xl font-bold text-main-green font-gill-sans">792+</div>
-                  <div className="text-xs md:text-sm text-muted-foreground font-doxent-light">Transformări</div>
-                </div>
-                <div>
-                  <div className="text-xl md:text-2xl font-bold text-main-green font-gill-sans">100%</div>
-                  <div className="text-xs md:text-sm text-muted-foreground font-doxent-light">Satisfacție</div>
-                </div>
-                <div>
-                  <div className="text-xl md:text-2xl font-bold text-main-green font-gill-sans">5★</div>
-                  <div className="text-xs md:text-sm text-muted-foreground font-doxent-light">Rating Mediu</div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-        </div> */}
       </div>
     </section>
   );

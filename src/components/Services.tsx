@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Building2, Home, Zap } from "lucide-react";
+import { useTranslation } from "react-i18next";
 import officeImage from "@/assets/office-cleaning.jpg";
 import homeImage from "@/assets/home-cleaning.jpg";
 import deepImage from "@/assets/deep-cleaning.jpg";
@@ -30,16 +31,17 @@ const services = [
 ];
 
 export const Services = () => {
+  const { t } = useTranslation();
+  
   return (
     <section id="services" className="py-20 section-bg">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16 animate-fade-in">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            SERVICIILE NOASTRE DE <span className="text-success">CURĂȚENIE</span>
+{t('services.title')} <span className="text-success">{t('services.titleHighlight')}</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Oferim o gamă largă de servicii de curățenie pentru spații rezidențiale și comerciale în Chișinău, Moldova. 
-            De la curățenie profundă la întreținere regulată, ne asigurăm că spațiul dumneavoastră rămâne impecabil.
+{t('services.subtitle')}
           </p>
         </div>
         
