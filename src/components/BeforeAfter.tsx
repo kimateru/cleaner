@@ -6,6 +6,7 @@ import deepCleaningImage from "@/assets/deep-cleaning.jpg";
 import homeCleaningImage from "@/assets/home-cleaning.jpg";
 import officeCleaningImage from "@/assets/office-cleaning.jpg";
 import heroCleaningImage from "@/assets/hero-cleaning.jpg";
+import CTA from "./CTA";
 
 interface BeforeAfterItem {
   title: string;
@@ -84,7 +85,7 @@ export const BeforeAfter = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8 mb-20">
           {beforeAfterItems.map((item, index) => {
             const sliderPosition = sliderPositions[index] || 50;
             const isCardInteracting = isInteracting[index] || false;
@@ -202,6 +203,7 @@ export const BeforeAfter = () => {
           })}
         </div>
       </div>
+      <CTA heading={t('about.cta')} />
     </section>
   );
 }; 

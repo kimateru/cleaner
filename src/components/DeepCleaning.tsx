@@ -75,20 +75,20 @@ export const DeepCleaning = () => {
               </div>
             </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div className="grid grid-cols-3 gap-4">
               <div className="text-center p-4 bg-main-green/5 rounded-xl border border-main-green/20">
                 <Clock className="w-8 h-8 text-main-green mx-auto mb-2" />
-                <div className="text-sm font-semibold text-main-green font-gill-sans">{t('deepCleaning.fast')}</div>
+                <div className="text-xs md:text-sm font-semibold text-main-green font-gill-sans">{t('deepCleaning.fast')}</div>
                 <div className="text-xs text-muted-foreground font-doxent-light">{t('deepCleaning.fastDesc')}</div>
               </div>
               <div className="text-center p-4 bg-main-green/5 rounded-xl border border-main-green/20">
                 <Shield className="w-8 h-8 text-main-green mx-auto mb-2" />
-                <div className="text-sm font-semibold text-main-green font-gill-sans">{t('deepCleaning.safe')}</div>
+                <div className="text-xs md:text-sm font-semibold text-main-green font-gill-sans">{t('deepCleaning.safe')}</div>
                 <div className="text-xs text-muted-foreground font-doxent-light">{t('deepCleaning.safeDesc')}</div>
               </div>
               <div className="text-center p-4 bg-main-green/5 rounded-xl border border-main-green/20">
                 <Sparkles className="w-8 h-8 text-main-green mx-auto mb-2" />
-                <div className="text-sm font-semibold text-main-green font-gill-sans">{t('deepCleaning.complete')}</div>
+                <div className="text-xs md:text-sm font-semibold text-main-green font-gill-sans">{t('deepCleaning.complete')}</div>
                 <div className="text-xs text-muted-foreground font-doxent-light">{t('deepCleaning.completeDesc')}</div>
               </div>
             </div>

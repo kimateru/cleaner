@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Shield, Award, Users, CheckCircle } from "lucide-react";
 import { useTranslation } from "react-i18next";
+import CTA from "./CTA";
 
 export const About = () => {
   const { t } = useTranslation();
@@ -24,8 +25,8 @@ export const About = () => {
   ];
 
   return (
-    <section id="about" className="py-20 section-bg">
-      <div className="container mx-auto px-4">
+    <section id="about" className="py-20 bg-gray-50">
+      <div className="container mx-auto px-4 mb-20">
         <div className="grid lg:grid-cols-5 gap-12 items-start">
           <div className="lg:col-span-3 animate-fade-in text-center lg:text-left">
             <h2 className="text-4xl lg:text-5xl font-gill-sans font-bold mb-6 text-main-green">
@@ -35,7 +36,7 @@ export const About = () => {
               {t('about.description')}
             </p>
             
-            <div className="mb-8">
+            <div className="md:mb-8">
               <h3 className="text-2xl font-gill-sans font-semibold mb-4 text-main-green">
                 {t('about.mission')}
               </h3>
@@ -44,29 +45,29 @@ export const About = () => {
               </p>
             </div>
 
-            <div className="space-y-4">
-              <div className="flex items-center justify-center lg:justify-start gap-2">
-                <CheckCircle className="w-5 h-5 text-main-green" />
-                <span className="font-medium font-doxent-light">
+            <div className="hidden md:block space-y-3">
+              <div className="flex items-center justify-center lg:justify-start gap-3 p-3 bg-main-green/5 rounded-lg border border-main-green/10 hover:bg-main-green/10 transition-colors duration-200">
+                <CheckCircle className="w-5 h-5 text-main-green flex-shrink-0" />
+                <span className="font-medium font-doxent-light text-gray-700">
                   {t('about.licensed')}
                 </span>
               </div>
-              <div className="flex items-center justify-center lg:justify-start gap-2">
-                <CheckCircle className="w-5 h-5 text-main-green" />
-                <span className="font-medium font-doxent-light">
+              <div className="flex items-center justify-center lg:justify-start gap-3 p-3 bg-main-green/5 rounded-lg border border-main-green/10 hover:bg-main-green/10 transition-colors duration-200">
+                <CheckCircle className="w-5 h-5 text-main-green flex-shrink-0" />
+                <span className="font-medium font-doxent-light text-gray-700">
                   {t('about.equipment')}
                 </span>
               </div>
-              <div className="flex items-center justify-center lg:justify-start gap-2">
-                <CheckCircle className="w-5 h-5 text-main-green" />
-                <span className="font-medium font-doxent-light">
+              <div className="flex items-center justify-center lg:justify-start gap-3 p-3 bg-main-green/5 rounded-lg border border-main-green/10 hover:bg-main-green/10 transition-colors duration-200">
+                <CheckCircle className="w-5 h-5 text-main-green flex-shrink-0" />
+                <span className="font-medium font-doxent-light text-gray-700">
                   {t('about.ecoProducts')}
                 </span>
               </div>
             </div>
           </div>
 
-          <div className="lg:col-span-2 animate-fade-in text-center lg:text-left">
+          <div className="hidden md:block lg:col-span-2 animate-fade-in text-center lg:text-left">
             <h3 className="text-2xl font-gill-sans font-semibold mb-6 text-main-green">
               {t('about.whyChooseUs')}
             </h3>
@@ -88,6 +89,7 @@ export const About = () => {
           </div>
         </div>
       </div>
+        <CTA heading={t('about.cta')} />
     </section>
   );
 };

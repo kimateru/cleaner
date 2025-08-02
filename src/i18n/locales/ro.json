@@ -38,7 +38,8 @@
     "quality": "Calitate",
     "qualityDesc": "Produse și echipamente premium",
     "trust": "Încredere",
-    "trustDesc": "Peste 500 clienți mulțumiți"
+    "trustDesc": "Peste 500 clienți mulțumiți",
+    "cta": "Contactează-ne"
   },
   "services": {
     "title": "SERVICIILE NOASTRE DE",
@@ -219,7 +220,7 @@
     "fastDesc": "2-6 ore",
     "safe": "Sigur",
     "safeDesc": "Produse eco",
-    "complete": "Complet",
+    "complete": "Ideal",
     "completeDesc": "Până la detalii"
   },
   "regularCleaning": {

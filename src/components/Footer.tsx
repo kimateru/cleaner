@@ -100,7 +100,7 @@ export const Footer = () => {
         </div>
 
         <div className="border-t border-background/20 mt-12 pt-8 text-center text-background/70 animate-fade-in">
-          <p>&copy; 2024 CleanWave. {t('footer.copyright')} | {t('footer.privacy')} | {t('footer.terms')}</p>
+          <p>&copy; 2024 Cleaner. {t('footer.copyright')} | {t('footer.privacy')} | {t('footer.terms')}</p>
         </div>
       </div>
     </footer>

@@ -6,6 +6,7 @@ import { useTranslation } from "react-i18next";
 import upholsteryImage from "@/assets/home-cleaning.jpg";
 import officeImage from "@/assets/office-cleaning.jpg";
 import deepImage from "@/assets/deep-cleaning.jpg";
+import CTA from "./CTA";
 
 export const UpholsteryCleaning = () => {
   const { t } = useTranslation();
@@ -65,33 +66,29 @@ export const UpholsteryCleaning = () => {
                 loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-3xl"></div>
-              <div className="absolute bottom-6 left-6 text-white">
-                <h3 className="text-2xl font-gill-sans font-bold mb-2">Rezultate Garantate</h3>
-                <p className="font-doxent-light">100% satisfacție sau refacem gratuit</p>
-              </div>
             </div>
 
-            <div className="flex flex-col md:grid md:grid-cols-3 gap-4 mt-8">
-              <div className="text-center p-6 bg-main-green/5 rounded-2xl border border-main-green/20 hover:bg-main-green/10 transition-colors">
-                <Droplets className="w-10 h-10 text-main-green mx-auto mb-3" />
-                <h4 className="font-gill-sans font-semibold text-main-green mb-1">{t('upholstery.efficiency')}</h4>
-                <p className="text-xs text-muted-foreground font-doxent-light">{t('upholstery.efficiencyDesc')}</p>
+            <div className="grid grid-cols-3 gap-4 mt-8">
+              <div className="text-center p-4 bg-main-green/5 rounded-xl border border-main-green/20">
+                <Droplets className="w-8 h-8 text-main-green mx-auto mb-2" />
+                <div className="text-xs md:text-sm font-semibold text-main-green font-gill-sans">{t('upholstery.efficiency')}</div>
+                <div className="text-xs text-muted-foreground font-doxent-light">{t('upholstery.efficiencyDesc')}</div>
               </div>
-              <div className="text-center p-6 bg-main-green/5 rounded-2xl border border-main-green/20 hover:bg-main-green/10 transition-colors">
-                <Shield className="w-10 h-10 text-main-green mx-auto mb-3" />
-                <h4 className="font-gill-sans font-semibold text-main-green mb-1">{t('upholstery.ecoFriendly')}</h4>
-                <p className="text-xs text-muted-foreground font-doxent-light">{t('upholstery.ecoFriendlyDesc')}</p>
+              <div className="text-center p-4 bg-main-green/5 rounded-xl border border-main-green/20">
+                <Shield className="w-8 h-8 text-main-green mx-auto mb-2" />
+                <div className="text-xs md:text-sm font-semibold text-main-green font-gill-sans">{t('upholstery.ecoFriendly')}</div>
+                <div className="text-xs text-muted-foreground font-doxent-light">{t('upholstery.ecoFriendlyDesc')}</div>
               </div>
-              <div className="text-center p-6 bg-main-green/5 rounded-2xl border border-main-green/20 hover:bg-main-green/10 transition-colors">
-                <Zap className="w-10 h-10 text-main-green mx-auto mb-3" />
-                <h4 className="font-gill-sans font-semibold text-main-green mb-1">{t('upholstery.fastDrying')}</h4>
-                <p className="text-xs text-muted-foreground font-doxent-light">{t('upholstery.fastDryingDesc')}</p>
+              <div className="text-center p-4 bg-main-green/5 rounded-xl border border-main-green/20">
+                <Zap className="w-8 h-8 text-main-green mx-auto mb-2" />
+                <div className="text-xs md:text-sm font-semibold text-main-green font-gill-sans">{t('upholstery.fastDrying')}</div>
+                <div className="text-xs text-muted-foreground font-doxent-light">{t('upholstery.fastDryingDesc')}</div>
               </div>
             </div>
           </div>
 
           <div className="animate-slide-in-right flex flex-col justify-between">
-            <div className="mb-8">
+            <div className="hidden md:block mb-8">
               <h3 className="text-3xl font-gill-sans font-bold mb-6 text-main-green text-center md:text-left">
                 {t('upholstery.whyChooseUs')}
               </h3>
@@ -162,8 +159,11 @@ export const UpholsteryCleaning = () => {
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
                 <CardContent className="p-6">
-                  <div className="text-4xl mb-4">{step.icon}</div>
-                  <div className="text-3xl font-gill-sans font-bold text-main-green mb-2">{step.step}</div>
+                  <div className="text-3xl font-gill-sans font-bold text-main-green mb-2 flex justify-center items-center gap-2">
+                    <p>{step.step}</p>
+                    <div className="text-4xl">{step.icon}</div>
+                  </div>
+                 
                   <h4 className="font-gill-sans font-semibold text-lg mb-3">{step.title}</h4>
                   <p className="text-sm text-muted-foreground font-doxent-light">{step.description}</p>
                 </CardContent>
@@ -173,25 +173,8 @@ export const UpholsteryCleaning = () => {
         </div>
 
         {/* CTA Section */}
-        <div className="text-center animate-fade-in">
-          <Card className="bg-gradient-to-r from-main-green to-secondary-green text-white w-full mx-auto">
-            <CardContent className="p-12">
-              <h3 className="text-4xl font-gill-sans font-bold mb-4">{t('upholstery.readyToRestore')}</h3>
-              <p className="text-xl font-doxent-light mb-2 opacity-90">
-                {t('upholstery.ctaDescription')}
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <p className="text-3xl font-doxent-light mb-4 opacity-90">{t('upholstery.callNow')}</p>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a href="tel: " className="bg-white text-main-green font-gill-sans text-lg transition-all duration-300 w-full md:w-[300px] rounded-xl py-2 px-4 hover:scale-105">
-                  📞 +373 (60) 123-456
-                </a>
-              </div>
-            </CardContent>
-          </Card>
-        </div>
       </div>
+        <CTA heading={t('upholstery.readyToRestore')} />
     </section>
   );
 }; 
