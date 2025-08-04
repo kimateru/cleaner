@@ -11,10 +11,10 @@ export const Hero = () => {
       <HeroBackground />
 
       <div className="container mx-auto px-4 relative z-10 py-12 md:py-20 w-full">
-        <div className="flex flex-col lg:grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+        <div className="flex flex-col xl:grid lg:grid-cols-12 gap-8 lg:gap-12 items-center">
           {/* Left Column - Text Content */}
           <div className="w-full lg:col-span-7 text-center lg:text-left space-y-6 animate-fade-in">
-            <div className="inline-block bg-black/50 backdrop-blur-md px-6 py-2.5 rounded-full text-white font-medium mb-6 border border-white/10 shadow-lg">
+            <div className="inline-block bg-black/50 backdrop-blur-md px-6 py-2.5 rounded-full text-white font-medium mb-6 border border-white/10 shadow-lg mt-20 md:mt-10">
               <div className="flex items-center gap-2">
                 <Award className="w-5 h-5 text-success" />
                 {t('hero.badge')}

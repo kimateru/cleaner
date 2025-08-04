@@ -11,7 +11,7 @@ export const HeroBackground = () => {
       />
       
       {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/50 to-black/80" />
+      <div className="absolute inset-0 bg-gradient-to-r from-black/30 via-black/20 to-black/30" />
       
       {/* Subtle Pattern Overlay */}
       <div 

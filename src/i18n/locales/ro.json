@@ -134,14 +134,12 @@
     "subtitle": "Vezi transformările incredibile realizate de echipa noastră. Rezultate garantate pentru fiecare proiect.",
     "items": [
       {
-        "title": "Apartament după Renovare",
-        "description": "Curățenie completă după renovarea unei bucătării moderne",
-        "location": "Centru, Chișinău"
+        "title": "Bucătărie după Renovare",
+        "description": "Curățenie completă după renovarea unei bucătării moderne"
       },
       {
-        "title": "Birou Corporativ",
-        "description": "Transformarea unui spațiu de lucru negliat într-un mediu profesional",
-        "location": "Râșcani, Chișinău"
+        "title": "Curățenie Generală",
+        "description": "Transformarea unui spațiu într-o zonă comfortabilă"
       }
     ],
     "before": "Înainte",
@@ -152,6 +150,8 @@
     "badge": "Testimoniale Clienți",
     "title": "Ce Spun Clienții Noștri",
     "subtitle": "Peste 500 de clienți mulțumiți în Chișinău. Iată ce spun despre serviciile noastre.",
+    "readMore": "Citește mai mult",
+    "readLess": "Ascunde",
     "reviews": [
       {
         "name": "Maria Popescu",

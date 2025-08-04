@@ -1,13 +1,12 @@
 import React from 'react'
-import { Card, CardContent } from '@/components/ui/card'
 import { useTranslation } from 'react-i18next'
 
 const CTA = ({ heading }) => {
     const { t } = useTranslation()
     return (
         <div className="text-center animate-fade-in">
-            <Card className="bg-gradient-to-r from-main-green to-secondary-green text-white w-full mx-auto py-6">
-                <CardContent className="p-8">
+            <div className="bg-[#456C5D] text-white w-full mx-auto py-6 rounded-lg border shadow-sm" style={{backgroundColor: '#456C5D'}}>
+                <div className="p-8">
                     <h3 className="text-3xl font-gill-sans font-bold mb-3">{heading || t('upholstery.readyToRestore')}</h3>
                     <p className="text-lg font-doxent-light mb-4 opacity-90">
                         {t('upholstery.callNow')}
@@ -17,8 +16,8 @@ const CTA = ({ heading }) => {
                             📞 +373 (60) 123-456
                         </a>
                     </div>
-                </CardContent>
-            </Card>
+                </div>
+            </div>
         </div>
     )
 }

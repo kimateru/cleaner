@@ -18,7 +18,7 @@ export const Header = () => {
           />
         </div>
 
-        <nav className="hidden lg:flex items-center gap-3 xl:gap-6 animate-fade-in">
+        <nav className="hidden xl:flex items-center gap-2 xl:gap-6 animate-fade-in">
           <a href="#home" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm xl:text-base">{t('nav.home')}</a>
           <a href="#about" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm xl:text-base">{t('nav.about')}</a>
           <a href="#deep-cleaning" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm xl:text-base">{t('nav.deepCleaning')}</a>

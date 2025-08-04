@@ -2,10 +2,12 @@ import { useState, useRef, MouseEvent, TouchEvent } from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { useTranslation } from "react-i18next";
-import deepCleaningImage from "@/assets/deep-cleaning.jpg";
-import homeCleaningImage from "@/assets/home-cleaning.jpg";
-import officeCleaningImage from "@/assets/office-cleaning.jpg";
-import heroCleaningImage from "@/assets/hero-cleaning.jpg";
+import beforeAOne from "@/assets/beforea1.jpg";
+import afterAOne from "@/assets/beforea2.jpg";
+import beforeBOne from "@/assets/beforeb1.jpg";
+import afterBOne from "@/assets/beforeb2.jpg";
+
+
 import CTA from "./CTA";
 
 interface BeforeAfterItem {
@@ -13,7 +15,6 @@ interface BeforeAfterItem {
   description: string;
   beforeImage: string;
   afterImage: string;
-  location: string;
 }
 
 export const BeforeAfter = () => {
@@ -23,8 +24,8 @@ export const BeforeAfter = () => {
 
   const beforeAfterItems: BeforeAfterItem[] = t('beforeAfter.items', { returnObjects: true }).map((item, index) => ({
     ...item,
-    beforeImage: [deepCleaningImage, officeCleaningImage, heroCleaningImage, homeCleaningImage][index],
-    afterImage: [homeCleaningImage, heroCleaningImage, deepCleaningImage, officeCleaningImage][index]
+    beforeImage: [afterAOne, afterBOne][index],
+    afterImage: [beforeAOne, beforeBOne][index]
   }));
 
   const updateSliderPosition = (clientX: number, element: HTMLDivElement, index: number) => {
@@ -158,10 +159,7 @@ export const BeforeAfter = () => {
                         <span className="hidden md:inline">{t('beforeAfter.dragToCompare')}</span>
                         <span className="md:hidden">{t('beforeAfter.dragToCompare')}</span>
                       </div>
-                      <div className="text-sm font-doxent-light opacity-80">
-                        <span className="hidden md:inline">Glisează pentru a vedea diferența</span>
-                        <span className="md:hidden">Trage cu degetul pentru a vedea diferența</span>
-                      </div>
+                     
                     </div>
                   </div>
 
@@ -190,12 +188,6 @@ export const BeforeAfter = () => {
                     <p className="text-muted-foreground font-doxent-light mb-2 text-sm md:text-base">
                       {item.description}
                     </p>
-                    <div className="flex items-center gap-2">
-                      <div className="w-2 h-2 bg-secondary-green rounded-full flex-shrink-0"></div>
-                      <span className="text-sm text-muted-foreground font-doxent-light">
-                        {item.location}
-                      </span>
-                    </div>
                   </div>
                 </CardContent>
               </Card>
