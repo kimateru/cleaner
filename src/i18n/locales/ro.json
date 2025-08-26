@@ -68,7 +68,6 @@
         "title": "Program convenabil",
         "description": "Lucrăm în zilele lucrătoare, mereu la ora stabilită cu dumneavoastră."
       }
-      
     ],
     "efficiency": "Eficiență",
     "ecoFriendly": "Eco-Friendly",
@@ -243,7 +242,7 @@
     "verified": "Verificat"
   },
   "deepCleaning": {
-    "badge": "Serviciu Premium",
+    "badge": "Curățenie maximă",
     "title": "Curățenie Profundă",
     "subtitle": "Servicii intensive de curățenie pentru mutări, după construcții sau curățenie de primăvară. Rezultate garantate.",
     "equipment": "Echipament Profesional",
@@ -264,7 +263,73 @@
     "safe": "Sigur",
     "safeDesc": "Produse eco",
     "complete": "Ideal",
-    "completeDesc": "Până la detalii"
+    "completeDesc": "Până la detalii",
+    "list": [
+      {
+        "title": "Camere de locuit și dormitoare",
+        "description": "Îndepărtarea prafului de pe tavane și pereți, spălarea geamurilor, curățarea mobilierului (inclusiv în profunzime), a podelelor și a elementelor decorative."
+      },
+      {
+        "title": "Bucătărie",
+        "description": "Spălarea fațadelor dulapurilor, curățarea în profunzime a interiorului dulapurilor, a plitei, cuptorului, hotei și frigiderului la exterior, degresarea suprafețelor de lucru, spălarea chiuvetei și a robinetului, curățarea plăcilor și a faianței."
+      },
+      {
+        "title": "Grupuri sanitare și băi",
+        "description": "Dezinfectarea toaletei, chiuvetei, căzii sau cabinei de duș, îndepărtarea depunerilor și a ruginii, curățarea plăcilor, oglinzilor, ușilor și a podelei."
+      },
+      {
+        "title": "Coridoare și holuri",
+        "description": "Spălarea ușii de la intrare, curățarea dulapurilor și rafturilor, oglinzilor și elementelor decorative, curățarea și spălarea umedă a podelei."
+      },
+      {
+        "title": "Balcoane și logii",
+        "description": "Spălarea geamurilor pe interior și exterior, curățarea balustradelor, pervazurilor, parapetelor, curățarea umedă a podelei."
+      },
+      {
+        "title": "Suplimentar (la cerere)",
+        "description": "Spălarea și curățarea draperiilor, curățarea chimică a mobilierului tapițat, spălarea fațadelor caselor, dezinfectare completă, curățenie după construcții și renovări."
+      }
+    ],
+    "types": {
+      "title": "Tipuri de Curățenie Complexă",
+      "list": [
+        {
+          "title": "Curățenie după construcții și renovări",
+          "description": "Îndepărtarea prafului de construcție, spălarea tuturor suprafețelor, dezinfectare, pregătirea locuinței pentru trai."
+        },
+        {
+          "title": "Curățenie la mutarea în locuință nouă",
+          "description": "Ordine completă pentru noua casă sau apartament."
+        },
+        {
+          "title": "Curățenie la eliberarea locuinței",
+          "description": "Curățenie pentru predarea locuinței proprietarului sau chiriașilor."
+        },
+        {
+          "title": "Curățenie sezonieră",
+          "description": "Curățenie de primăvară și toamnă, pregătirea pentru noul sezon."
+        },
+        {
+          "title": "Curățenie după evenimente",
+          "description": "Curățenie după sărbători, petreceri și evenimente de familie."
+        },
+        {
+          "title": "Pregătirea locuinței pentru închiriere",
+          "description": "Curățenie completă, dezinfectare și reîmprospătarea interiorului."
+        }
+      ]
+    },
+    "features": [
+      {
+        "title": "Rezultate Garantate",
+        "description": "Servicii de înaltă calitate cu garanția satisfacției",
+        "showRating": true
+      },
+      {
+        "title": "Echipă Profesionistă",
+        "description": "Specialiști experimentați și echipamente moderne"
+      }
+    ]
   },
   "regularCleaning": {
     "badge": "Serviciu Regulat",
