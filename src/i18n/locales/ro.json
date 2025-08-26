@@ -384,10 +384,9 @@
     "callUs": "Sună-ne",
     "sendEmail": "Trimite Email",
     "visitUs": "Vizitează-ne",
-    "address": "Strada Ștefan cel Mare 123, Chișinău, Moldova",
+    "address": "Camenița 2A, Chișinău 2101 Chișinău, Moldova",
     "workingHours": "Orele de Lucru",
-    "workingDays": "Luni - Vineri: 08:00 - 18:00",
-    "saturday": "Sâmbătă: 09:00 - 16:00"
+    "workingDays": "Luni - Vineri: 09:00 - 18:00"
   },
   "stats": {
     "cleaningsCompleted": "Curățenii Finalizate",
@@ -408,6 +407,6 @@
     "startNow": "Începe Acum"
   },
   "common": {
-    "phone": "+373 (60) 123-456"
+    "phone": "+373 (69) 971222"
   }
 }

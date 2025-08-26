@@ -15,13 +15,13 @@ export const Contact = () => {
             {t('contact.subtitle')}
           </p>
         </div>
-        
+
         {/* Google Maps Integration */}
         <div className="mb-12 animate-fade-in">
           <Card className="overflow-hidden">
             <CardContent className="p-0">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.8366863935716!2d28.8356!3d47.0105!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c3628b769a1%3A0x5c5c6c5c6c5c6c5c!2sChișinău%2C%20Moldova!5e0!3m2!1sen!2s!4v1234567890123"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3347.5884140992252!2d28.8434767!3d47.0092233!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c97c21c3b0ae61%3A0xc5954c3fe6dc4b97!2zU3RyYWRhIENhbWVuacWjYSAydiwgQ2hpyJlpbsSDdQ!5e1!3m2!1sru!2s!4v1756231843352!5m2!1sru!2s"
                 width="100%"
                 height="400"
                 style={{ border: 0 }}
@@ -33,7 +33,7 @@ export const Contact = () => {
             </CardContent>
           </Card>
         </div>
-        
+
         {/* Contact Information */}
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 animate-slide-in-up">
           <Card className="hover:shadow-lg transition-all duration-300 border-main-green/20">
@@ -45,7 +45,7 @@ export const Contact = () => {
               <p className="text-muted-foreground font-doxent-light">{t('common.phone')}</p>
             </CardContent>
           </Card>
-          
+
           <Card className="hover:shadow-lg transition-all duration-300 border-main-green/20">
             <CardContent className="p-6 text-center">
               <div className="w-16 h-16 rounded-full bg-main-green/10 flex items-center justify-center mx-auto mb-4">
@@ -55,7 +55,7 @@ export const Contact = () => {
               <p className="text-muted-foreground font-doxent-light">contact@cleaner.md</p>
             </CardContent>
           </Card>
-          
+
           <Card className="hover:shadow-lg transition-all duration-300 border-main-green/20">
             <CardContent className="p-6 text-center">
               <div className="w-16 h-16 rounded-full bg-main-green/10 flex items-center justify-center mx-auto mb-4">
@@ -65,7 +65,7 @@ export const Contact = () => {
               <p className="text-muted-foreground font-doxent-light">{t('contact.address')}</p>
             </CardContent>
           </Card>
-          
+
           <Card className="hover:shadow-lg transition-all duration-300 border-main-green/20">
             <CardContent className="p-6 text-center">
               <div className="w-16 h-16 rounded-full bg-main-green/10 flex items-center justify-center mx-auto mb-4">
@@ -74,7 +74,6 @@ export const Contact = () => {
               <h3 className="font-gill-sans font-semibold text-main-green mb-2">{t('contact.workingHours')}</h3>
               <div className="text-muted-foreground font-doxent-light">
                 <p>{t('contact.workingDays')}</p>
-                <p>{t('contact.saturday')}</p>
               </div>
             </CardContent>
           </Card>

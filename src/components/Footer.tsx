@@ -92,9 +92,9 @@ export const Footer = () => {
           <div className="animate-fade-in text-center md:text-left">
             <h4 className="text-lg font-semibold mb-4">{t('footer.contact')}</h4>
             <ul className="space-y-2 text-background/70">
-              <li>{t('footer.phone')}</li>
+              <li>{t('common.phone')}</li>
               <li>{t('footer.email')}</li>
-              <li dangerouslySetInnerHTML={{ __html: t('footer.address') }}></li>
+              <li dangerouslySetInnerHTML={{ __html: t('contact.address') }}></li>
             </ul>
           </div>
         </div>

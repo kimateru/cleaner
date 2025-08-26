@@ -16,7 +16,6 @@ export const UpholsteryCleaning = () => {
   const process = processRaw.map((item, index) => ({
     ...item,
     step: `0${index + 1}`,
-    icon: ["🔍", "🧪", "💨", "✨"][index]
   }));
 
   const testimonials = [
@@ -137,7 +136,6 @@ export const UpholsteryCleaning = () => {
                 <CardContent className="p-6">
                   <div className="text-3xl font-gill-sans font-bold text-main-green mb-2 flex justify-center items-center gap-2">
                     <p>{step.step}</p>
-                    <div className="text-4xl">{step.icon}</div>
                   </div>
 
                   <h4 className="font-gill-sans font-semibold text-lg mb-3">{step.title}</h4>

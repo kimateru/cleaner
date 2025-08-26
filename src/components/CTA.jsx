@@ -15,11 +15,11 @@ const CTA = ({ heading }) => {
                         <a href="tel:+37360123456" className="bg-white text-main-green font-gill-sans text-lg transition-all duration-300 sm:w-[250px] rounded-xl py-1 px-8 hover:scale-105 flex items-center justify-center gap-3">
                             <Phone />
                             <span>
-                                +373 (60) 123-456
+                                +373 (69) 971222
                             </span>
                         </a>
                     </div>
-                </div>
+            </div>
             </div>
         </div>
     )
