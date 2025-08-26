@@ -84,10 +84,13 @@ export const RegularCleaning = () => {
                 </div>
 
                 <Button 
+                  asChild
                   variant={plan.popular ? "default" : "outline"} 
                   className={`w-full font-gill-sans mt-auto ${plan.popular ? 'bg-main-green hover:bg-main-green/90 text-white' : 'border-main-green text-main-green hover:bg-main-green/90'}`}
                 >
-                  {t('regularCleaning.choosePackage')}
+                  <a href="tel:+37369971222">
+                    {t('regularCleaning.choosePackage')}
+                  </a>
                 </Button>
               </CardContent>
             </Card>

@@ -92,9 +92,18 @@ export const Footer = () => {
           <div className="animate-fade-in text-center md:text-left">
             <h4 className="text-lg font-semibold mb-4">{t('footer.contact')}</h4>
             <ul className="space-y-2 text-background/70">
-              <li>{t('common.phone')}</li>
-              <li>{t('footer.email')}</li>
-              <li dangerouslySetInnerHTML={{ __html: t('contact.address') }}></li>
+              <li>
+                <a href="tel:+37369971222">{t('common.phone')}</a>
+              </li>
+
+              <li>
+                <a 
+                  href={`https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(t('contact.address'))}`} 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  dangerouslySetInnerHTML={{ __html: t('contact.address') }}
+                />
+              </li>
             </ul>
           </div>
         </div>

@@ -33,7 +33,9 @@ export const Header = () => {
           <LanguageSwitcher />
           <Button variant="default" size="sm" className="bg-main-green hover:bg-main-green/90 text-white font-gill-sans">
             <Phone className="w-4 h-4 text-white" />
-            <span className="text-sm font-medium font-doxent-light">{t('common.phone')}</span>
+            <a href="tel:+37369971222" className="text-sm font-medium font-doxent-light">
+              {t('common.phone')}
+            </a>
           </Button>
         </div>
       </div>

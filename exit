@@ -1,0 +1,99 @@
+[33mcommit 9e897670076e21f9203ec9f8e00bbb7582774ec9[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m
+Author: kimateru <dancikpalcik@yahoo.com>
+Date:   Tue Aug 26 21:14:56 2025 +0300
+
+    typochragpy change 3.1
+
+[33mcommit 696705ddbf8da782cfff399568b2d1446aed6f2e[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: kimateru <dancikpalcik@yahoo.com>
+Date:   Tue Aug 26 20:57:39 2025 +0300
+
+    typochragpy change 3
+
+[33mcommit eec30c1f296893e9abc0430df51ec376f4c91625[m
+Author: kimateru <dancikpalcik@yahoo.com>
+Date:   Tue Aug 26 20:12:22 2025 +0300
+
+    typography change 1,2
+
+[33mcommit dba3aae40c0dbdee126155c9d2a2125cfa5e2d96[m
+Author: kimateru <dancikpalcik@yahoo.com>
+Date:   Mon Aug 4 23:00:23 2025 +0300
+
+    ui changes before/after
+
+[33mcommit 4e92dcd5962a96939b1355f12e62aa0a1b143f71[m
+Author: kimateru <dancikpalcik@yahoo.com>
+Date:   Sat Aug 2 16:48:06 2025 +0300
+
+    ui changes,adaptivity,email js connected
+
+[33mcommit 51275b186d5d8acbe59f16b388b4f0f9308bc30c[m
+Author: kimateru <dancikpalcik@yahoo.com>
+Date:   Thu Jul 31 19:51:55 2025 +0300
+
+    ui chnages for hero 0.1
+
+[33mcommit 461fb279ab7d7fa9ba0625c2529c77ae65221990[m
+Author: kimateru <dancikpalcik@yahoo.com>
+Date:   Thu Jul 31 19:40:55 2025 +0300
+
+    added translation 0.1
+
+[33mcommit 5c3f12c2c8d1bb6566878117dfaf475338fab923[m
+Author: kimateru <dancikpalcik@yahoo.com>
+Date:   Thu Jul 31 19:09:22 2025 +0300
+
+    added translation
+
+[33mcommit 18a685afe7a8b3254d45914817b439e3b401853a[m
+Author: kimateru <dancikpalcik@yahoo.com>
+Date:   Thu Jul 24 21:38:05 2025 +0300
+
+    ui changes 0.4
+
+[33mcommit 821b3457b8d637005ae56e4a4610b554ee68ebb3[m
+Author: kimateru <dancikpalcik@yahoo.com>
+Date:   Wed Jul 23 23:19:20 2025 +0300
+
+    ui changes 0.3
+
+[33mcommit 8ef0b1dc2e1bbfcde9cd63e17bf7b08375619dd0[m
+Author: kimateru <dancikpalcik@yahoo.com>
+Date:   Wed Jul 23 21:28:17 2025 +0300
+
+    ui changes 0.2
+
+[33mcommit bbbb9b67e62d927ba0880bb655f9d4690699a80f[m
+Author: kimateru <dancikpalcik@yahoo.com>
+Date:   Wed Jul 23 20:59:22 2025 +0300
+
+    ui changes,before after slider
+
+[33mcommit 4c8551add9e6f11a2220ac377652241cfe635093[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Wed Jul 23 16:17:20 2025 +0000
+
+    Refactor: Update sections, fonts, and branding
+    
+    Integrates new section order: About Us, Deep Cleaning, Regular Cleaning, Upholstery Cleaning, and Our Clients and Reviews. Updates company name to "Cleaner" with the motto "Servicii de curatenie". Implements specified fonts (Gill Sans Semibold, Doxent Light) and color scheme (main green: #456C5D, secondary green: #6AA08A). Adds a Russian translation button to the navbar.
+
+[33mcommit 7dc221e22a8f9a85df1dc1a6800e3b65076f64e4[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Tue Jul 22 22:58:36 2025 +0000
+
+    Add Romanian translation and SEO
+
+[33mcommit f7d4a6791edc77a09b9b36c18497e528a9db0a13[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Tue Jul 22 22:49:23 2025 +0000
+
+    Create cleaning company landing page
+    
+    Create a visually appealing and animated landing page for a cleaning company, inspired by the provided Dribbble design.
+
+[33mcommit ee1e5c6e1e84943b91fd4ec426ec881c3ba0e598[m
+Author: gpt-engineer-app[bot] <159125892+gpt-engineer-app[bot]@users.noreply.github.com>
+Date:   Tue Jul 22 22:45:46 2025 +0000
+
+    Use tech stack vite_react_shadcn_ts

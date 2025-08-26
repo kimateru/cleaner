@@ -109,9 +109,11 @@ export const UpholsteryCleaning = () => {
               </div>
             </div>
 
-            <Button size="lg" className="w-full bg-main-green hover:bg-main-green/90 text-white font-gill-sans">
-              <span>{t('upholstery.requestEvaluation')}</span>
-              <ArrowRight className="w-4 h-4 ml-2" />
+            <Button asChild size="lg" className="w-full bg-main-green hover:bg-main-green/90 text-white font-gill-sans">
+              <a href="tel:+37369971222">
+                <span>{t('upholstery.requestEvaluation')}</span>
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </a>
             </Button>
           </div>
         </div>
