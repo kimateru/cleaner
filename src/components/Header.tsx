@@ -16,7 +16,7 @@ export const Header = () => {
             className="w-24 h-24 object-contain"
             loading="lazy"
           />
-        </div>
+      </div>
 
         <nav className="hidden xl:flex items-center gap-2 xl:gap-6 animate-fade-in">
           <a href="#home" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm xl:text-base">{t('nav.home')}</a>

@@ -33,22 +33,7 @@ export const RegularCleaning = () => {
     }
   ];
 
-  const workSites = [
-    {
-      title: "Apartament Central Chișinău",
-      type: "Apartament 3 camere",
-      frequency: "Săptămânal",
-      image: homeImage,
-      description: "Întreținere regulată pentru familie tânără"
-    },
-    {
-      title: "Birou IT Company",
-      type: "Spațiu comercial",
-      frequency: "Bi-săptămânal",
-      image: officeImage,
-      description: "Menținerea curățeniei într-un mediu profesional"
-    }
-  ];
+
 
   return (
     <section id="regular-cleaning" className="py-20 section-bg">
@@ -80,7 +65,7 @@ export const RegularCleaning = () => {
                 </Badge>
               )}
               
-              <CardContent className="p-6">
+              <CardContent className="p-6 flex flex-col h-full">
                 <div className="text-center mb-6">
                   <h3 className="font-gill-sans font-semibold text-xl mb-2 mt-2">{plan.title}</h3>
                   <div className="flex items-baseline justify-center gap-1">
@@ -89,8 +74,8 @@ export const RegularCleaning = () => {
                   </div>
                 </div>
 
-                <div className="space-y-3 mb-8">
-                  {plan.features.map((feature) => (
+                <div className="space-y-3 mb-8 flex-grow">
+                  {plan.features.map((feature: string) => (
                     <div key={feature} className="flex items-start justify-center md:justify-start gap-3">
                       <CheckCircle className="w-5 h-5 text-main-green flex-shrink-0 mt-0.5" />
                       <span className="text-sm font-doxent-light text-center md:text-left">{feature}</span>
@@ -100,7 +85,7 @@ export const RegularCleaning = () => {
 
                 <Button 
                   variant={plan.popular ? "default" : "outline"} 
-                  className={`w-full font-gill-sans ${plan.popular ? 'bg-main-green hover:bg-main-green/90 text-white' : 'border-main-green text-main-green hover:bg-main-green/90'}`}
+                  className={`w-full font-gill-sans mt-auto ${plan.popular ? 'bg-main-green hover:bg-main-green/90 text-white' : 'border-main-green text-main-green hover:bg-main-green/90'}`}
                 >
                   {t('regularCleaning.choosePackage')}
                 </Button>

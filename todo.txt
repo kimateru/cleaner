@@ -1,0 +1,4 @@
+1) Regular cleaning - check
+2) Upholstery - check
+3) DeepCleaning - uncheck
+4) About - uncheck

@@ -51,6 +51,25 @@
     "title": "Curățenie Tapițerie",
     "subtitle": "Redăm viața mobilierului tău cu servicii specializate de curățenie pentru tapițerie, covoare și draperii. Tehnologie avansată și experiență de peste 5 ani.",
     "whyChooseUs": "De ce să ne alegi?",
+    "whyChooseUsList": [
+      {
+        "title": "Echipamente profesionale",
+        "description": "Tehnică modernă și tehnologii cu abur pentru o curățenie de calitate."
+      },
+      {
+        "title": "Fiabilitate și responsabilitate",
+        "description": "Alegem metoda de curățare în funcție de material și gradul de murdărie."
+      },
+      {
+        "title": "Abordare individuală",
+        "description": "30 de zile garanție pentru toate serviciile noastre."
+      },
+      {
+        "title": "Program convenabil",
+        "description": "Lucrăm în zilele lucrătoare, mereu la ora stabilită cu dumneavoastră."
+      }
+      
+    ],
     "efficiency": "Eficiență",
     "ecoFriendly": "Eco-Friendly",
     "fastDrying": "Uscare Rapidă",
@@ -62,37 +81,61 @@
         "title": "Canapele și Fotolii",
         "price": "200-500 MDL",
         "description": "Curățenie profundă pentru toate tipurile de țesături și piele",
-        "features": ["Eliminare pete", "Dezinfectare", "Protecție țesături"]
+        "features": [
+          "Eliminare pete",
+          "Dezinfectare",
+          "Protecție țesături"
+        ]
       },
       {
         "title": "Covoare și Mochete",
         "price": "15-25 MDL/m²",
         "description": "Restaurare completă cu echipamente profesionale",
-        "features": ["Curățare profundă", "Eliminare mirosuri", "Uscare rapidă"]
+        "features": [
+          "Curățare profundă",
+          "Eliminare mirosuri",
+          "Uscare rapidă"
+        ]
       },
       {
         "title": "Draperii și Perdele",
         "price": "150-300 MDL",
         "description": "Tratament delicat pentru materiale fine și valoroase",
-        "features": ["Curățare delicată", "Menținere formă", "Culori vii"]
+        "features": [
+          "Curățare delicată",
+          "Menținere formă",
+          "Culori vii"
+        ]
       },
       {
         "title": "Saltele și Perne",
         "price": "300-600 MDL",
         "description": "Dezinfectare completă și eliminarea acarienilor",
-        "features": ["Anti-acarieni", "Dezinfectare", "Igienizare completă"]
+        "features": [
+          "Anti-acarieni",
+          "Dezinfectare",
+          "Igienizare completă"
+        ]
       },
       {
         "title": "Mobilier de Birou",
         "price": "100-300 MDL",
         "description": "Întreținere profesională pentru mediul de lucru",
-        "features": ["Curățare regulată", "Menținere aspect", "Durabilitate"]
+        "features": [
+          "Curățare regulată",
+          "Menținere aspect",
+          "Durabilitate"
+        ]
       },
       {
         "title": "Covoare Persane",
         "price": "30-50 MDL/m²",
         "description": "Tratament special pentru covoare valoroase și antice",
-        "features": ["Tehnică specială", "Conservare valoare", "Restaurare culori"]
+        "features": [
+          "Tehnică specială",
+          "Conservare valoare",
+          "Restaurare culori"
+        ]
       }
     ],
     "process": [
@@ -226,31 +269,31 @@
   "regularCleaning": {
     "badge": "Serviciu Regulat",
     "title": "Curățenie Regulată",
-    "subtitle": "Planuri flexibile de curățenie pentru case și birouri. Alege frecvența care ți se potrivește.",
+    "subtitle": "Planuri flexibile de curățenie pentru case și birouri. Alege frecvența care ți se potrivește. Costul curățenii se calculează pe baza suprafeței - 10 lei/m².",
     "weekly": "Plan Săptămânal",
-    "biweekly": "Plan Bi-săptămânal", 
+    "biweekly": "Plan Bi-săptămânal",
     "monthly": "Plan Lunar",
     "currency": "MDL/vizită",
     "weeklyFeatures": [
-      "Curățenie completă săptămânală",
-      "Aspirare și ștergere",
-      "Curățenie băi și bucătărie",
-      "Schimbare așternuturi",
-      "Reducere 15% pentru contract anual"
+      "Curățenie generală săptămânală",
+      "Curățenie în bucătărie și baie",
+      "Aspirare și ștergere a tuturor suprafețelor",
+      "Schimbarea lenjeriei de pat la fiecare vizită",
+      "Fiecare a 10-a curățenie gratuită dacă se respectă programul fără întreruperi",
+      "Curățenia se efectuează în ziua stabilită în prealabil"
     ],
     "biweeklyFeatures": [
-      "Curățenie la 2 săptămâni",
-      "Curățenie profundă periodică",
+      "Curățenie o dată la 2 săptămâni",
+      "Curățenie de întreținere pentru păstrarea curățeniei și prospețimii",
       "Întreținere regulată",
-      "Flexibilitate program",
+      "Fiecare a 10-a curățenie gratuită dacă se respectă programul fără întreruperi",
       "Cea mai populară opțiune"
     ],
     "monthlyFeatures": [
-      "Curățenie lunară intensivă",
-      "Perfect pentru birouri",
-      "Curățenie geamuri inclusă",
-      "Fără contract pe termen lung",
-      "Ideal pentru întreținere"
+      "Curățenie temeinică lunară",
+      "Menținerea curățeniei fără curățenie zilnică",
+      "Program regulat",
+      "Ideal pentru birouri cu încărcare minimă"
     ],
     "popular": "Cel mai popular",
     "choosePackage": "Alege Pachetul"

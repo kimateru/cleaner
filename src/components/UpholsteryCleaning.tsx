@@ -12,7 +12,8 @@ export const UpholsteryCleaning = () => {
   const { t } = useTranslation();
   const services = t('upholstery.services', { returnObjects: true });
 
-  const process = t('upholstery.process', { returnObjects: true }).map((item, index) => ({
+  const processRaw = t('upholstery.process', { returnObjects: true }) as Array<{ title: string; description: string }>;
+  const process = processRaw.map((item, index) => ({
     ...item,
     step: `0${index + 1}`,
     icon: ["🔍", "🧪", "💨", "✨"][index]
@@ -26,7 +27,7 @@ export const UpholsteryCleaning = () => {
       service: "Canapea din piele"
     },
     {
-      name: "Alexandru Popescu", 
+      name: "Alexandru Popescu",
       text: "Covorul persian a fost restaurat perfect. Recomand!",
       rating: 5,
       service: "Covor persian"
@@ -38,6 +39,8 @@ export const UpholsteryCleaning = () => {
       service: "Mobilier birou"
     }
   ];
+
+  const whyChooseUsList = t('upholstery.whyChooseUsList', { returnObjects: true }) as Array<{ title: string; description: string }>;
 
   return (
     <section id="upholstery-cleaning" className="section-bg overflow-hidden">
@@ -59,8 +62,8 @@ export const UpholsteryCleaning = () => {
         <div className="grid lg:grid-cols-2 gap-12 mb-20">
           <div className="animate-slide-in-left">
             <div className="relative">
-              <img 
-                src={upholsteryImage} 
+              <img
+                src={upholsteryImage}
                 alt="Curățenie tapițerie profesională"
                 className="w-full h-96 object-cover rounded-3xl shadow-2xl"
                 loading="lazy"
@@ -69,17 +72,17 @@ export const UpholsteryCleaning = () => {
             </div>
 
             <div className="grid grid-cols-3 gap-4 mt-8">
-              <div className="text-center p-4 bg-main-green/5 rounded-xl border border-main-green/20">
+              <div className="text-center p-2 md:p-4 bg-main-green/5 rounded-xl border border-main-green/20">
                 <Droplets className="w-8 h-8 text-main-green mx-auto mb-2" />
                 <div className="text-xs md:text-sm font-semibold text-main-green font-gill-sans">{t('upholstery.efficiency')}</div>
                 <div className="text-xs text-muted-foreground font-doxent-light">{t('upholstery.efficiencyDesc')}</div>
               </div>
-              <div className="text-center p-4 bg-main-green/5 rounded-xl border border-main-green/20">
+              <div className="text-center p-2 md:p-4 bg-main-green/5 rounded-xl border border-main-green/20">
                 <Shield className="w-8 h-8 text-main-green mx-auto mb-2" />
                 <div className="text-xs md:text-sm font-semibold text-main-green font-gill-sans">{t('upholstery.ecoFriendly')}</div>
                 <div className="text-xs text-muted-foreground font-doxent-light">{t('upholstery.ecoFriendlyDesc')}</div>
               </div>
-              <div className="text-center p-4 bg-main-green/5 rounded-xl border border-main-green/20">
+              <div className="text-center p-2 md:p-4 bg-main-green/5 rounded-xl border border-main-green/20">
                 <Zap className="w-8 h-8 text-main-green mx-auto mb-2" />
                 <div className="text-xs md:text-sm font-semibold text-main-green font-gill-sans">{t('upholstery.fastDrying')}</div>
                 <div className="text-xs text-muted-foreground font-doxent-light">{t('upholstery.fastDryingDesc')}</div>
@@ -93,51 +96,24 @@ export const UpholsteryCleaning = () => {
                 {t('upholstery.whyChooseUs')}
               </h3>
               <div className="space-y-4">
-                <div className="flex flex-col items-center md:flex-row md:items-start gap-4 p-4 bg-background rounded-xl border border-main-green/20 text-center md:text-left">
-                  <CheckCircle className="w-6 h-6 text-main-green flex-shrink-0 mt-1 md:mt-1 md:mr-0" />
-                  <div>
-                    <h4 className="font-gill-sans font-semibold mb-1">{t('upholstery.equipment')}</h4>
-                    <p className="text-sm text-muted-foreground font-doxent-light">
-                      {t('upholstery.equipmentDesc')}
-                    </p>
+                {whyChooseUsList.map((item, index) => (
+                  <div key={index} className="flex flex-col items-center md:flex-row md:items-start gap-4 p-4 bg-background rounded-xl border border-main-green/20 text-center md:text-left">
+                    <CheckCircle className="w-6 h-6 text-main-green flex-shrink-0 mt-1 md:mt-1 md:mr-0" />
+                    <div>
+                      <h4 className="font-gill-sans font-semibold mb-1">{item.title}</h4>
+                      <p className="text-sm text-muted-foreground font-doxent-light">
+                        {item.description}
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex flex-col items-center md:flex-row md:items-start gap-4 p-4 bg-background rounded-xl border border-main-green/20 text-center md:text-left">
-                  <CheckCircle className="w-6 h-6 text-main-green flex-shrink-0 mt-1 md:mt-1 md:mr-0" />
-                  <div>
-                    <h4 className="font-gill-sans font-semibold mb-1">{t('upholstery.experience')}</h4>
-                    <p className="text-sm text-muted-foreground font-doxent-light">
-                      {t('upholstery.experienceDesc')}
-                    </p>
-                  </div>
-                </div>
-                <div className="flex flex-col items-center md:flex-row md:items-start gap-4 p-4 bg-background rounded-xl border border-main-green/20 text-center md:text-left">
-                  <CheckCircle className="w-6 h-6 text-main-green flex-shrink-0 mt-1 md:mt-1 md:mr-0" />
-                  <div>
-                    <h4 className="font-gill-sans font-semibold mb-1">{t('upholstery.guarantee')}</h4>
-                    <p className="text-sm text-muted-foreground font-doxent-light">
-                      {t('upholstery.guaranteeDesc')}
-                    </p>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
 
-            <Card className="bg-gradient-to-br from-main-green/10 to-secondary-green/5 border-main-green/20">
-              <CardContent className="p-6">
-                <div className="flex flex-col items-center md:flex-row md:items-center gap-3 mb-4 text-center md:text-left">
-                  <Clock className="w-8 h-8 text-main-green" />
-                  <div>
-                    <h4 className="font-gill-sans font-bold text-lg text-main-green">{t('upholstery.flexibleSchedule')}</h4>
-                    <p className="text-sm text-muted-foreground font-doxent-light">{t('upholstery.flexibleScheduleDesc')}</p>
-                  </div>
-                </div>
-                <Button size="lg" className="w-full bg-main-green hover:bg-main-green/90 text-white font-gill-sans">
-                  <span>{t('upholstery.requestEvaluation')}</span>
-                  <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </CardContent>
-            </Card>
+            <Button size="lg" className="w-full bg-main-green hover:bg-main-green/90 text-white font-gill-sans">
+              <span>{t('upholstery.requestEvaluation')}</span>
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Button>
           </div>
         </div>
 
@@ -150,11 +126,11 @@ export const UpholsteryCleaning = () => {
               {t('upholstery.processSubtitle')}
             </p>
           </div>
-          
+
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             {process.map((step, index) => (
-              <Card 
-                key={index} 
+              <Card
+                key={index}
                 className="text-center border-main-green/20 hover:shadow-lg transition-all duration-300 animate-slide-in-up"
                 style={{ animationDelay: `${index * 0.2}s` }}
               >
@@ -163,7 +139,7 @@ export const UpholsteryCleaning = () => {
                     <p>{step.step}</p>
                     <div className="text-4xl">{step.icon}</div>
                   </div>
-                 
+
                   <h4 className="font-gill-sans font-semibold text-lg mb-3">{step.title}</h4>
                   <p className="text-sm text-muted-foreground font-doxent-light">{step.description}</p>
                 </CardContent>
@@ -174,7 +150,7 @@ export const UpholsteryCleaning = () => {
 
         {/* CTA Section */}
       </div>
-        <CTA heading={t('upholstery.readyToRestore')} />
+      <CTA heading={t('upholstery.readyToRestore')} />
     </section>
   );
 }; 
