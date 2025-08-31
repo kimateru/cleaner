@@ -56,9 +56,6 @@ const Index = () => {
           <ClientsReviews />
         </Suspense>
 
-        <Suspense fallback={<LoadingSpinner />}>
-          <Stats />
-        </Suspense>
 
         <Suspense fallback={<LoadingSpinner />}>
           <Contact />
