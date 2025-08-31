@@ -18,15 +18,16 @@ export const Header = () => {
           />
       </div>
 
-        <nav className="hidden xl:flex items-center gap-2 xl:gap-6 animate-fade-in">
-          <a href="#home" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm xl:text-base">{t('nav.home')}</a>
-          <a href="#about" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm xl:text-base">{t('nav.about')}</a>
-          <a href="#deep-cleaning" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm xl:text-base">{t('nav.deepCleaning')}</a>
-          <a href="#regular-cleaning" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm xl:text-base">{t('nav.regularCleaning')}</a>
-          <a href="#upholstery-cleaning" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm xl:text-base">{t('nav.upholsteryCleaning')}</a>
-          <a href="#before-after" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm xl:text-base">{t('nav.beforeAfter')}</a>
-          <a href="#clients" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm xl:text-base">{t('nav.clients')}</a>
-          <a href="#contact" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm xl:text-base">{t('nav.contact')}</a>
+        <nav className="hidden xl:flex items-center gap-2 xl:gap-5 animate-fade-in">
+          <a href="#home" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm 2xl:text-base">{t('nav.home')}</a>
+          <a href="#about" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm 2xl:text-base">{t('nav.about')}</a>
+          <a href="#general-cleaning" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm 2xl:text-base">{t('nav.generalCleaning')}</a>
+          <a href="#deep-cleaning" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm 2xl:text-base">{t('nav.deepCleaning')}</a>
+          <a href="#regular-cleaning" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm 2xl:text-base">{t('nav.regularCleaning')}</a>
+          <a href="#upholstery-cleaning" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm 2xl:text-base">{t('nav.upholsteryCleaning')}</a>
+          <a href="#before-after" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm 2xl:text-base">{t('nav.beforeAfter')}</a>
+          <a href="#clients" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm 2xl:text-base">{t('nav.clients')}</a>
+          <a href="#contact" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm 2xl:text-base">{t('nav.contact')}</a>
         </nav>
 
         <div className="flex items-center gap-4 animate-fade-in">

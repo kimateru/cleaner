@@ -4,6 +4,7 @@ import { lazy, Suspense } from "react";
 const Header = lazy(() => import("@/components/Header").then(module => ({ default: module.Header })));
 const Hero = lazy(() => import("@/components/Hero").then(module => ({ default: module.Hero })));
 const About = lazy(() => import("@/components/About").then(module => ({ default: module.About })));
+const GeneralCleaning = lazy(() => import("@/components/GeneralCleaning").then(module => ({ default: module.GeneralCleaning })));
 const DeepCleaning = lazy(() => import("@/components/DeepCleaning").then(module => ({ default: module.DeepCleaning })));
 const RegularCleaning = lazy(() => import("@/components/RegularCleaning").then(module => ({ default: module.RegularCleaning })));
 const UpholsteryCleaning = lazy(() => import("@/components/UpholsteryCleaning").then(module => ({ default: module.UpholsteryCleaning })));
@@ -29,6 +30,10 @@ const Index = () => {
         <Hero />
 
         <About />
+
+        <Suspense fallback={<LoadingSpinner />}>
+          <GeneralCleaning />
+        </Suspense>
 
         <DeepCleaning />
 

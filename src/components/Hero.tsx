@@ -47,7 +47,7 @@ export const Hero = () => {
             
             {/* Features */}
             <div className="hidden md:grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 mt-8">
-              <div className="group bg-main-green/5 backdrop-blur-md hover:bg-black/60 transition-all duration-300 rounded-xl p-6 border border-white/10 shadow-lg">
+              <div className="group backdrop-blur-md bg-black/60 transition-all duration-300 rounded-xl p-6 border border-white/10 shadow-lg">
                 <div className="flex flex-col items-center lg:items-start gap-3">
                   <div className="bg-success/20 p-3 rounded-lg border border-success/20 shadow-success/10 shadow-lg">
                     <Award className="w-6 h-6 text-success" />
@@ -60,7 +60,7 @@ export const Hero = () => {
               </div>
               
             
-              <div className="group bg-main-green/5 backdrop-blur-md hover:bg-black/60 transition-all duration-300 rounded-xl p-6 border border-white/10 shadow-lg">
+              <div className="group backdrop-blur-md bg-black/60 transition-all duration-300 rounded-xl p-6 border border-white/10 shadow-lg">
                 <div className="flex flex-col items-center lg:items-start gap-3">
                   <div className="bg-success/20 p-3 rounded-lg border border-success/20 shadow-success/10 shadow-lg">
                     <Star className="w-6 h-6 text-success" />
@@ -74,7 +74,7 @@ export const Hero = () => {
 
 
               
-              <div className="group bg-main-green/5 backdrop-blur-md hover:bg-black/60 transition-all duration-300 rounded-xl p-6 border border-white/10 shadow-lg">
+              <div className="group backdrop-blur-md bg-black/60 transition-all duration-300 rounded-xl p-6 border border-white/10 shadow-lg">
                 <div className="flex flex-col items-center lg:items-start gap-3">
                   <div className="bg-success/20 p-3 rounded-lg border border-success/20 shadow-success/10 shadow-lg">
                     <Shield className="w-6 h-6 text-success" />

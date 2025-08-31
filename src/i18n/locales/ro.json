@@ -2,6 +2,7 @@
   "nav": {
     "home": "Acasă",
     "about": "Despre Noi",
+    "generalCleaning": "Curățenie Generală",
     "deepCleaning": "Curățenie Profundă",
     "regularCleaning": "Curățenie Regulată",
     "upholsteryCleaning": "Curățenie Tapițerie",
@@ -26,7 +27,7 @@
   },
   "about": {
     "title": "Despre Cleaner",
-    "description": "Cu peste 5 ani de experiență în curățenie profesională, Cleaner este liderul pieței din Chișinău. Folosim echipamente moderne și produse ecologice pentru rezultate impecabile.",
+    "description": "Cu Cleaner, curățenia devine o soluție simplă și de încredere. Folosim echipamente moderne și produse sigure, pentru ca locuința sau biroul dumneavoastră să strălucească de prospețime impecabilă.",
     "mission": "Misiunea Noastră",
     "missionDesc": "Să oferim servicii de curățenie de cea mai înaltă calitate, creând spații curate și sănătoase pentru clienții noștri din Moldova.",
     "whyChooseUs": "De Ce Să Ne Alegeți",
@@ -405,6 +406,63 @@
     "instantQuote": "Calculează Preț Instant",
     "viewPricing": "Vezi Prețurile",
     "startNow": "Începe Acum"
+  },
+  "generalCleaning": {
+    "badge": "Curățenie Detaliată",
+    "title": "Curățenie Generală",
+    "subtitle": "Curățenie detaliată și completă pentru toate camerele: de la dormitoare la bucătărie și băi. Opțiunea perfectă pentru reîmprospătarea completă a spațiului.",
+    "equipment": "Echipamente Profesionale",
+    "equipmentDesc": "Tehnologii moderne pentru rezultate impecabile",
+    "guaranteed": "Rezultate Garantate",
+    "ourServices": "Serviciile Noastre",
+    "services": [
+      "Curățenie generală apartamente și case",
+      "Curățenie completă bucătărie și aparate",
+      "Dezinfectarea băilor",
+      "Spălarea ferestrelor și suprafețelor din sticlă",
+      "Curățenia mobilierului și zonelor greu accesibile",
+      "Curățenia holurilor, coridoarelor și balcoanelor"
+    ],
+    "types": {
+      "title": "Curățenie Generală Apartamente, Case și Vile",
+      "subtitle": "Curățenie detaliată și completă pentru toate camerele pentru ordine și curățenie perfectă.",
+      "list": [
+        {
+          "title": "Camere de zi și dormitoare",
+          "description": "Îndepărtarea prafului de pe tavane și pereți, spălarea ferestrelor, curățarea mobilierului, podelelor și elementelor decorative."
+        },
+        {
+          "title": "Bucătăria",
+          "description": "Spălarea fațadelor mobilierului de bucătărie, curățarea plitei, cuptorului, hotei și frigiderului, degresarea suprafețelor de lucru, spălarea chiuvetei și robinetului, curățarea plăcilor și backsplash-ului, curățarea zonelor greu accesibile."
+        },
+        {
+          "title": "Băi și toalete",
+          "description": "Dezinfectarea toaletei, chiuvetei, căzii sau cabinei de duș, îndepărtarea depunerilor și ruginii, curățarea plăcilor, oglinzilor, curățenia completă a podelei și ușilor."
+        },
+        {
+          "title": "Coridoare și holuri",
+          "description": "Spălarea ușii de intrare, curățarea dulapurilor și rafturilor, oglinzilor și elementelor decorative, curățenia și tratarea umedă a podelei."
+        },
+        {
+          "title": "Balcoane și logii",
+          "description": "Spălarea geamurilor interior și exterior, curățarea balustradelor, pervazurilor, parapetelor, curățenia umedă a podelei."
+        },
+        {
+          "title": "Suplimentar (la cerere)",
+          "description": "Curățarea chimică a mobilierului tapițat și covoarelor, spălarea fațadelor vilelor, dezinfectare completă, curățenia după renovări."
+        }
+      ]
+    },
+    "features": [
+      {
+        "title": "Echipamente Profesionale",
+        "description": "Tehnologii moderne pentru rezultate impecabile"
+      },
+      {
+        "title": "Rezultate Garantate",
+        "description": "100% calitatea muncii efectuate"
+      }
+    ]
   },
   "common": {
     "phone": "+373 (69) 971222"
