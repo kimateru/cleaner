@@ -158,7 +158,10 @@ export const Header = () => {
       {/* Mobile Menu Overlay */}
       <div 
         className="mobile-menu-overlay fixed inset-0 z-[60] bg-white/95 backdrop-blur-lg xl:hidden overflow-hidden"
-        style={{ display: 'none' }}
+        style={{ 
+          display: 'none',
+          height: '100dvh' // Use dynamic viewport height for better mobile support
+        }}
       >
 
 
@@ -170,34 +173,42 @@ export const Header = () => {
           <X className="w-6 h-6 text-main-green" />
         </button>
 
-        <div className="mobile-menu-content flex flex-col items-center justify-center h-full px-6 py-10 relative w-full">
-          {/* Navigation Links - Perfectly Centered */}
-          <nav className="flex flex-col items-center justify-center space-y-5 flex-1 w-full max-w-md">
-            {navigationLinks.map((link, index) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="menu-item text-2xl font-gill-sans font-medium text-main-green hover:text-main-green/80 transition-colors text-center w-full py-3 block"
-                onClick={closeMenu}
-              >
-                {link.label}
-              </a>
-            ))}
-          </nav>
+        <div className="mobile-menu-content flex flex-col h-full w-full">
+          {/* Safe area for close button */}
+          <div className="h-20 flex-shrink-0"></div>
+          
+          {/* Main content area - perfectly centered */}
+          <div className="flex-1 flex flex-col items-center justify-center px-6 min-h-0">
+            {/* Navigation Links - Centered */}
+            <nav className="flex flex-col items-center justify-center w-full max-w-sm space-y-1 sm:space-y-2">
+              {navigationLinks.map((link, index) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="menu-item text-lg sm:text-xl md:text-2xl font-gill-sans font-medium text-main-green hover:text-main-green/80 transition-colors text-center w-full py-2 block"
+                  onClick={closeMenu}
+                >
+                  {link.label}
+                </a>
+              ))}
+            </nav>
 
-          {/* Mobile CTA - Bottom Centered */}
-          <div className="mobile-cta mt-4 flex-shrink-0 w-full flex justify-center">
-            <Button 
-              asChild
-              size="lg"
-              className="bg-main-green hover:bg-main-green/90 text-white font-gill-sans px-8 py-4 text-lg"
-            >
-              <a href="tel:+37369971222" onClick={closeMenu} className="flex items-center">
-                <Phone className="w-5 h-5 mr-2" />
-                {t('common.phone')}
-              </a>
-            </Button>
+            {/* Mobile CTA - Centered below navigation */}
+            <div className="mobile-cta mt-6 sm:mt-8 flex-shrink-0 w-full flex justify-center">
+              <Button 
+                asChild
+                className="bg-main-green hover:bg-main-green/90 text-white font-gill-sans px-6 py-3 text-sm sm:text-base"
+              >
+                <a href="tel:+37369971222" onClick={closeMenu} className="flex items-center">
+                  <Phone className="w-4 h-4 mr-2" />
+                  {t('common.phone')}
+                </a>
+              </Button>
+            </div>
           </div>
+          
+          {/* Bottom safe area */}
+          <div className="h-16 flex-shrink-0"></div>
         </div>
       </div>
     </>
