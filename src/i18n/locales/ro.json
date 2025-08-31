@@ -6,6 +6,7 @@
     "deepCleaning": "Curățenie Profundă",
     "regularCleaning": "Curățenie Regulată",
     "upholsteryCleaning": "Curățenie Tapițerie",
+    "windowCleaning": "Spălare Ferestre",
     "beforeAfter": "Înainte & După",
     "clients": "Clienți",
     "contact": "Contact"
@@ -463,6 +464,50 @@
         "description": "100% calitatea muncii efectuate"
       }
     ]
+  },
+  "windowCleaning": {
+    "badge": "Curățenie Cristalină",
+    "title": "Spălare Ferestre",
+    "subtitle": "Ferestrele murdare privează casa de lumină, iar biroul de soliditate. Știm cum să redăm sticlei transparența și strălucirea, pentru ca spațiul să radieze.",
+    "tagline": "o privire clară asupra lumii",
+    "whyChooseUs": "De ce ne aleg:",
+    "features": [
+      "Produse și echipamente profesionale — fără urme și zgârieturi",
+      "Lucrăm la orice înălțime și cu orice construcții",
+      "Acuratețea și siguranța sunt pe primul loc",
+      "Curățenie care durează mai mult"
+    ],
+    "cta": "Cu noi, ferestrele tale devin cartea de vizită a curățeniei. Comandă spălarea astăzi și simte diferența mâine!",
+    "description": "Spălare profesională a ferestrelor până la strălucire: sticlă, rame, pervazuri, plase de țânțari. Lucrăm doar cu chimie și echipamente de calitate.",
+    "pricingTitle": "Exemple de prețuri:",
+    "twoSection": "Fereastră cu două secțiuni",
+    "threeSection": "Fereastră cu trei secțiuni",
+    "fiveSection": "Fereastră cu cinci secțiuni",
+    "panoramic": "Ferestre panoramice / vitralii",
+    "currency": "lei/fereastră",
+    "individualPrice": "Calcul individual",
+    "twoSectionFeatures": [
+      "Spălare completă a sticlei și ramelor",
+      "Pervazul și plasa de țânțari incluse",
+      "Ideal pentru apartamente"
+    ],
+    "threeSectionFeatures": [
+      "Sticlă, rame, pervazuri",
+      "Lucru rapid fără urme",
+      "Alegerea populară pentru case și birouri"
+    ],
+    "fiveSectionFeatures": [
+      "Spălare complexă a tuturor elementelor",
+      "Recomandat pentru încăperi mari",
+      "Rezultat garantat"
+    ],
+    "panoramicFeatures": [
+      "Prețul depinde de mărime și complexitate",
+      "Folosim doar echipamente profesionale"
+    ],
+    "popular": "Alegerea populară",
+    "choosePackage": "Comandă serviciul",
+    "minimumOrder": "Suma minimă de comandă — 1800 lei"
   },
   "common": {
     "phone": "+373 (69) 971222"

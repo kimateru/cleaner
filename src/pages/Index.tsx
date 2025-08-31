@@ -8,6 +8,7 @@ const GeneralCleaning = lazy(() => import("@/components/GeneralCleaning").then(m
 const DeepCleaning = lazy(() => import("@/components/DeepCleaning").then(module => ({ default: module.DeepCleaning })));
 const RegularCleaning = lazy(() => import("@/components/RegularCleaning").then(module => ({ default: module.RegularCleaning })));
 const UpholsteryCleaning = lazy(() => import("@/components/UpholsteryCleaning").then(module => ({ default: module.UpholsteryCleaning })));
+const WindowCleaning = lazy(() => import("@/components/WindowCleaning").then(module => ({ default: module.WindowCleaning })));
 const BeforeAfter = lazy(() => import("@/components/BeforeAfter").then(module => ({ default: module.BeforeAfter })));
 const ClientsReviews = lazy(() => import("@/components/ClientsReviews").then(module => ({ default: module.ClientsReviews })));
 const Stats = lazy(() => import("@/components/Stats").then(module => ({ default: module.Stats })));
@@ -41,6 +42,10 @@ const Index = () => {
 
         <Suspense fallback={<LoadingSpinner />}>
           <UpholsteryCleaning />
+        </Suspense>
+
+        <Suspense fallback={<LoadingSpinner />}>
+          <WindowCleaning />
         </Suspense>
 
         <Suspense fallback={<LoadingSpinner />}>

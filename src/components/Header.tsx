@@ -25,6 +25,7 @@ export const Header = () => {
           <a href="#deep-cleaning" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm 2xl:text-base">{t('nav.deepCleaning')}</a>
           <a href="#regular-cleaning" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm 2xl:text-base">{t('nav.regularCleaning')}</a>
           <a href="#upholstery-cleaning" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm 2xl:text-base">{t('nav.upholsteryCleaning')}</a>
+          <a href="#window-cleaning" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm 2xl:text-base">{t('nav.windowCleaning')}</a>
           <a href="#before-after" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm 2xl:text-base">{t('nav.beforeAfter')}</a>
           <a href="#clients" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm 2xl:text-base">{t('nav.clients')}</a>
           <a href="#contact" className="text-foreground hover:text-main-green transition-colors font-doxent-light font-medium text-sm 2xl:text-base">{t('nav.contact')}</a>
