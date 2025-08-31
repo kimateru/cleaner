@@ -180,12 +180,12 @@ export const Header = () => {
           {/* Main content area - perfectly centered */}
           <div className="flex-1 flex flex-col items-center justify-center px-6 min-h-0">
             {/* Navigation Links - Centered */}
-            <nav className="flex flex-col items-center justify-center w-full max-w-sm space-y-5 sm:space-y-2">
+            <nav className="flex flex-col items-center justify-center w-full max-w-sm space-y-3 sm:space-y-2">
               {navigationLinks.map((link, index) => (
                 <a
                   key={link.href}
                   href={link.href}
-                  className="menu-item text-2xl md:text-2xl font-gill-sans font-medium text-main-green hover:text-main-green/80 transition-colors text-center w-full py-2 block"
+                  className="menu-item text-xl sm:text-xl md:text-2xl font-gill-sans font-medium text-main-green hover:text-main-green/80 transition-colors text-center w-full py-2 block"
                   onClick={closeMenu}
                 >
                   {link.label}
