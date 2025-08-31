@@ -31,152 +31,50 @@ export const Header = () => {
     };
   }, [isMenuOpen]);
 
-  // GSAP animations for menu
- // GSAP animations for menu
- useEffect(() => {
-  const tl = gsap.timeline();
+  // Simple GSAP animations for menu
+  useEffect(() => {
+    const overlay = document.querySelector('.mobile-menu-overlay') as HTMLElement;
+    const content = document.querySelector('.mobile-menu-content') as HTMLElement;
+    
+    if (!overlay || !content) return;
 
-  // Cleanup sparkles
-  gsap.killTweensOf('.sparkle');
-  document.querySelectorAll('.sparkle').forEach(el => el.remove());
+    const tl = gsap.timeline();
 
- const createSparkle = (broom: Element | null) => {
-  if (!broom) return;
-  if (Math.random() > 0.3) return; // ~30% chance only
-
-  const rect = broom.getBoundingClientRect();
-  if (rect.width === 0 || rect.height === 0) return; // 🚫 skip if not rendered/hidden
-  const style = window.getComputedStyle(broom as HTMLElement);
-  if (style.opacity === "0") return; // 🚫 skip if broom is invisible
-
-  const sparkle = document.createElement('div');
-  sparkle.className = 'sparkle';
-  sparkle.innerHTML = '✨';
-  Object.assign(sparkle.style, {
-    position: 'fixed',
-    left: rect.left + rect.width / 2 + 'px',
-    top: rect.top + rect.height / 2 + 'px',
-    pointerEvents: 'none',
-    fontSize: '1.5rem',
-    opacity: 1,
-    zIndex: 99,
-  });
-  document.body.appendChild(sparkle);
-
-  gsap.to(sparkle, {
-    y: gsap.utils.random(-20, 20),
-    x: gsap.utils.random(-10, 10),
-    scale: gsap.utils.random(0.7, 1.2),
-    opacity: 0,
-    duration: 1,
-    ease: "power1.out",
-    onComplete: () => sparkle.remove()
-  });
-};
+    // Clean up any existing animations
+    gsap.killTweensOf([overlay, content, '.menu-item', '.mobile-cta']);
 
 
-  if (isMenuOpen) {
-    tl.set('.mobile-menu-overlay', { display: 'flex' })
-      .set('.mobile-menu-content', { x: '100%' })
-      .set('.broom-sweep', { x: '110vw', opacity: 1, scale: 1.8 })
-      .set('.menu-item', { x: 100, opacity: 0 })
-      .set('.mobile-cta', { x: 100, opacity: 0 })
-      .set('.close-button', { opacity: 0, scale: 0 })
-
-      // Sweeping motion
-      .to('.broom-sweep', {
-        keyframes: [
-          { x: '70vw', rotation: -25, duration: 0.3, onUpdate() {
-            createSparkle(document.querySelector('.broom-sweep'));
-          }},
-          { x: '40vw', rotation: 25, duration: 0.3, onUpdate() {
-            createSparkle(document.querySelector('.broom-sweep'));
-          }},
-          { x: '10vw', rotation: -20, duration: 0.3, onUpdate() {
-            createSparkle(document.querySelector('.broom-sweep'));
-          }},
-          { x: '-20vw', rotation: 20, duration: 0.3, onUpdate() {
-            createSparkle(document.querySelector('.broom-sweep'));
-          }},
-        ],
-        ease: "power1.inOut",
-      })
-
-      // Overlay fade
-      .fromTo('.mobile-menu-overlay', 
-        { opacity: 0 }, 
-        { opacity: 1, duration: 0.8, ease: "power2.out" }, 
-        "-=1.0"
-      )
-
-      .to('.mobile-menu-content', {
-        x: '0%',
-        duration: 0.8,
-        ease: "power3.out"
-      }, "-=0.6")
-
-      .to('.broom-sweep', { opacity: 0, duration: 0.3 }, "-=0.4")
-
-      .to('.menu-item', {
-        x: 0, opacity: 1, duration: 0.3,
-        stagger: 0.08, ease: "back.out(1.7)"
-      }, "-=0.2")
-
-      .to('.mobile-cta', {
-        x: 0, opacity: 1, duration: 0.4,
-        ease: "back.out(1.7)"
-      }, "-=0.2")
-
-      .to('.close-button', {
-        opacity: 1, scale: 1, duration: 0.3,
-        ease: "back.out(1.7)"
-      }, "-=0.2");
-
-  } else {
-    // Reverse sweep
-    tl.set('.broom-sweep', { x: '-30vw', opacity: 0, scale: 1.8 })
-
-      .to('.close-button', { opacity: 0, scale: 0, duration: 0.2 })
-
-      .to('.menu-item', {
-        x: 100, opacity: 0, duration: 0.2,
-        stagger: 0.04, ease: "power2.in"
-      }, "-=0.1")
-
-      .to('.mobile-cta', {
-        x: 100, opacity: 0, duration: 0.2, ease: "power2.in"
-      }, "-=0.15")
-
-      .to('.broom-sweep', { opacity: 1, duration: 0.2 })
-
-      .to('.broom-sweep', {
-        keyframes: [
-          { x: '10vw', rotation: 20, duration: 0.3, onUpdate() {
-            createSparkle(document.querySelector('.broom-sweep'));
-          }},
-          { x: '40vw', rotation: -20, duration: 0.3, onUpdate() {
-            createSparkle(document.querySelector('.broom-sweep'));
-          }},
-          { x: '70vw', rotation: 20, duration: 0.3, onUpdate() {
-            createSparkle(document.querySelector('.broom-sweep'));
-          }},
-          { x: '110vw', rotation: -20, duration: 0.3, onUpdate() {
-            createSparkle(document.querySelector('.broom-sweep'));
-          }},
-        ],
-        ease: "power1.inOut",
-      })
-
-      .to('.mobile-menu-content', {
-        x: '100%', duration: 0.6, ease: "power3.in"
-      }, "-=0.7")
-
-      .to('.mobile-menu-overlay', {
-        opacity: 0, duration: 0.3, ease: "power2.in"
-      }, "-=0.3")
-
-      .set('.mobile-menu-overlay', { display: 'none' });
-  }
+         if (isMenuOpen) {
+      // Simple opening animation
+      tl.set(overlay, { display: 'flex', opacity: 0 })
+        .set(content, { x: '100%' })
+        .set('.menu-item', { opacity: 0, y: 20 })
+        .set('.mobile-cta', { opacity: 0, y: 20 })
+        
+        .to(overlay, { opacity: 1, duration: 0.3 })
+        .to(content, { x: '0%', duration: 0.5, ease: "power2.out" }, "-=0.2")
+        .to('.menu-item', { 
+          opacity: 1, 
+          y: 0, 
+          duration: 0.3, 
+          stagger: 0.1, 
+          ease: "back.out(1.7)" 
+        }, "-=0.2")
+        .to('.mobile-cta', { 
+          opacity: 1, 
+          y: 0, 
+          duration: 0.3, 
+          ease: "back.out(1.7)" 
+        }, "-=0.1");
+        
+    } else {
+      // Simple closing animation
+      tl.to('.menu-item', { opacity: 0, y: 20, duration: 0.2, stagger: 0.05 })
+        .to('.mobile-cta', { opacity: 0, y: 20, duration: 0.2 }, "-=0.1")
+        .to(content, { x: '100%', duration: 0.4, ease: "power2.in" }, "-=0.1")
+        .to(overlay, { opacity: 0, duration: 0.3 })
+        .set(overlay, { display: 'none' });
+    }
 }, [isMenuOpen]);
 
 
@@ -243,18 +141,16 @@ export const Header = () => {
               </a>
             </Button>
             {/* Burger Menu Button */}
-            <Button
-              variant="ghost"
-              size="sm"
+            <button
               onClick={toggleMenu}
-              className="p-2 hover:bg-main-green/10"
+              className="p-3 hover:bg-main-green/10 rounded-md transition-colors"
             >
               {isMenuOpen ? (
                 <X className="w-6 h-6 text-main-green" />
               ) : (
                 <Menu className="w-6 h-6 text-main-green" />
               )}
-            </Button>
+            </button>
           </div>
         </div>
       </header>
@@ -264,15 +160,12 @@ export const Header = () => {
         className="mobile-menu-overlay fixed inset-0 z-[60] bg-white/95 backdrop-blur-lg xl:hidden overflow-hidden"
         style={{ display: 'none' }}
       >
-        {/* Broom Sweep Animation */}
-        <div className="broom-sweep fixed top-1/2 transform -translate-y-1/2 text-8xl z-10 pointer-events-none select-none">
-          🧹
-        </div>
+
 
         {/* Close Button - Fixed Position */}
         <button
           onClick={closeMenu}
-          className="close-button fixed top-6 right-6 z-20 w-12 h-12 rounded-full bg-main-green/10 hover:bg-main-green/20 flex items-center justify-center transition-colors"
+          className="fixed top-6 right-6 z-20 w-12 h-12 rounded-full bg-main-green/10 hover:bg-main-green/20 flex items-center justify-center transition-colors"
         >
           <X className="w-6 h-6 text-main-green" />
         </button>
