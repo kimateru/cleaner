@@ -1,3 +1,4 @@
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -12,21 +13,21 @@ export const RegularCleaning = () => {
   const plans = [
     {
       title: t('regularCleaning.weekly'),
-      price: "800-1,200",
+      price: "900 - 1300",
       period: t('regularCleaning.currency'),
       features: t('regularCleaning.weeklyFeatures', { returnObjects: true }),
       popular: false
     },
     {
       title: t('regularCleaning.biweekly'),
-      price: "1,000-1,500",
+      price: "1100 - 1600",
       period: t('regularCleaning.currency'),
       features: t('regularCleaning.biweeklyFeatures', { returnObjects: true }),
       popular: true
     },
     {
       title: t('regularCleaning.monthly'),
-      price: "1,500-2,200",
+      price: "1500-2700",
       period: t('regularCleaning.currency'),
       features: t('regularCleaning.monthlyFeatures', { returnObjects: true }),
       popular: false
@@ -46,7 +47,7 @@ export const RegularCleaning = () => {
             {t('regularCleaning.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-doxent-light">
-            {t('regularCleaning.subtitle')}
+            {t('regularCleaning.subtitle')} <span className="text-main-green font-bold">{t('regularCleaning.pricePerSquare')}</span>
           </p>
         </div>
 

@@ -36,7 +36,7 @@
     "equipment": "Echipamente profesionale moderne",
     "ecoProducts": "Produse de curățenie ecologice",
     "experience": "Experiență",
-    "experienceDesc": "Peste 5 ani în domeniu",
+    "experienceDesc": "Peste un an în domeniu",
     "quality": "Calitate",
     "qualityDesc": "Produse și echipamente premium",
     "trust": "Încredere",
@@ -64,7 +64,7 @@
       },
       {
         "title": "Abordare individuală",
-        "description": "30 de zile garanție pentru toate serviciile noastre."
+        "description": "Curățăm orice tip de mobilier tapițat și covoare."
       },
       {
         "title": "Program convenabil",
@@ -246,7 +246,7 @@
   "deepCleaning": {
     "badge": "Curățenie maximă",
     "title": "Curățenie Profundă",
-    "subtitle": "Servicii intensive de curățenie pentru mutări, după construcții sau curățenie de primăvară. Rezultate garantate.",
+    "subtitle": "Curățenie temeinică și completă a tuturor spațiilor, inclusiv curățarea în profunzime a mobilierului, electrocasnicelor și zonelor greu accesibile. O opțiune ideală pentru mutare, închiriere, pregătirea spațiului după renovare sau pentru o reîmprospătare sezonieră.",
     "equipment": "Echipament Profesional",
     "equipmentDesc": "Tehnologie de ultimă generație",
     "guaranteed": "Rezultate Garantate",
@@ -297,10 +297,10 @@
       "list": [
         {
           "title": "Curățenie după construcții și renovări",
-          "description": "Îndepărtarea prafului de construcție, spălarea tuturor suprafețelor, dezinfectare, pregătirea locuinței pentru trai."
+          "description": "Îndepărtarea prafului de construcție, spălarea tuturor suprafețelor, dezinfectare. Pregătirea locuinței pentru trai și birou pentru utilizare."
         },
         {
-          "title": "Curățenie la mutarea în locuință nouă",
+          "title": "Curățenie la mutarea în locuință nouă și birou",
           "description": "Ordine completă pentru noua casă sau apartament."
         },
         {
@@ -316,7 +316,7 @@
           "description": "Curățenie după sărbători, petreceri și evenimente de familie."
         },
         {
-          "title": "Pregătirea locuinței pentru închiriere",
+          "title": "Pregătirea spațiului pentru închiriere",
           "description": "Curățenie completă, dezinfectare și reîmprospătarea interiorului."
         }
       ]
@@ -336,7 +336,8 @@
   "regularCleaning": {
     "badge": "Serviciu Regulat",
     "title": "Curățenie Regulată",
-    "subtitle": "Planuri flexibile de curățenie pentru case și birouri. Alege frecvența care ți se potrivește. Costul curățenii se calculează pe baza suprafeței - 10 lei/m².",
+    "subtitle": "Planuri flexibile de curățenie pentru case și birouri. Alege frecvența care ți se potrivește. Costul curățenii se calculează pe baza suprafeței -",
+    "pricePerSquare": "10 lei/m²",
     "weekly": "Plan Săptămânal",
     "biweekly": "Plan Bi-săptămânal",
     "monthly": "Plan Lunar",
@@ -411,7 +412,7 @@
   "generalCleaning": {
     "badge": "Curățenie Detaliată",
     "title": "Curățenie Generală",
-    "subtitle": "Curățenie detaliată și completă pentru toate camerele: de la dormitoare la bucătărie și băi. Opțiunea perfectă pentru reîmprospătarea completă a spațiului.",
+    "subtitle": "Curățenie detaliată și completă pentru toate camerele: de la dormitoare la bucătărie și băi, până la birouri și centre mari. Opțiunea perfectă pentru reîmprospătarea completă a spațiului.",
     "equipment": "Echipamente Profesionale",
     "equipmentDesc": "Tehnologii moderne pentru rezultate impecabile",
     "guaranteed": "Rezultate Garantate",
@@ -434,7 +435,7 @@
         },
         {
           "title": "Bucătăria",
-          "description": "Spălarea fațadelor mobilierului de bucătărie, curățarea plitei, cuptorului, hotei și frigiderului, degresarea suprafețelor de lucru, spălarea chiuvetei și robinetului, curățarea plăcilor și backsplash-ului, curățarea zonelor greu accesibile."
+          "description": "Spălarea fațadelor mobilierului de bucătărie, curățarea plitei, cuptorului, hotei și frigiderului, degresarea suprafețelor de lucru, spălarea ferestrelor, chiuvetei și robinetului, curățarea plăcilor și backsplash-ului, curățarea zonelor greu accesibile."
         },
         {
           "title": "Băi și toalete",
@@ -485,6 +486,7 @@
     "fiveSection": "Fereastră cu cinci secțiuni",
     "panoramic": "Ferestre panoramice / vitralii",
     "currency": "lei/fereastră",
+    "pricePrefix": "De la",
     "individualPrice": "Calcul individual",
     "twoSectionFeatures": [
       "Spălare completă a sticlei și ramelor",

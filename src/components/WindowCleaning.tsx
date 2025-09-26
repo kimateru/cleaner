@@ -110,6 +110,7 @@ export const WindowCleaning = () => {
                         <span className="text-xl font-bold text-main-green font-gill-sans">{plan.price}</span>
                       ) : (
                         <>
+                          <span className="text-sm text-muted-foreground font-doxent-light">{t('windowCleaning.pricePrefix')}</span>
                           <span className="text-2xl font-bold text-main-green font-gill-sans">{plan.price}</span>
                           <span className="text-sm text-muted-foreground font-doxent-light">{plan.period}</span>
                         </>

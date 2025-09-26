@@ -18,26 +18,6 @@ export const UpholsteryCleaning = () => {
     step: `0${index + 1}`,
   }));
 
-  const testimonials = [
-    {
-      name: "Maria Ionescu",
-      text: "Canapeaua mea din piele arăta ca nouă după serviciul lor!",
-      rating: 5,
-      service: "Canapea din piele"
-    },
-    {
-      name: "Alexandru Popescu",
-      text: "Covorul persian a fost restaurat perfect. Recomand!",
-      rating: 5,
-      service: "Covor persian"
-    },
-    {
-      name: "Elena Mihai",
-      text: "Servicii profesionale pentru mobilierul de birou.",
-      rating: 5,
-      service: "Mobilier birou"
-    }
-  ];
 
   const whyChooseUsList = t('upholstery.whyChooseUsList', { returnObjects: true }) as Array<{ title: string; description: string }>;
 

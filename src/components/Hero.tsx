@@ -59,20 +59,6 @@ export const Hero = () => {
                 </div>
               </div>
               
-            
-              <div className="group backdrop-blur-md bg-black/60 transition-all duration-300 rounded-xl p-6 border border-white/10 shadow-lg">
-                <div className="flex flex-col items-center lg:items-start gap-3">
-                  <div className="bg-success/20 p-3 rounded-lg border border-success/20 shadow-success/10 shadow-lg">
-                    <Star className="w-6 h-6 text-success" />
-                  </div>
-                  <div>
-                    <h3 className="font-semibold text-white font-gill-sans mb-2 drop-shadow-sm">{t('hero.insured')}</h3>
-                    <p className="text-sm text-white font-doxent-light leading-relaxed">{t('hero.insuredDesc')}</p>
-                  </div>
-                </div>
-              </div>
-
-
               
               <div className="group backdrop-blur-md bg-black/60 transition-all duration-300 rounded-xl p-6 border border-white/10 shadow-lg">
                 <div className="flex flex-col items-center lg:items-start gap-3">

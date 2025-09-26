@@ -14,7 +14,7 @@ const CTA = ({ heading }) => {
                     <div className="flex justify-center">
                         <a href="tel:+37369971222" className="bg-white text-main-green font-gill-sans text-lg transition-all duration-300 sm:w-[250px] rounded-xl py-1 px-8 hover:scale-105 flex items-center justify-center gap-3">
                             <Phone />
-                            <span>
+                            <span className='text-2xl'>
                                 +373 (69) 971222
                             </span>
                         </a>
