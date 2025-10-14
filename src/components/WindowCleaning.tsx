@@ -52,9 +52,6 @@ export const WindowCleaning = () => {
           <h2 className="text-4xl lg:text-5xl font-gill-sans font-bold mb-6 text-main-green">
             {t('windowCleaning.title')}
           </h2>
-          <p className="text-lg text-main-green/80 font-gill-sans italic">
-            — {t('windowCleaning.tagline')}
-          </p>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-doxent-light">
             {t('windowCleaning.subtitle')}
           </p>

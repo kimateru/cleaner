@@ -13,6 +13,7 @@ const BeforeAfter = lazy(() => import("@/components/BeforeAfter").then(module =>
 const ClientsReviews = lazy(() => import("@/components/ClientsReviews").then(module => ({ default: module.ClientsReviews })));
 const Stats = lazy(() => import("@/components/Stats").then(module => ({ default: module.Stats })));
 const Contact = lazy(() => import("@/components/Contact").then(module => ({ default: module.Contact })));
+const Careers = lazy(() => import("@/components/Careers").then(module => ({ default: module.Careers })));
 const Footer = lazy(() => import("@/components/Footer").then(module => ({ default: module.Footer })));
 
 // Loading component
@@ -59,6 +60,10 @@ const Index = () => {
 
         <Suspense fallback={<LoadingSpinner />}>
           <Contact />
+        </Suspense>
+
+        <Suspense fallback={<LoadingSpinner />}>
+          <Careers />
         </Suspense>
       </main>
 

@@ -47,7 +47,7 @@ export const RegularCleaning = () => {
             {t('regularCleaning.title')}
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed font-doxent-light">
-            {t('regularCleaning.subtitle')} <span className="text-main-green font-bold">{t('regularCleaning.pricePerSquare')}</span>
+            {t('regularCleaning.subtitle')}
           </p>
         </div>
 
@@ -70,6 +70,7 @@ export const RegularCleaning = () => {
                 <div className="text-center mb-6">
                   <h3 className="font-gill-sans font-semibold text-xl mb-2 mt-2">{plan.title}</h3>
                   <div className="flex items-baseline justify-center gap-1">
+                    <span className="text-sm text-muted-foreground font-doxent-light">{t('regularCleaning.pricePrefix')}</span>
                     <span className="text-3xl font-bold text-main-green font-gill-sans">{plan.price}</span>
                     <span className="text-sm text-muted-foreground font-doxent-light">{plan.period}</span>
                   </div>

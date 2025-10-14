@@ -27,15 +27,15 @@ export const Footer = () => {
               {t('footer.description')}
             </p>
             <div className="flex gap-4 justify-center md:justify-start">
-              <div className="w-8 h-8 rounded-full bg-background/10 flex items-center justify-center hover:bg-success transition-colors cursor-pointer">
+              <a href="https://m.facebook.com/cleaner.md/" className="w-8 h-8 rounded-full bg-background/10 flex items-center justify-center hover:bg-success transition-colors cursor-pointer">
                 <Facebook className="w-4 h-4" />
-              </div>
-              <div className="w-8 h-8 rounded-full bg-background/10 flex items-center justify-center hover:bg-success transition-colors cursor-pointer">
+              </a>
+              <a href="https://www.instagram.com/cleaner.md_/?igsh=anprMnN1d2Q2azN2#" className="w-8 h-8 rounded-full bg-background/10 flex items-center justify-center hover:bg-success transition-colors cursor-pointer">
                 <Instagram className="w-4 h-4" />
-              </div>
-              <div className="w-8 h-8 rounded-full bg-background/10 flex items-center justify-center hover:bg-success transition-colors cursor-pointer">
+              </a>
+              <a href="tel:+37369971222" className="w-8 h-8 rounded-full bg-background/10 flex items-center justify-center hover:bg-success transition-colors cursor-pointer">
                 <Phone className="w-4 h-4" />
-              </div>
+              </a>
             </div>
           </div>
 
@@ -43,6 +43,21 @@ export const Footer = () => {
           <div className="animate-fade-in text-center md:text-left">
             <h4 className="text-lg font-semibold mb-4">{t('footer.services')}</h4>
             <ul className="space-y-2 text-background/70">
+              <li>
+                <a href="#home" className="hover:text-success transition-colors">
+                  {t('nav.home')}
+                </a>
+              </li>
+              <li>
+                <a href="#about" className="hover:text-success transition-colors">
+                  {t('nav.about')}
+                </a>
+              </li>
+              <li>
+                <a href="#general-cleaning" className="hover:text-success transition-colors">
+                  {t('nav.generalCleaning')}
+                </a>
+              </li>
               <li>
                 <a href="#deep-cleaning" className="hover:text-success transition-colors">
                   {t('nav.deepCleaning')}
@@ -53,16 +68,6 @@ export const Footer = () => {
                   {t('nav.regularCleaning')}
                 </a>
               </li>
-              <li>
-                <a href="#upholstery-cleaning" className="hover:text-success transition-colors">
-                  {t('nav.upholsteryCleaning')}
-                </a>
-              </li>
-              <li>
-                <a href="#before-after" className="hover:text-success transition-colors">
-                  {t('nav.beforeAfter')}
-                </a>
-              </li>
             </ul>
           </div>
           
@@ -71,13 +76,23 @@ export const Footer = () => {
             <h4 className="text-lg font-semibold mb-4">{t('footer.company')}</h4>
             <ul className="space-y-2 text-background/70">
               <li>
-                <a href="#about" className="hover:text-success transition-colors">
-                  {t('footer.aboutUs')}
+                <a href="#upholstery-cleaning" className="hover:text-success transition-colors">
+                  {t('nav.upholsteryCleaning')}
+                </a>
+              </li>
+              <li>
+                <a href="#window-cleaning" className="hover:text-success transition-colors">
+                  {t('nav.windowCleaning')}
+                </a>
+              </li>
+              <li>
+                <a href="#before-after" className="hover:text-success transition-colors">
+                  {t('nav.beforeAfter')}
                 </a>
               </li>
               <li>
                 <a href="#clients" className="hover:text-success transition-colors">
-                  {t('footer.clients')}
+                  {t('nav.clients')}
                 </a>
               </li>
               <li>

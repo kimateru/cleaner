@@ -36,11 +36,11 @@
     "equipment": "Echipamente profesionale moderne",
     "ecoProducts": "Produse de curățenie ecologice",
     "experience": "Experiență",
-    "experienceDesc": "Peste un an în domeniu",
+    "experienceDesc": "1,5 ani în domeniu",
     "quality": "Calitate",
     "qualityDesc": "Produse și echipamente premium",
     "trust": "Încredere",
-    "trustDesc": "Peste 500 clienți mulțumiți",
+    "trustDesc": "Peste 600 clienți mulțumiți",
     "cta": "Contactează-ne"
   },
   "services": {
@@ -336,12 +336,12 @@
   "regularCleaning": {
     "badge": "Serviciu Regulat",
     "title": "Curățenie Regulată",
-    "subtitle": "Planuri flexibile de curățenie pentru case și birouri. Alege frecvența care ți se potrivește. Costul curățenii se calculează pe baza suprafeței -",
-    "pricePerSquare": "10 lei/m²",
+    "subtitle": "Costul curățeniei se calculează individual, în funcție de suprafață, volumul lucrărilor și frecvența efectuării curățeniei.",
     "weekly": "Plan Săptămânal",
     "biweekly": "Plan Bi-săptămânal",
     "monthly": "Plan Lunar",
     "currency": "MDL/vizită",
+    "pricePrefix": "de la",
     "weeklyFeatures": [
       "Curățenie generală săptămânală",
       "Curățenie în bucătărie și baie",
@@ -513,5 +513,11 @@
   },
   "common": {
     "phone": "+373 (69) 971222"
+  },
+  "careers": {
+    "badge": "Alătură-te nouă",
+    "title": "Căutăm profesioniști",
+    "description": "Dacă împărtășești cu noi atitudinea față de un nivel înalt de curățenie, alătură-te echipei noastre. Împreună ridicăm standardele serviciilor și construim o reputație de încredere.",
+    "ctaHeading": "Află detalii"
   }
 }
