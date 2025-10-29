@@ -42,7 +42,7 @@ export const UpholsteryCleaning = () => {
           <div className="animate-slide-in-left">
             <div className="relative">
               <img
-                src={upholsteryImage}
+                src="https://www.carpetbright.uk.com/wp-content/uploads/2024/04/How-to-know-when-my-Upholstery-needs-cleaning_.jpeg"
                 alt="Curățenie tapițerie profesională"
                 className="w-full h-96 object-cover rounded-3xl shadow-2xl"
                 loading="lazy"

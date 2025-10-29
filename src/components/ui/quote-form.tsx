@@ -36,10 +36,10 @@ export const QuoteForm = () => {
 
     try {
       const result = await emailjs.sendForm(
-        'service_yptgkcs', // Replace with your EmailJS service ID
-        'template_ccxqhi8', // Replace with your EmailJS template ID
+        'service_9k2z9x5', // Replace with your EmailJS service ID
+        'template_3hyx0v6', // Replace with your EmailJS template ID
         formRef.current,
-        'yaWtDmZEXbRiwbW3n' // Replace with your EmailJS public key
+        'j1T9a98i1fMpQfkq3' // Replace with your EmailJS public key
       );
 
       if (result.text === 'OK') {

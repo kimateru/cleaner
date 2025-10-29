@@ -42,7 +42,9 @@ export const Contact = () => {
                 <Phone className="w-8 h-8 text-main-green" />
               </div>
               <h3 className="font-gill-sans font-semibold text-main-green mb-2">{t('contact.callUs')}</h3>
-              <p className="text-muted-foreground font-doxent-light">{t('common.phone')}</p>
+              <a href="tel:+37369971222" className="text-muted-foreground font-doxent-light hover:text-main-green transition-colors">
+                {t('common.phone')}
+              </a>
             </CardContent>
           </Card>
 
@@ -52,7 +54,9 @@ export const Contact = () => {
                 <Mail className="w-8 h-8 text-main-green" />
               </div>
               <h3 className="font-gill-sans font-semibold text-main-green mb-2">{t('contact.sendEmail')}</h3>
-              <p className="text-muted-foreground font-doxent-light">contact@cleaner.md</p>
+              <a href="mailto:cleaner@cleaner.md" className="text-muted-foreground font-doxent-light hover:text-main-green transition-colors">
+                cleaner@cleaner.md
+              </a>
             </CardContent>
           </Card>
 
@@ -62,7 +66,14 @@ export const Contact = () => {
                 <MapPin className="w-8 h-8 text-main-green" />
               </div>
               <h3 className="font-gill-sans font-semibold text-main-green mb-2">{t('contact.visitUs')}</h3>
-              <p className="text-muted-foreground font-doxent-light">{t('contact.address')}</p>
+              <a 
+                href="https://www.google.com/maps/place/Strada+Cameni%C8%9Ba+2a,+Chi%C8%99in%C4%83u+2101,+Moldova/@47.0092233,28.8434767,17z"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-muted-foreground font-doxent-light hover:text-main-green transition-colors"
+              >
+                {t('contact.address')}
+              </a>
             </CardContent>
           </Card>
 
